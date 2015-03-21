@@ -1,0 +1,1 @@
+running ['E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\lib\\windows-i686\\zsync.exe', '-o', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update.new', '-k', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.zsync', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update', 'http://update.renpy.org/6.18.3/renpy-6.18.3-rapt.zsync']
