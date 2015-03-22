@@ -17,7 +17,7 @@ label start:
     show derek happy
 
     e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
-    show derek happy at right
+    
     
     menu:
         "Yes, oh lord and master.":
@@ -42,8 +42,8 @@ label start:
         e "Oh shit, someone triggered PURPLE ALERT!  Let's go."
     
     scene bg cave
-    with slowdissolve
     show derek mad at left
+    with move
     
     e "I bet it's that fucker, Greg."
 
