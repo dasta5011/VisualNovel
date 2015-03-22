@@ -1,4 +1,4 @@
-# VisualNovel-1
+# VisualNovel
 For now, to run the game run the Renpy.exe, select GreenT on the left hand side, and hit Launch application.
 This is the game in its current state.
 From the launcher, you can also open the game/asset directory and open the script for the game.
