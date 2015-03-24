@@ -8,3 +8,5 @@ There is also HTML help files in the root of the Renpy folder inside the Doc fol
 
 See forum for if you need expanded communication:  http://greent.boards.net/board/7/discussion-development
 Don't have access?  Let Delubear know and it will be taken care of.  Thanks!
+
+Note:  Renpy uses Python for scripting.
