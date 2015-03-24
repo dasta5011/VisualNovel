@@ -5,9 +5,11 @@
 
 # Declare characters used by this game.
 define e = Character('Derek', color="#c8ffc8")
+define robo = Character('Robot', color="#c8ffc8")
 image bg cave = "cave.jpg"
 image derek happy = "lucy_happy.png"
 image derek mad = "lucy_mad.png"
+image robo = "robo_default_01.png"
 define slowdissolve = Dissolve(1.0)
 
 # The game starts here.
@@ -44,6 +46,7 @@ label start:
     scene bg cave
     show derek mad at left
     with move
+    show robo at right
     
     e "I bet it's that fucker, Greg."
 
