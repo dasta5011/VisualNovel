@@ -1,11 +1,11 @@
-Tue Mar 24 13:08:53 2015
+Tue Mar 24 13:55:39 2015
 Windows-post2008Server-6.2.9200
 Ren'Py 6.18.3.761
 GreenT 0.0
 
 
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(800, 450)
+Screen sizes: virtual=(1280, 720) physical=(1173, 660)
 Vendor: 'NVIDIA Corporation'
 Renderer: 'GeForce GTX 680/PCIe/SSE2'
 Version: '4.4.0 NVIDIA 344.75'
@@ -335,7 +335,7 @@ Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.007000 seconds.
-- Frame drawn at 0.008000 seconds.
-- Frame drawn at 0.014000 seconds.
-- Frame drawn at 0.021000 seconds.
-- 0.021000 seconds to render 5 frames.
+- Frame drawn at 0.010000 seconds.
+- Frame drawn at 0.017000 seconds.
+- Frame drawn at 0.024000 seconds.
+- 0.024000 seconds to render 5 frames.
