@@ -14,6 +14,7 @@ define slowdissolve = Dissolve(1.0)
 label start:
     scene bg cave
     with slowdissolve
+    play music "iron_man_01.mp3" fadeout 1
     show derek happy
 
     e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."

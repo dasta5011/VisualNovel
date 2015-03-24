@@ -16,6 +16,8 @@ Art:  When making art, please save the file to be used in game as a .PNG where p
 
 When saving different character poses/expressions, please use the following naming convention:  characterName_expression_variantNumber  I.e. derek_happy_03
 
+Background Art:  The game resolution will be 1280x720.  This is a 16:9 Aspect Ratio.  
+
 -----------------------------------------------------
 
 Audio: When making music or SFX, please save the file to be used in game as an .OGG where possible.  Also, please save the editable file with separate audio tracks in the appropriate folder.   VisualNovel\renpy-6.18.3-sdk\GreenT\game\Audio_Raw
