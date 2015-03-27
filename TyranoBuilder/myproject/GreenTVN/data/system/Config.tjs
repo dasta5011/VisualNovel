@@ -2,7 +2,7 @@
 ;global.config_version=3.14
 ;System.title=GreenTVN
 ;projectID=GreenTVN
-;ScreenRatio=fix
+;ScreenRatio=normal
 ;scWidth=1280
 ;scHeight=720
 ;chSpeeds.fast=10

@@ -1,10 +1,10 @@
 ;メッセージレイヤの定義
 
-		[position width=1240 height=237 top=417 left=20 ]
+		[position width=1240 height=200 top=500 left=20 ]
 
 
 		
-			[position page=fore margint=45 marginl=10 marginr=20 marginb=10 vertical=false opacity="180" color="0x000000" ]
+			[position page=fore margint=50 marginl=40 marginr=50 marginb=0 vertical=false opacity="180" color="0x000000" ]
 		
 
 		[ptext name="chara_name_area" layer="message0" color=0xFFFFFF size=26 x=30 y=427 bold="bold"]
