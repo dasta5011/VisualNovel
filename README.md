@@ -8,12 +8,15 @@ There is also HTML help files in the root of the Renpy folder inside the Doc fol
 
 See forum for if you need expanded communication:  http://greent.boards.net/board/7/discussion-development
 Don't have access?  Let Delubear know and it will be taken care of.  Thanks!
+
 -----------------------------------------------------
 
 Art:  When making art, please save the file to be used in game as a .PNG where possible.  Also, please save a corresponding .PSD file in the appropriate folder.  VisualNovel\renpy-6.18.3-sdk\GreenT\game\Images_Raw
 -I have included the GIMP.exe if needed for all your licence free file editing/creation needs.
 
 When saving different character poses/expressions, please use the following naming convention:  characterName_expression_variantNumber  I.e. derek_happy_03
+
+Background Art:  The game resolution will be 1280x720.  This is a 16:9 Aspect Ratio.  
 
 -----------------------------------------------------
 

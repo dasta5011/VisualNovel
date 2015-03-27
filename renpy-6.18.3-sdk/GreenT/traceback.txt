@@ -1,45 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-Exception: Style 'cave.jpg' does not exist.
+  File "game/script.rpy", line 20, in script
+    e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
+IOError: Couldn't find file 'iron_man_01.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
-    $ ui.interact()
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 785, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\python.py", line 1382, in py_exec_bytecode
-    exec bytecode in globals, locals
-  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
-    $ ui.interact()
+  File "game/script.rpy", line 20, in script
+    e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 593, in execute
+    renpy.exports.say(who, what, interact=self.interact)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\exports.py", line 999, in say
+    who(what, interact=interact)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 826, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, **display_args)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 688, in do_display
+    **display_args)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 491, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ui.py", line 247, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2149, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2397, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 338, in visit_all
-    d.visit_all(callback)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 338, in visit_all
-    d.visit_all(callback)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 338, in visit_all
-    d.visit_all(callback)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\screen.py", line 388, in visit_all
-    self.child.visit_all(callback)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 338, in visit_all
-    d.visit_all(callback)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 335, in visit_all
-    for d in self.visit():
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\layout.py", line 908, in visit
-    return [ self.style.background ] + self.children
-  File "styleproperties.pxi", line 997, in renpy.styleclass.Style.background.__get__ (gen\renpy.styleclass.c:109913)
-  File "style.pyx", line 456, in renpy.style.StyleCore._get (gen\renpy.style.c:6189)
-  File "style.pyx", line 619, in renpy.style.build_style (gen\renpy.style.c:8238)
-  File "style.pyx", line 130, in renpy.style.get_full_style (gen\renpy.style.c:2300)
-  File "style.pyx", line 82, in renpy.style.get_style (gen\renpy.style.c:1628)
-Exception: Style 'cave.jpg' does not exist.
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2428, in interact_core
+    renpy.audio.audio.interact()
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 946, in interact
+    periodic()
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 880, in periodic
+    c.periodic()
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 349, in periodic
+    topf = load(self.file_prefix + topq.filename + self.file_suffix)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 83, in load
+    rv = renpy.loader.load(fn)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\loader.py", line 438, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'iron_man_01.mp3'.
 
 Windows-post2008Server-6.2.9200
 Ren'Py 6.18.3.761

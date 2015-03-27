@@ -1,4 +1,4 @@
-Sun Mar 22 18:55:55 2015
+Tue Mar 24 13:08:28 2015
 Windows-post2008Server-6.2.9200
 Ren'Py 6.18.3.761
 Ren'Py Tutorial 6.18 "... through shared popular culture."
@@ -335,7 +335,16 @@ Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
 - Frame drawn at 0.004000 seconds.
-- Frame drawn at 0.007000 seconds.
-- Frame drawn at 0.014000 seconds.
+- Frame drawn at 0.008000 seconds.
+- Frame drawn at 0.011000 seconds.
 - Frame drawn at 0.018000 seconds.
 - 0.018000 seconds to render 5 frames.
+
+Windowed mode.
+Screen sizes: virtual=(800, 600) physical=(800, 650)
+
+Windowed mode.
+Screen sizes: virtual=(800, 600) physical=(800, 607)
+
+Windowed mode.
+Screen sizes: virtual=(800, 600) physical=(800, 600)
