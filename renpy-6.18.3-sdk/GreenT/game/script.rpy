@@ -19,8 +19,7 @@ label start:
     play music "iron_man_01.mp3" fadeout 1
     show derek happy
 
-    e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
-    
+    e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."    
     
     menu:
         "Yes, oh lord and master.":
