@@ -6,6 +6,8 @@
 # Declare characters used by this game.
 define e = Character('Derek', color="#c8ffc8")
 define robo = Character('Robot', color="#c8ffc8")
+#character n is for narrator, and represents the characters internal monologue and scene descriptions
+define n = Character(' ', color="#c8ffc8")
 image bg cave = "cave.jpg"
 image derek happy = "lucy_happy.png"
 image derek mad = "lucy_mad.png"
@@ -20,7 +22,7 @@ label start:
     show derek happy
 
     e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
-    
+    n "Well, this should be interesting. D-Man never lets anyone see his Dotes lair."
     
     menu:
         "Yes, oh lord and master.":
@@ -50,5 +52,14 @@ label start:
     show robo at right
     
     e "I bet it's that fucker, Greg."
+    show robo at offscreenright
+    with move
+    e "Get back here!  Gnnh..!"
+    show derek mad at offscreenright
+    with move
+    n "And with that, Derek took off down the tunnel with a murderous look in his eyes."
+    n "I wonder if there'll be cake..."
+    
+    jump start2
 
     return

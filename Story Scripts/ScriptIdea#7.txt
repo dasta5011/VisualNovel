@@ -19,3 +19,32 @@ Few different arcs it could follow:
 Mechanics:  
 -Addiction/Composure meter.  If the character has taken too much of the drug, or has taken it too recently, it'll be harder for him to control himself in situations and may cause certain normal actions to be unavailable and force the character to lash out or act sporadic when dealing with others, like his boss or the police or women.
 -The Sister Puzzle.  If using the dead sister route, give the player options where to look for her next, and different places provide different parts/clues that he comes back with. Collecting certain combinations unlock new areas and different endings depending on where the character goes.
+
+
+---------------------------------------------------------------------------
+
+"11,543."
+"11,542."
+"11,541."
+"That's how many seconds I have left."
+"Until this work day is over."
+"When did it get like this?"
+"I had dreams when I started here.  Big dreams.  I had ambition!"
+"But now, what am I?"
+
+*Smack*
+
+"As if I just realized I was still alive, I turn around startled."
+
+Coworker 1 "Oy, <character name>, you doing alright?  You almost looked dead with how you were staring off."
+
+"<Coworker 1's name>, one of the people I work closest to in this office."
+"He gets his work done, but he's too friendly."  
+"I feel disgusting when he touches me.  I'm sure he's a good guy, I'm probably the one at fault for how I feel towards him."
+"But, that doesn't change how filthy I feel right now."
+
+Coworker 1 "<character name>?"
+
+Character "Yes, I'm fine.
+Character "I'm more than fine.  I'm fucking splendid."
+Character "Only 11,523 to go!"
