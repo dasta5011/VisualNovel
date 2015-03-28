@@ -3,9 +3,28 @@
 [tb_show_message_window] 
 *start
 
-[bg  time="1000"  method="scale"  storage="cave.jpg"  ]
-[chara_show  name="Derek"  time="1000"  left="141"  top="120"  ]
+[bg  time="1000"  method="puff"  storage="cave.jpg"  ]
 [tb_show_message_window  ]
+[iscript]
+gamestarts = 2;
+[endscript]
+
+[tb_start_tyrano_code]
+[if exp="gamestarts==1"]
+[_tb_end_tyrano_code]
+
+Testings[p]
+
+
+[tb_start_tyrano_code]
+[else]
+[_tb_end_tyrano_code]
+
+Test3[p]
+
+
+[playbgm  loop="true"  storage="iron_man_01.mp3"  ]
+[chara_show  name="Derek"  time="1000"  left="141"  top="120"  ]
 #Derek
 Welcome to my new Dotes lair.  [p]
 If you keep hush about it, I'll let you in, got it?[p]
