@@ -1,7 +1,9 @@
 [_tb_system_call storage=system/_preview.ks ]
 
 [tb_show_message_window] 
-[bg  time="1000"  method="puff"  storage="cave.jpg"  ]
+*start
+
+[bg  time="1000"  method="scale"  storage="cave.jpg"  ]
 [chara_show  name="Derek"  time="1000"  left="141"  top="120"  ]
 [tb_show_message_window  ]
 #Derek
