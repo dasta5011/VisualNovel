@@ -17,7 +17,7 @@ Few different arcs it could follow:
 
 
 Mechanics:  
--Addiction/Composure meter.  If the character has taken too much of the drug, or has taken it too recently, it'll be harder for him to control himself in situations and may cause certain normal actions to be unavailable and force the character to lash out or act sporadic when dealing with others, like his boss or the police or women.
+-Addiction/Composure meter.  If the character has taken too much of the drug, or has taken it too recently, it'll be harder for him to control himself in situations and may cause certain normal actions to be unavailable and force the character to lash out or act sporadic when dealing with others, like his boss or the police or women.  However, the more addicted/on the drug he is, his power is stronger, and having that power can open up additional options as well.
 -The Sister Puzzle.  If using the dead sister route, give the player options where to look for her next, and different places provide different parts/clues that he comes back with. Collecting certain combinations unlock new areas and different endings depending on where the character goes.
 
 
@@ -48,3 +48,20 @@ Coworker 1 "<character name>?"
 Character "Yes, I'm fine.
 Character "I'm more than fine.  I'm fucking splendid."
 Character "Only 11,523 to go!"
+
+______________________________________________________________
+
+After being distraught after his way home from work one day late at night, on his sisters birthday, he violently attacks a homeless person who asked him for change.  Someone mysterious sees this and approaches him, offering him something that can help him relax and help him find what was lost.  A drug he's never heard of or seen before. He takes the drug from the gentleman, and he stares off into the distance where he sees something, his face finally gets happy and he takes off running.  The player doesn't find out what happens after that for now.  Cut to the next morning, he's passed out on or next to his bed, there's a birthday present ribbon attached to his hand, but he can't remember anything from last night.  Shit, it's already 10:30, now he'll have to listen to someone's bullshit about him being late at work.  On his way to work, he passes that spot where he met the strange man who gave him that drug, and although the details are hazy, he starts crying.  He doesn't know why, he can't stop.  He gaze is fixed in the direction he was staring at after he took the drug, he stares and he cries, unable to fully comprehend why.  An image of his sister flashes in his mind for a second then vanishes, breaking his gaze and his tears.  He hurries on to work.
+
+Queue some talk at work about how someone on the news heard a bum got beat up last night around here and how we all need to be careful.  Then some of his memories return, that's right, he beat the shit out of that bum...then...that's right, he saw her!  Yet instead of happiness, he feels sorrow, he really has lost it.  It's too bad his plans to kill himself last night were interrupted, by first a bum, then a strange man, and after that...it was morning.  Oh well, maybe tonight? Or this weekend?  Or should it be at work?  Could be fitting.
+
+He gets home after work and here's someone inside his apartment.  Burglars?  Hmm, the door is still locked and no way they could get through his windows on this floor.  Maybe it's maintenance.  He cautiously goes inside.  To his surprise, he sees someone inside. A she actually.  And she's cooking.  And uh...she has horns?
+Character "Uh, excuse me...are you part of the maintenance staff?  The stove still works well, even though I rarely use it."
+Demon "No, I'm not part of the maintenance staff." She says without looking.
+Character "Then how did you get in here?!  What do you want?!"
+Demon "You let me in.  We came back together last night after we made our contract.  Don't tell me you got into an accident today and hit your head and forgot all that?" She walks over and starts inspecting his head for injuries and signs of concussion.
+Demon "Oh, dinner is almost ready.  This'll be my first time cooking like this in quite some time."
+
+Next they'll probably have a sit down during dinner and the demon fills him in on what happened last night.  How when chasing whatever he was after (his sister), he ended up in a place of unholy ground (some horrible murder or something happened there in the past), and he spoke the spell words to summon a demon.  She was about to immediately kill him for summoning her without a sacrifice as is it's suppose to be, but she stopped when she saw the despair in his eyes.  There was something about him that made her restrain herself at that moment.
+
+To do:  what was the contract, what are the terms, what's next.  How is this drug going to affect him, how will he get more, what's the deal with his sister.
