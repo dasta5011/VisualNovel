@@ -1,4 +1,4 @@
-Sat Mar 28 23:35:39 2015
+Sat Mar 28 23:46:14 2015
 Windows-post2008Server-6.2.9200
 Ren'Py 6.18.3.761
 GreenT 0.0
@@ -226,8 +226,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.009000 seconds.
+- Frame drawn at 0.012000 seconds.
+- Frame drawn at 0.014000 seconds.
 - Frame drawn at 0.018000 seconds.
-- Frame drawn at 0.027000 seconds.
-- Frame drawn at 0.030000 seconds.
-- Frame drawn at 0.033000 seconds.
-- 0.033000 seconds to render 5 frames.
+- 0.018000 seconds to render 5 frames.
