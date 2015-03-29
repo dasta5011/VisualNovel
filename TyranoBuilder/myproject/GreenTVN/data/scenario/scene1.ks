@@ -43,7 +43,13 @@ Alright, I trust you...for now.[p]
 
 [chara_hide  name="Derek"  time="100"  ]
 [chara_mod  name="Derek"  time="600"  storage="chara/1/lucy_mad.png"  ]
-[chara_show  name="Derek"  time="100"  left="678"  top="120"  ]
+[chara_show  name="Derek"  time="100"  left="516"  top="730"  ]
+[tb_start_tyrano_code]
+[anim name="Derek" top="100" time="500"]
+[wait time=100]
+[wa]
+[_tb_end_tyrano_code]
+
 [font  size="20"  color="0xff0000"  bold="true"  ]
 What the shit?  I say keep quiet and you bust out your iPhone and start tweeting that shit?  What the fuck?!  #secretbases?  The fuck dude...?![p]
 

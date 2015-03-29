@@ -17,3 +17,6 @@ Mechanics:
 -Health.  Making choices that lead to you getting injured deplete your hp.  Lose it all and die.
 -Psych.  Depending on your choices, you may end up in situations that require drastic measures.  Each time the player goes through a traumatic event, add a Psych point.  The more Psych points, the weirder the story gets.  New scenes involving illusions will start creeping up more frequent with more Psych points.  The player won't be sure which is real, which is an illusion, and can easily lead to a decision where the player is killed.
 -Favor.  Favor points relate to the characters relationship with the unknown entity causing the trouble.  Maybe only applicable in the third scenario with the little girl, but if the character doesn't have enough favor at certain stages, the character will be killed by the mysterious force rather than spared by it due to its unique fancy with the character.
+
+--------------------------------------------------------------------------------------------------
+
