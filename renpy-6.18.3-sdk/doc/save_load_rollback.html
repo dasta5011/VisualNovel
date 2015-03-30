@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -249,6 +249,13 @@ low-level save and load actions.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="renpy.copy_save">
+<code class="descclassname">renpy.</code><code class="descname">copy_save</code><span class="sig-paren">(</span><em>old</em>, <em>new</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.copy_save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copies the save at <cite>old</cite> to <cite>new</cite>. (Does nothing if <cite>old</cite> does not
+exist.)</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="renpy.list_saved_games">
 <code class="descclassname">renpy.</code><code class="descname">list_saved_games</code><span class="sig-paren">(</span><em>regexp='.'</em>, <em>fast=False</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.list_saved_games" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lists the save games. For each save game, returns a tuple containing:</p>
@@ -463,6 +470,18 @@ executed.</dd>
 If false, rollback occurs to just before the current checkpoint.</dd>
 <dt><cite>label</cite></dt>
 <dd>If not None, a label that is called when rollback completes.</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="renpy.suspend_rollback">
+<code class="descclassname">renpy.</code><code class="descname">suspend_rollback</code><span class="sig-paren">(</span><em>flag</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.suspend_rollback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rollback will skip sections of the game where rollback has been
+suspended.</p>
+<dl class="docutils">
+<dt><cite>flag</cite>:</dt>
+<dd>When <cite>flag</cite> is true, rollback is suspended. When false,
+rollback is resumed.</dd>
 </dl>
 </dd></dl>
 

@@ -29,8 +29,8 @@ VERSION=	2.7
 srcdir=		.
 
 
-CC=		ccache arm-linux-androideabi-gcc -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r8c/platforms/android-8/arch-arm
-CXX=		ccache arm-linux-androideabi-g++ -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r8c/platforms/android-8/arch-arm
+CC=		ccache arm-linux-androideabi-gcc -DANDROID -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r10c/platforms/android-9/arch-arm
+CXX=		ccache arm-linux-androideabi-g++ -DANDROID -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r10c/platforms/android-9/arch-arm
 MAINCC=		$(CC)
 LINKCC=		$(PURIFY) $(MAINCC)
 AR=		arm-linux-androideabi-ar
@@ -61,9 +61,9 @@ INSTALL_SHARED= ${INSTALL} -m 555
 MAKESETUP=      $(srcdir)/Modules/makesetup
 
 # Compiler options
-OPT=		-DNDEBUG -g  -O3 -Wall -Wstrict-prototypes
+OPT=		-DNDEBUG 
 BASECFLAGS=	 -fno-strict-aliasing
-CFLAGS=		$(BASECFLAGS) -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r8c/platforms/android-8/arch-arm $(OPT) $(EXTRA_CFLAGS)
+CFLAGS=		$(BASECFLAGS) -DANDROID -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r10c/platforms/android-9/arch-arm $(OPT) $(EXTRA_CFLAGS)
 # Both CPPFLAGS and LDFLAGS need to contain the shell's value for setup.py to
 # be able to build extension modules using the directories specified in the
 # environment variables
@@ -143,7 +143,7 @@ EXEMODE=	755
 FILEMODE=	644
 
 # configure script arguments
-CONFIG_ARGS=	 '--host=arm-eabi' '--prefix=/home/tom/ab/android/python-for-android/build/python-install' '--enable-shared' '--disable-toolbox-glue' '--disable-framework' 'host_alias=arm-eabi' 'CC=ccache arm-linux-androideabi-gcc -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r8c/platforms/android-8/arch-arm' 'CFLAGS=-mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r8c/platforms/android-8/arch-arm' 'LDFLAGS=-lm'
+CONFIG_ARGS=	 '--host=arm-eabi' 'OPT=' '--prefix=/home/tom/ab/android/python-for-android/build/python-install' '--enable-shared' '--disable-toolbox-glue' '--disable-framework' 'host_alias=arm-eabi' 'CC=ccache arm-linux-androideabi-gcc -DANDROID -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r10c/platforms/android-9/arch-arm' 'CFLAGS=-DANDROID -mandroid  -fomit-frame-pointer --sysroot /home/tom/ab/android/android-ndk-r10c/platforms/android-9/arch-arm' 'LDFLAGS=-lm'
 
 
 # Subdirectories with code

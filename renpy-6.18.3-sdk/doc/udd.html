@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -378,6 +378,18 @@ creator-defined displayable.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="renpy.load_image">
+<code class="descclassname">renpy.</code><code class="descname">load_image</code><span class="sig-paren">(</span><em>im</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.load_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the image manipulator <cite>im</cite> using the image cache, and returns a texture.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="renpy.load_surface">
+<code class="descclassname">renpy.</code><code class="descname">load_surface</code><span class="sig-paren">(</span><em>im</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.load_surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the image manipulator <cite>im</cite> using the image cache, and returns a pygame Surface.</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="renpy.map_event">
 <code class="descclassname">renpy.</code><code class="descname">map_event</code><span class="sig-paren">(</span><em>ev</em>, <em>keysym</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.map_event" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns true if the pygame event <cite>ev</cite> matches <cite>keysym</cite></p>
@@ -416,6 +428,18 @@ once they have been retrieved.</p>
 <dd><p>Causes an event to be generated before <cite>seconds</cite> seconds have elapsed.
 This ensures that the event method of a user-defined displayable will be
 called.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="im.load_image">
+<code class="descclassname">im.</code><code class="descname">load_image</code><span class="sig-paren">(</span><em>im</em><span class="sig-paren">)</span><a class="headerlink" href="#im.load_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the image manipulator <cite>im</cite> using the image cache, and returns a texture.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="im.load_surface">
+<code class="descclassname">im.</code><code class="descname">load_surface</code><span class="sig-paren">(</span><em>im</em><span class="sig-paren">)</span><a class="headerlink" href="#im.load_surface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the image manipulator <cite>im</cite> using the image cache, and returns a pygame Surface.</p>
 </dd></dl>
 
 <dl class="function">

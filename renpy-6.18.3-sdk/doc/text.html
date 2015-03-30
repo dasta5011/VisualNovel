@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -62,7 +62,7 @@
 <li><a class="reference internal" href="#styling-and-text-tags">Styling and Text Tags</a><ul>
 <li><a class="reference internal" href="#general-text-tags">General Text Tags</a></li>
 <li><a class="reference internal" href="#dialogue-text-tags">Dialogue Text Tags</a></li>
-<li><a class="reference internal" href="#user-defined-text-tags">User-Defined Text Tags</a></li>
+<li><a class="reference internal" href="#style-text-tags">Style Text Tags</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#non-english-languages">Non-English Languages</a><ul>
@@ -76,7 +76,7 @@
 <li><a class="reference internal" href="#font-groups">Font Groups</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#text-displayable">Text Displayable</a></li>
+<li><a class="reference internal" href="#text-displayables">Text Displayables</a></li>
 <li><a class="reference internal" href="#slow-text-concerns">Slow Text Concerns</a><ul>
 <li><a class="reference internal" href="#text-overflow-logging">Text Overflow Logging</a></li>
 </ul>
@@ -487,14 +487,17 @@ that many seconds have passed.</p>
 </div>
 </dd></dl>
 
+<p>It's also possible to define <a class="reference internal" href="custom_text_tags.html#custom-text-tags"><em>custom text tags</em></a> using
+Python.</p>
 </div>
-<div class="section" id="user-defined-text-tags">
-<h3>User-Defined Text Tags<a class="headerlink" href="#user-defined-text-tags" title="Permalink to this headline">¶</a></h3>
-<p>Ren'Py also supports user-defined text tags. A user-defined text tag
-is a text tag where the tag name is empty. In this case, the argument
-is taken to be the name of a style. The text between this tag and the
-closing tag has the following properties set to those defined in the
-style:</p>
+<div class="section" id="style-text-tags">
+<h3>Style Text Tags<a class="headerlink" href="#style-text-tags" title="Permalink to this headline">¶</a></h3>
+<p>Ren'Py supports text tags that access styles. These are text tags
+where the tag name is empty. In this case, the argument
+is taken to be the name of a style. For example, the {=mystyle} tag
+will acces the <code class="docutils literal"><span class="pre">mystyle</span></code> style.</p>
+<p>The text between the tag and the corresponding closing tag has the following
+properties set to those defined in the style:</p>
 <ul class="simple">
 <li>antialias</li>
 <li>font</li>
@@ -812,11 +815,32 @@ chained together.</p>
 
 </div>
 </div>
-<div class="section" id="text-displayable">
-<h2>Text Displayable<a class="headerlink" href="#text-displayable" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="text-displayables">
+<span id="id3"></span><h2>Text Displayables<a class="headerlink" href="#text-displayables" title="Permalink to this headline">¶</a></h2>
 <p>Text can also be used as a <a class="reference internal" href="displayables.html#displayables"><em>displayable</em></a>, which
 allows you to apply transforms to text, displaying it as if it was an
 image and moving it around the screen.</p>
+<dl class="function">
+<dt id="ParameterizedText">
+<code class="descname">ParameterizedText</code><span class="sig-paren">(</span><em>style='default'</em>, <em>**properties</em><span class="sig-paren">)</span><a class="headerlink" href="#ParameterizedText" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a displayable that can be shown with an additional string
+parameter, which then shows that string as if it was an image.
+This is usually used as part of the pre-defined <code class="docutils literal"><span class="pre">text</span></code> image.</p>
+<p>For example, one can do:</p>
+<div class="highlight-renpy"><div class="highlight"><pre><span class="k">show</span> <span class="k">text</span> <span class="s">&quot;Hello, World&quot;</span> <span class="k">at</span> <span class="n">truecenter</span>
+<span class="k">with</span> <span class="n">dissolve</span>
+<span class="k">pause</span> <span class="mi">1</span>
+<span class="k">hide</span> <span class="k">text</span>
+<span class="k">with</span> <span class="n">dissolve</span>
+</pre></div>
+</div>
+<p>You can use ParameterizedText directly to define similar images with
+different style properties. For example, one can write:</p>
+<div class="highlight-renpy"><div class="highlight"><pre><span class="k">image</span> <span class="n">top_text</span> <span class="o">=</span> <span class="n">ParameterizedText</span><span class="p">(</span><span class="na">xalign</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="na">yalign</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
 <dl class="function">
 <dt id="Text">
 <code class="descname">Text</code><span class="sig-paren">(</span><em>text</em>, <em>slow=None</em>, <em>scope=None</em>, <em>substitute=None</em>, <em>slow_done=None</em>, <em>**properties</em><span class="sig-paren">)</span><a class="headerlink" href="#Text" title="Permalink to this definition">¶</a></dt>
@@ -836,6 +860,27 @@ interpolation to occur in.</dd>
 <dd>If true, text interpolation occurs. If false, it will not occur. If
 None, they are controlled by <a class="reference internal" href="config.html#var-config.new_substitutions"><code class="xref std std-var docutils literal"><span class="pre">config.new_substitutions</span></code></a>.</dd>
 </dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="renpy.ParameterizedText">
+<code class="descclassname">renpy.</code><code class="descname">ParameterizedText</code><span class="sig-paren">(</span><em>style='default'</em>, <em>**properties</em><span class="sig-paren">)</span><a class="headerlink" href="#renpy.ParameterizedText" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a displayable that can be shown with an additional string
+parameter, which then shows that string as if it was an image.
+This is usually used as part of the pre-defined <code class="docutils literal"><span class="pre">text</span></code> image.</p>
+<p>For example, one can do:</p>
+<div class="highlight-renpy"><div class="highlight"><pre><span class="k">show</span> <span class="k">text</span> <span class="s">&quot;Hello, World&quot;</span> <span class="k">at</span> <span class="n">truecenter</span>
+<span class="k">with</span> <span class="n">dissolve</span>
+<span class="k">pause</span> <span class="mi">1</span>
+<span class="k">hide</span> <span class="k">text</span>
+<span class="k">with</span> <span class="n">dissolve</span>
+</pre></div>
+</div>
+<p>You can use ParameterizedText directly to define similar images with
+different style properties. For example, one can write:</p>
+<div class="highlight-renpy"><div class="highlight"><pre><span class="k">image</span> <span class="n">top_text</span> <span class="o">=</span> <span class="n">ParameterizedText</span><span class="p">(</span><span class="na">xalign</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="na">yalign</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </div>

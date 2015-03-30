@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -543,6 +543,11 @@ the <code class="docutils literal"><span class="pre">button</span> <span class="
 <dt><cite>action</cite></dt>
 <dd>The action to run when the button is activated. This also controls
 if the button is sensitive, and if the button is selected.</dd>
+<dt><cite>alternate</cite></dt>
+<dd>An action that is run if the button is activated in an alternate manner.
+Alternate activation occurs when the player right-clicks on the button
+on a mouse-based platform, or when the player long presses the button
+on a touch-based platform.</dd>
 <dt><cite>hovered</cite></dt>
 <dd>An action to run when the button gains focus.</dd>
 <dt><cite>unhovered</cite></dt>
@@ -569,7 +574,9 @@ if the button is sensitive, and if the button is selected.</dd>
 <span id="sl-input"></span><h3>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h3>
 <p>Creates a text input area, which allows the user to enter text. When
 the user presses return, the text will be returned by the
-interaction. This takes no parameters, and the following properties:</p>
+interaction. (When the screen is invoked through <code class="docutils literal"><span class="pre">call</span> <span class="pre">screen</span></code>, the result
+will be placed in the <code class="docutils literal"><span class="pre">_return</span></code> variable.)</p>
+<p>The input statement takes no parameters, and the following properties:</p>
 <dl class="docutils">
 <dt><cite>default</cite></dt>
 <dd>The default text in this input.</dd>
@@ -796,6 +803,11 @@ following properties:</p>
 <dt><cite>action</cite></dt>
 <dd>The action to run when the button is activated. This also controls
 if the button is sensitive, and if the button is selected.</dd>
+<dt><cite>alternate</cite></dt>
+<dd>An action that is run if the button is activated in an alternate manner.
+Alternate activation occurs when the player right-clicks on the button
+on a mouse-based platform, or when the player long presses the button
+on a touch-based platform.</dd>
 <dt><cite>hovered</cite></dt>
 <dd>An action to run when the button gains focus.</dd>
 <dt><cite>unhovered</cite></dt>
@@ -1084,6 +1096,11 @@ also takes the following properties:</p>
 <dt><cite>action</cite></dt>
 <dd>The action to run when the button is activated. This also controls
 if the button is sensitive, and if the button is selected.</dd>
+<dt><cite>alternate</cite></dt>
+<dd>An action that is run if the hotspot is activated in an alternate manner.
+Alternate activation occurs when the player right-clicks on the hotspot
+on a mouse-based platform, or when the player long presses the hotspot
+on a touch-based platform.</dd>
 <dt><cite>hovered</cite></dt>
 <dd>An action to run when the button gains focus.</dd>
 <dt><cite>unhovered</cite></dt>
@@ -1140,7 +1157,8 @@ properties.</p>
 <dt><code class="docutils literal"><span class="pre">drag</span></code></dt>
 <dd>Creates a <a class="reference internal" href="drag_drop.html#Drag" title="Drag"><code class="xref py py-class docutils literal"><span class="pre">Drag</span></code></a>. A drag can be given an optional child,
 or the <a class="reference internal" href="style_properties.html#style-property-child"><code class="xref std std-propref docutils literal"><span class="pre">child</span></code></a> style property can be used to supply the child,
-and its focused variants.</dd>
+and its focused variants. Drags also take the <a class="reference internal" href="style_properties.html#style-property-focus_mask"><code class="xref std std-propref docutils literal"><span class="pre">focus_mask</span></code></a>
+style property.</dd>
 <dt><code class="docutils literal"><span class="pre">draggroup</span></code></dt>
 <dd>Creates a <a class="reference internal" href="drag_drop.html#DragGroup" title="DragGroup"><code class="xref py py-class docutils literal"><span class="pre">DragGroup</span></code></a>. A drag group may have zero or more
 drags as its children.</dd>
@@ -1517,6 +1535,12 @@ them. (In general, <code class="docutils literal"><span class="pre">&quot;small&
 <dd>Defined on the OUYA console. (<code class="docutils literal"><span class="pre">&quot;tv&quot;</span></code> and <code class="docutils literal"><span class="pre">&quot;small&quot;</span></code> are also defined.)</dd>
 <dt><code class="docutils literal"><span class="pre">&quot;firetv&quot;</span></code></dt>
 <dd>Defined on the Amazon Fire TV console. (<code class="docutils literal"><span class="pre">&quot;tv&quot;</span></code> and <code class="docutils literal"><span class="pre">&quot;small&quot;</span></code> are also defined.)</dd>
+<dt><code class="docutils literal"><span class="pre">&quot;android&quot;</span></code></dt>
+<dd>Defined on all Android devices.</dd>
+<dt><code class="docutils literal"><span class="pre">&quot;ios&quot;</span></code></dt>
+<dd>Defined on iOS devices, like the iPad (where <code class="docutils literal"><span class="pre">&quot;tablet&quot;</span></code> and <code class="docutils literal"><span class="pre">&quot;medium&quot;</span></code>
+are also defined) and the iPhone (where <code class="docutils literal"><span class="pre">&quot;phone&quot;</span></code> and <code class="docutils literal"><span class="pre">&quot;small&quot;</span></code> are
+also defined).</dd>
 <dt><code class="docutils literal"><span class="pre">&quot;pc&quot;</span></code></dt>
 <dd>Defined on Windows, Mac OS X, and Linux. A PC is expected to have
 a mouse and keyboard present, to allow buttons to be hovered, and

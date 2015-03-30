@@ -1,2 +1,2 @@
 init -999 python:
-    config.script_version = (6, 18, 3)
+    config.script_version = (6, 99, 1)

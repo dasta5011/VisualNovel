@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -150,8 +150,8 @@ actions.</li>
 </ul>
 <p>If screens are shown from python code, it's a good idea to start predicting
 the screen before it is shown. To start predicting a screen, use the
-<code class="xref py py-func docutils literal"><span class="pre">renpy.start_screen_predict()</span></code> function. To stop predicting a screen,
-use the <code class="xref py py-func docutils literal"><span class="pre">renpy.stop_screen_predict()</span></code> function.</p>
+<a class="reference internal" href="screen_python.html#renpy.start_predict_screen" title="renpy.start_predict_screen"><code class="xref py py-func docutils literal"><span class="pre">renpy.start_predict_screen()</span></code></a> function. To stop predicting a screen,
+use the <a class="reference internal" href="screen_python.html#renpy.stop_predict_screen" title="renpy.stop_predict_screen"><code class="xref py py-func docutils literal"><span class="pre">renpy.stop_predict_screen()</span></code></a> function.</p>
 </div>
 <div class="section" id="displayable-reuse">
 <h2>Displayable Reuse<a class="headerlink" href="#displayable-reuse" title="Permalink to this headline">¶</a></h2>
@@ -407,6 +407,7 @@ the game directory.</p>
 <ul class="simple">
 <li>ADVCharacter</li>
 <li>ADVSpeaker</li>
+<li>AddToSet</li>
 <li>Alpha</li>
 <li><a class="reference internal" href="displayables.html#AlphaBlend" title="AlphaBlend"><code class="xref py py-func docutils literal"><span class="pre">AlphaBlend()</span></code></a></li>
 <li><a class="reference internal" href="transitions.html#AlphaDissolve" title="AlphaDissolve"><code class="xref py py-func docutils literal"><span class="pre">AlphaDissolve()</span></code></a></li>
@@ -466,7 +467,7 @@ the game directory.</p>
 <li>OldMoveTransition</li>
 <li><a class="reference internal" href="screen_actions.html#OpenURL" title="OpenURL"><code class="xref py py-func docutils literal"><span class="pre">OpenURL()</span></code></a></li>
 <li>Pan</li>
-<li>ParameterizedText</li>
+<li><a class="reference internal" href="text.html#ParameterizedText" title="ParameterizedText"><code class="xref py py-func docutils literal"><span class="pre">ParameterizedText()</span></code></a></li>
 <li>Particles</li>
 <li><a class="reference internal" href="transitions.html#Pause" title="Pause"><code class="xref py py-func docutils literal"><span class="pre">Pause()</span></code></a></li>
 <li><a class="reference internal" href="transitions.html#Pixellate" title="Pixellate"><code class="xref py py-func docutils literal"><span class="pre">Pixellate()</span></code></a></li>
@@ -477,6 +478,7 @@ the game directory.</p>
 <li><a class="reference internal" href="screen_actions.html#QuickLoad" title="QuickLoad"><code class="xref py py-func docutils literal"><span class="pre">QuickLoad()</span></code></a></li>
 <li><a class="reference internal" href="screen_actions.html#QuickSave" title="QuickSave"><code class="xref py py-func docutils literal"><span class="pre">QuickSave()</span></code></a></li>
 <li><a class="reference internal" href="screen_actions.html#Quit" title="Quit"><code class="xref py py-func docutils literal"><span class="pre">Quit()</span></code></a></li>
+<li>RemoveFromSet</li>
 <li><a class="reference internal" href="rooms.html#Replay" title="Replay"><code class="xref py py-func docutils literal"><span class="pre">Replay()</span></code></a></li>
 <li><a class="reference internal" href="screen_actions.html#Return" title="Return"><code class="xref py py-func docutils literal"><span class="pre">Return()</span></code></a></li>
 <li>Revolve</li>
@@ -512,6 +514,7 @@ the game directory.</p>
 <li><a class="reference internal" href="screen_actions.html#ToggleDict" title="ToggleDict"><code class="xref py py-func docutils literal"><span class="pre">ToggleDict()</span></code></a></li>
 <li><a class="reference internal" href="screen_actions.html#ToggleField" title="ToggleField"><code class="xref py py-func docutils literal"><span class="pre">ToggleField()</span></code></a></li>
 <li><a class="reference internal" href="screen_actions.html#ToggleScreenVariable" title="ToggleScreenVariable"><code class="xref py py-func docutils literal"><span class="pre">ToggleScreenVariable()</span></code></a></li>
+<li>ToggleSetMembership</li>
 <li><a class="reference internal" href="screen_actions.html#ToggleVariable" title="ToggleVariable"><code class="xref py py-func docutils literal"><span class="pre">ToggleVariable()</span></code></a></li>
 <li><a class="reference internal" href="voice.html#ToggleVoiceMute" title="ToggleVoiceMute"><code class="xref py py-func docutils literal"><span class="pre">ToggleVoiceMute()</span></code></a></li>
 <li><a class="reference internal" href="trans_trans_python.html#Transform" title="Transform"><code class="xref py py-class docutils literal"><span class="pre">Transform</span></code></a></li>
@@ -581,7 +584,7 @@ the game directory.</p>
 <li>range</li>
 <li>reduce</li>
 <li>renpy.Keymap</li>
-<li>renpy.ParameterizedText</li>
+<li><a class="reference internal" href="text.html#renpy.ParameterizedText" title="renpy.ParameterizedText"><code class="xref py py-func docutils literal"><span class="pre">renpy.ParameterizedText()</span></code></a></li>
 <li><a class="reference internal" href="cds.html#renpy.check_text_tags" title="renpy.check_text_tags"><code class="xref py py-func docutils literal"><span class="pre">renpy.check_text_tags()</span></code></a></li>
 <li>renpy.curried_call_in_new_context</li>
 <li>renpy.curried_invoke_in_new_context</li>

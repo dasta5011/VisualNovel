@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -106,10 +106,30 @@ binding alphabetic keys and numbers. Examples of these keysyms include &quot;a&q
 the K_ constants taken from pygame.constants. This type of keysym looks like
 &quot;K_BACKSPACE&quot;, &quot;K_RETURN&quot;, and &quot;K_TAB&quot;; a full list of this kind of keysyms may
 be found <a class="reference external" href="http://www.pygame.org/docs/ref/key.html">here</a>.</p>
-<p>Keyboard keysyms may be preceded by the prefixes &quot;alt_&quot;, &quot;meta_&quot;, &quot;shift_&quot;,
-or &quot;noshift_&quot;. The first three of these require the corresponding modifier
-key to be pressed. (Meta is present on Linux keyboards, and corresponds to the
-Command key on a Mac.) &quot;noshift_&quot; requires that the shift key not be pressed.</p>
+<p>Keyboard keysyms may be preceded by the following prefixes, separated by
+underscores:</p>
+<dl class="docutils">
+<dt>alt</dt>
+<dd>Matches if the alt key is pressed. Keysyms without this prefix match
+when the alt key is not pressed.</dd>
+<dt>meta</dt>
+<dd>Matches if the meta, command, or windows key is pressed. Keysyms without
+this prefix match when the meta key is not pressed.</dd>
+<dt>ctrl</dt>
+<dd>Matches if the ctrl key is pressed. Keysyms without this prefix match
+when the ctrl key is not pressed. (Ctrl is not very useful, as it
+usually triggers skipping.)</dd>
+<dt>shift</dt>
+<dd>Matches when the shift key is pressed.</dd>
+<dt>noshift</dt>
+<dd>Matches when the shift key is not pressed. A K_ keysym ignores the state
+of the shift key when matching.</dd>
+<dt>repeat</dt>
+<dd>Matches when the key is a repeat due to the key being held down. Keysyms
+without this prefix do not match repeats.</dd>
+</dl>
+<p>For example, the keysym &quot;shift_alt_K_F5&quot; will match the F5 key being pressed
+while shift and alt are held down.</p>
 <p>To change a binding, update the appropriate list in <a class="reference internal" href="config.html#var-config.keymap"><code class="xref std std-var docutils literal"><span class="pre">config.keymap</span></code></a>. The
 following code adds the 't' key to the list of keys that dismiss a say
 statement, and removes the space key from that list.</p>
@@ -118,39 +138,45 @@ statement, and removes the space key from that list.</p>
     <span class="k">$</span> <span class="n">config</span><span class="o">.</span><span class="n">keymap</span><span class="p">[</span><span class="s">&#39;dismiss&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s">&#39;K_SPACE&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The default keymap is contained inside the python code implementing Ren'Py, and
-as of version 6.17 is as follows:</p>
+<p>The default keymap is contained inside renpy/common/00keymap.rpy, and
+as of version 6.99 is as follows:</p>
 <div class="highlight-renpy"><div class="highlight"><pre><span class="n">config</span><span class="o">.</span><span class="n">keymap</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
 
     <span class="c"># Bindings present almost everywhere, unless explicitly</span>
     <span class="c"># disabled.</span>
-    <span class="n">rollback</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_PAGEUP&#39;</span><span class="p">,</span> <span class="s">&#39;mousedown_4&#39;</span><span class="p">,</span> <span class="s">&#39;joy_rollback&#39;</span> <span class="p">],</span>
+    <span class="n">rollback</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_PAGEUP&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_PAGEUP&#39;</span><span class="p">,</span> <span class="s">&#39;K_AC_BACK&#39;</span><span class="p">,</span> <span class="s">&#39;mousedown_4&#39;</span><span class="p">,</span> <span class="s">&#39;joy_rollback&#39;</span> <span class="p">],</span>
     <span class="n">screenshot</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;s&#39;</span> <span class="p">],</span>
     <span class="n">toggle_fullscreen</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;f&#39;</span><span class="p">,</span> <span class="s">&#39;alt_K_RETURN&#39;</span><span class="p">,</span> <span class="s">&#39;alt_K_KP_ENTER&#39;</span><span class="p">,</span> <span class="s">&#39;K_F11&#39;</span> <span class="p">],</span>
-    <span class="n">game_menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_ESCAPE&#39;</span><span class="p">,</span> <span class="s">&#39;mouseup_3&#39;</span><span class="p">,</span> <span class="s">&#39;joy_menu&#39;</span> <span class="p">],</span>
+    <span class="n">game_menu</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_ESCAPE&#39;</span><span class="p">,</span> <span class="s">&#39;K_MENU&#39;</span><span class="p">,</span> <span class="s">&#39;mouseup_3&#39;</span><span class="p">,</span> <span class="s">&#39;joy_menu&#39;</span> <span class="p">],</span>
     <span class="n">hide_windows</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mouseup_2&#39;</span><span class="p">,</span> <span class="s">&#39;h&#39;</span><span class="p">,</span> <span class="s">&#39;joy_hide&#39;</span> <span class="p">],</span>
     <span class="n">launch_editor</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;E&#39;</span> <span class="p">],</span>
     <span class="n">dump_styles</span> <span class="o">=</span> <span class="p">[</span> <span class="p">],</span>
     <span class="n">reload_game</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;R&#39;</span> <span class="p">],</span>
     <span class="n">inspector</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;I&#39;</span> <span class="p">],</span>
+    <span class="n">full_inspector</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;alt_I&#39;</span> <span class="p">],</span>
     <span class="n">developer</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;D&#39;</span> <span class="p">],</span>
-    <span class="n">quit</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;meta_q&#39;</span><span class="p">,</span> <span class="s">&#39;alt_K_F4&#39;</span><span class="p">,</span> <span class="s">&#39;alt_q&#39;</span> <span class="p">],</span>
-    <span class="n">iconify</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;meta_m&#39;</span><span class="p">,</span> <span class="s">&#39;alt_m&#39;</span> <span class="p">],</span>
+    <span class="n">quit</span> <span class="o">=</span> <span class="p">[</span> <span class="p">],</span>
+    <span class="n">iconify</span> <span class="o">=</span> <span class="p">[</span> <span class="p">],</span>
     <span class="n">help</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_F1&#39;</span><span class="p">,</span> <span class="s">&#39;meta_shift_/&#39;</span> <span class="p">],</span>
     <span class="n">choose_renderer</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;G&#39;</span> <span class="p">],</span>
+    <span class="n">progress_screen</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;alt_P&#39;</span> <span class="p">],</span>
+
+    <span class="c"># Accessibility.</span>
+    <span class="n">self_voicing</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;v&#39;</span><span class="p">,</span> <span class="s">&#39;V&#39;</span> <span class="p">],</span>
+    <span class="n">clipboard_voicing</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;C&#39;</span> <span class="p">],</span>
 
     <span class="c"># Say.</span>
-    <span class="n">rollforward</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mousedown_5&#39;</span><span class="p">,</span> <span class="s">&#39;K_PAGEDOWN&#39;</span> <span class="p">],</span>
+    <span class="n">rollforward</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mousedown_5&#39;</span><span class="p">,</span> <span class="s">&#39;K_PAGEDOWN&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_PAGEDOWN&#39;</span> <span class="p">],</span>
     <span class="n">dismiss</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mouseup_1&#39;</span><span class="p">,</span> <span class="s">&#39;K_RETURN&#39;</span><span class="p">,</span> <span class="s">&#39;K_SPACE&#39;</span><span class="p">,</span> <span class="s">&#39;K_KP_ENTER&#39;</span><span class="p">,</span> <span class="s">&#39;joy_dismiss&#39;</span> <span class="p">],</span>
 
     <span class="c"># Pause.</span>
     <span class="n">dismiss_hard_pause</span> <span class="o">=</span> <span class="p">[</span> <span class="p">],</span>
 
     <span class="c"># Focus.</span>
-    <span class="n">focus_left</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_left&#39;</span> <span class="p">],</span>
-    <span class="n">focus_right</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_right&#39;</span> <span class="p">],</span>
-    <span class="n">focus_up</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;joy_up&#39;</span> <span class="p">],</span>
-    <span class="n">focus_down</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;joy_down&#39;</span> <span class="p">],</span>
+    <span class="n">focus_left</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_left&#39;</span> <span class="p">],</span>
+    <span class="n">focus_right</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_right&#39;</span> <span class="p">],</span>
+    <span class="n">focus_up</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;joy_up&#39;</span> <span class="p">],</span>
+    <span class="n">focus_down</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;joy_down&#39;</span> <span class="p">],</span>
 
     <span class="c"># Button.</span>
     <span class="n">button_ignore</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mousedown_1&#39;</span> <span class="p">],</span>
@@ -159,11 +185,11 @@ as of version 6.17 is as follows:</p>
     <span class="n">button_alternate_ignore</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mousedown_3&#39;</span> <span class="p">],</span>
 
     <span class="c"># Input.</span>
-    <span class="n">input_backspace</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_BACKSPACE&#39;</span> <span class="p">],</span>
+    <span class="n">input_backspace</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_BACKSPACE&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_BACKSPACE&#39;</span> <span class="p">],</span>
     <span class="n">input_enter</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RETURN&#39;</span><span class="p">,</span> <span class="s">&#39;K_KP_ENTER&#39;</span> <span class="p">],</span>
-    <span class="n">input_left</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_LEFT&#39;</span> <span class="p">],</span>
-    <span class="n">input_right</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RIGHT&#39;</span> <span class="p">],</span>
-    <span class="n">input_delete</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DELETE&#39;</span> <span class="p">],</span>
+    <span class="n">input_left</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_LEFT&#39;</span> <span class="p">],</span>
+    <span class="n">input_right</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_RIGHT&#39;</span> <span class="p">],</span>
+    <span class="n">input_delete</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DELETE&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_DELETE&#39;</span> <span class="p">],</span>
 
     <span class="c"># Viewport.</span>
     <span class="n">viewport_up</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mousedown_4&#39;</span> <span class="p">],</span>
@@ -179,10 +205,10 @@ as of version 6.17 is as follows:</p>
     <span class="c"># Bar.</span>
     <span class="n">bar_activate</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mousedown_1&#39;</span><span class="p">,</span> <span class="s">&#39;K_RETURN&#39;</span><span class="p">,</span> <span class="s">&#39;K_KP_ENTER&#39;</span><span class="p">,</span> <span class="s">&#39;joy_dismiss&#39;</span> <span class="p">],</span>
     <span class="n">bar_deactivate</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;mouseup_1&#39;</span><span class="p">,</span> <span class="s">&#39;K_RETURN&#39;</span><span class="p">,</span> <span class="s">&#39;K_KP_ENTER&#39;</span><span class="p">,</span> <span class="s">&#39;joy_dismiss&#39;</span> <span class="p">],</span>
-    <span class="n">bar_left</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_left&#39;</span> <span class="p">],</span>
-    <span class="n">bar_right</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_right&#39;</span> <span class="p">],</span>
-    <span class="n">bar_up</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;joy_up&#39;</span> <span class="p">],</span>
-    <span class="n">bar_down</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;joy_down&#39;</span> <span class="p">],</span>
+    <span class="n">bar_left</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_LEFT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_left&#39;</span> <span class="p">],</span>
+    <span class="n">bar_right</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_RIGHT&#39;</span><span class="p">,</span> <span class="s">&#39;joy_right&#39;</span> <span class="p">],</span>
+    <span class="n">bar_up</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;joy_up&#39;</span> <span class="p">],</span>
+    <span class="n">bar_down</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;joy_down&#39;</span> <span class="p">],</span>
 
     <span class="c"># Delete a save.</span>
     <span class="n">save_delete</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DELETE&#39;</span> <span class="p">],</span>
@@ -193,11 +219,15 @@ as of version 6.17 is as follows:</p>
 
     <span class="c"># Debug console.</span>
     <span class="n">console</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;shift_O&#39;</span> <span class="p">],</span>
-    <span class="n">console_older</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_UP&#39;</span> <span class="p">],</span>
-    <span class="n">console_newer</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DOWN&#39;</span> <span class="p">],</span>
+    <span class="n">console_older</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_UP&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_UP&#39;</span> <span class="p">],</span>
+    <span class="n">console_newer</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_DOWN&#39;</span><span class="p">,</span> <span class="s">&#39;repeat_K_DOWN&#39;</span><span class="p">],</span>
 
     <span class="c"># Ignored (kept for backwards compatibility).</span>
     <span class="n">toggle_music</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;m&#39;</span> <span class="p">],</span>
+
+    <span class="c"># Profile commands.</span>
+    <span class="n">profile_once</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_F8&#39;</span> <span class="p">],</span>
+    <span class="n">memory_profile</span> <span class="o">=</span> <span class="p">[</span> <span class="s">&#39;K_F7&#39;</span> <span class="p">],</span>
 
     <span class="p">)</span>
 </pre></div>
