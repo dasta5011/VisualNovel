@@ -69,7 +69,7 @@
 #define HAVE_ATANH 1
 
 /* Define if GCC supports __attribute__((format(PyArg_ParseTuple, 2, 3))) */
-/* #undef HAVE_ATTRIBUTE_FORMAT_PARSETUPLE */
+#define HAVE_ATTRIBUTE_FORMAT_PARSETUPLE 1
 
 /* Define to 1 if you have the `bind_textdomain_codeset' function. */
 /* #undef HAVE_BIND_TEXTDOMAIN_CODESET */
@@ -215,7 +215,7 @@
 #define HAVE_FCNTL_H 1
 
 /* Define if you have the 'fdatasync' function. */
-/* #undef HAVE_FDATASYNC */
+#define HAVE_FDATASYNC 1
 
 /* Define to 1 if you have the `finite' function. */
 #define HAVE_FINITE 1
@@ -787,7 +787,7 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have the <sys/un.h> header file. */
-/* #undef HAVE_SYS_UN_H */
+#define HAVE_SYS_UN_H 1
 
 /* Define to 1 if you have the <sys/utsname.h> header file. */
 #define HAVE_SYS_UTSNAME_H 1
@@ -1019,7 +1019,7 @@
 #define SIZEOF_VOID_P 4
 
 /* The size of `wchar_t', as computed by sizeof. */
-#define SIZEOF_WCHAR_T 1
+#define SIZEOF_WCHAR_T 4
 
 /* The size of `_Bool', as computed by sizeof. */
 #define SIZEOF__BOOL 1

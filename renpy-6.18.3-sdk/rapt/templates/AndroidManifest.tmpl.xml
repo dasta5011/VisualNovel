@@ -8,16 +8,22 @@
 
   <application android:label="@string/appName"
                android:icon="@drawable/icon"
+               android:allowBackup="true"
+               android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+               android:hardwareAccelerated="true" >
                >
 
-    <activity android:name="org.renpy.android.PythonActivity"
+    <meta-data android:name="wakelock" android:value="1" />
+    <meta-data android:name="surface.transparent" android:value="0" />
+    <meta-data android:name="fullscreen" android:value="1" />
+
+    <activity android:name="org.renpy.android.PythonSDLActivity"
               android:label="@string/iconName"
-              android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale|uiMode"
               android:launchMode="singleTop"
-              android:process=":python"
               android:screenOrientation="{{ config.orientation }}"
-              android:windowSoftInputMode="stateAlwaysHidden"
-            >
+              android:configChanges="keyboardHidden|orientation|screenSize"
+              >
+
 {% if not config.expansion %}
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -25,14 +31,14 @@
         <category android:name="tv.ouya.intent.category.GAME" />
         </intent-filter>
 {% endif %}
+
     </activity>
 
-{% if config.store == "amazon" %}
-    <receiver android:name="com.amazon.inapp.purchasing.ResponseReceiver">
-       <intent-filter>
-          <action android:name="com.amazon.inapp.purchasing.NOTIFY"
-          android:permission="com.amazon.inapp.purchasing.Permission.NOTIFY" />
-       </intent-filter>
+{% if config.store == "amazon" or config.store == "all" %}
+    <receiver android:name = "com.amazon.device.iap.ResponseReceiver" >
+      <intent-filter>
+        <action android:name = "com.amazon.inapp.purchasing.NOTIFY" android:permission = "com.amazon.inapp.purchasing.Permission.NOTIFY" />
+      </intent-filter>
     </receiver>
 {% endif %}
 
@@ -53,11 +59,12 @@
   </application>
 
   <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="{{ config.target_version }}"/>
+  <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="{{ config.target_version }}"/>
+
   <uses-permission android:name="android.permission.WAKE_LOCK" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-{% if config.expansion or config.store == "play" %}
+{% if config.expansion or config.store == "play" or config.store == "all" %}
   <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
 {% endif %}
 
@@ -67,7 +74,7 @@
   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 {% endif %}
 
-{% if config.store == "play" %}
+{% if config.store == "play" or config.store == "all" %}
   <uses-permission android:name="com.android.vending.BILLING"/>
 {% endif %}
 
@@ -75,5 +82,5 @@
   <uses-permission android:name="android.permission.{{ perm }}" />
   {% endfor %}
 
-{{ manifest_extra }}
+{{ manifest_extra or '' }}
 </manifest>

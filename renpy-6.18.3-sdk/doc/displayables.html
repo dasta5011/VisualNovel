@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -59,6 +59,7 @@
 <li><a class="reference internal" href="#">Displayables</a><ul>
 <li><a class="reference internal" href="#images">Images</a></li>
 <li><a class="reference internal" href="#image-like-displayables">Image-Like Displayables</a></li>
+<li><a class="reference internal" href="#text-displayables">Text Displayables</a></li>
 <li><a class="reference internal" href="#dynamic-displayables">Dynamic Displayables</a></li>
 <li><a class="reference internal" href="#applying-transforms-to-displayables">Applying Transforms to Displayables</a></li>
 <li><a class="reference internal" href="#layout-boxes-and-grids">Layout Boxes and Grids</a></li>
@@ -284,6 +285,10 @@ as a spacer inside a box.</p>
 </dd></dl>
 
 </div>
+<div class="section" id="text-displayables">
+<h2>Text Displayables<a class="headerlink" href="#text-displayables" title="Permalink to this headline">¶</a></h2>
+<p>See <a class="reference internal" href="text.html#text-displayables"><em>Text Displayables</em></a>.</p>
+</div>
 <div class="section" id="dynamic-displayables">
 <h2>Dynamic Displayables<a class="headerlink" href="#dynamic-displayables" title="Permalink to this headline">¶</a></h2>
 <p>Dynamic displayables display a child displayable based on the state of
@@ -341,7 +346,7 @@ to a displayable. In that case, function is run once per interaction.</p>
          <span class="k">if</span> <span class="n">tooltip</span><span class="p">:</span>
              <span class="k">return</span> <span class="n">tooltip</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span>
          <span class="k">else</span><span class="p">:</span>
-             <span class="k">return</span> <span class="n">Null</span><span class="p">()</span>
+             <span class="k">return</span> <span class="n">Null</span><span class="p">(),</span> <span class="o">.</span><span class="mi">1</span>
 
 <span class="k">image</span> <span class="n">tooltipper</span> <span class="o">=</span> <span class="n">DynamicDisplayable</span><span class="p">(</span><span class="n">show_tooltip</span><span class="p">)</span>
 </pre></div>

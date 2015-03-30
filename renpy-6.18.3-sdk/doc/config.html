@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -643,6 +643,15 @@ occur.</p>
 </dd></dl>
 
 <dl class="var">
+<dt id="var-config.hw_video">
+<code class="descname">config.hw_video</code> = False<a class="headerlink" href="#var-config.hw_video" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, hardware video playback will be used on mobile platforms. This
+is faster, but only some formats are supported and only fullscreen video
+is available. If false, software playback will be used, but it may be
+too slow to be useful.</p>
+</dd></dl>
+
+<dl class="var">
 <dt id="var-config.image_cache_size">
 <code class="descname">config.image_cache_size</code> = 8<a class="headerlink" href="#var-config.image_cache_size" title="Permalink to this definition">¶</a></dt>
 <dd><p>This is used to set the size of the <a class="reference internal" href="displayables.html#images"><em>image cache</em></a>, as a
@@ -1184,6 +1193,15 @@ shown to the user by <a class="reference internal" href="dialogue.html#say-state
 image fails. It may return None, or it may return an image
 manipulator. If an image manipulator is returned, that image
 manipulator is loaded in the place of the missing image.</p>
+</dd></dl>
+
+<dl class="var">
+<dt id="var-config.missing_label_callback">
+<code class="descname">config.missing_label_callback</code> = None<a class="headerlink" href="#var-config.missing_label_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>If not None, this function is called when Ren'Py attempts to access
+a label that does not exist in the game. It should return the name of
+a label to use as a replacement for the missing label, or None to cause
+Ren'Py to raise an exception.</p>
 </dd></dl>
 
 <dl class="var">

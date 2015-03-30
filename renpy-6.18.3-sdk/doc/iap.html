@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,8 +27,8 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Ren&#39;Py Documentation" href="index.html" />
-    <link rel="next" title="Dealing with Problems" href="problems.html" />
-    <link rel="prev" title="Android" href="android.html" /> 
+    <link rel="next" title="Gestures" href="gesture.html" />
+    <link rel="prev" title="iOS" href="ios.html" /> 
   </head>
   <body>
     <div class="related">
@@ -38,10 +38,10 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="problems.html" title="Dealing with Problems"
+          <a href="gesture.html" title="Gestures"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="android.html" title="Android"
+          <a href="ios.html" title="iOS"
              accesskey="P">previous</a> |</li>
 
         <li> <img src="_static/logo.png" width=19 height=21 align=center> 
@@ -64,11 +64,11 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="android.html"
-                        title="previous chapter">Android</a></p>
+  <p class="topless"><a href="ios.html"
+                        title="previous chapter">iOS</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="problems.html"
-                        title="next chapter">Dealing with Problems</a></p>
+  <p class="topless"><a href="gesture.html"
+                        title="next chapter">Gestures</a></p>
             <h4>Search</h4>
             
             <div id="cse-search-form" style="width: 100%;"></div>
@@ -91,8 +91,8 @@
   <div class="section" id="in-app-purchasing">
 <h1>In-App Purchasing<a class="headerlink" href="#in-app-purchasing" title="Permalink to this headline">¶</a></h1>
 <p>Ren'Py includes a high-level in-app purchasing framework. This framework
-currently only supports unlock-style purchases from Google Play and
-the Amazon App Store.</p>
+currently only supports unlock-style purchases from the Apple App Store,
+Google Play, and the Amazon App Store.</p>
 <p>Using this framework is fairly simple, and consists of the following
 functions.</p>
 <ul class="simple">
@@ -109,6 +109,9 @@ or the <a class="reference internal" href="#iap.Purchase" title="iap.Purchase"><
 must be set up on the various marketplaces. When building for android,
 Ren'Py will ask for the marketplace in use when configuring the package.</p>
 <dl class="docutils">
+<dt>Apple App Store</dt>
+<dd>The Apple App Store is based on the package name, and does not require
+special configuration.</dd>
 <dt>Google Play</dt>
 <dd>Before Google Play can be used, you must add the google play key and
 a salt to your project. See the <a class="reference internal" href="android-packaging.html#expansion-apk"><em>Expansion APK</em></a>
@@ -120,11 +123,19 @@ require special configuration.</dd>
 <div class="section" id="iap-functions">
 <h2>IAP Functions<a class="headerlink" href="#iap-functions" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
+<dt id="iap.get_price">
+<code class="descclassname">iap.</code><code class="descname">get_price</code><span class="sig-paren">(</span><em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#iap.get_price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string giving the price of the <cite>product</cite> in the user's
+local currency. Returns None if the price of the product is unknown -
+which indicates the product cannot be purchased.</p>
+</dd></dl>
+
+<dl class="function">
 <dt id="iap.get_store_name">
 <code class="descclassname">iap.</code><code class="descname">get_store_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#iap.get_store_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the name of the enabled store for in-app purchase. This
-currently returns one of &quot;amazon&quot;, &quot;google&quot;, or None if no store
-is configured.</p>
+currently returns one of &quot;amazon&quot;, &quot;google&quot;, &quot;ios&quot; or None if no store
+is available.</p>
 </dd></dl>
 
 <dl class="function">
@@ -132,6 +143,14 @@ is configured.</p>
 <code class="descclassname">iap.</code><code class="descname">has_purchased</code><span class="sig-paren">(</span><em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#iap.has_purchased" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns True if the user has purchased <cite>product</cite> in the past, and
 False otherwise.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="iap.is_deferred">
+<code class="descclassname">iap.</code><code class="descname">is_deferred</code><span class="sig-paren">(</span><em>product</em><span class="sig-paren">)</span><a class="headerlink" href="#iap.is_deferred" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if the user has asked to purchase <cite>product</cite>, but that
+request has to be approved by a third party, such as a parent or
+guardian.</p>
 </dd></dl>
 
 <dl class="function">
@@ -144,7 +163,7 @@ and false otherwise.</p>
 
 <dl class="function">
 <dt id="iap.register">
-<code class="descclassname">iap.</code><code class="descname">register</code><span class="sig-paren">(</span><em>product</em>, <em>identifier=None</em>, <em>amazon=None</em>, <em>google=None</em><span class="sig-paren">)</span><a class="headerlink" href="#iap.register" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">iap.</code><code class="descname">register</code><span class="sig-paren">(</span><em>product</em>, <em>identifier=None</em>, <em>amazon=None</em>, <em>google=None</em>, <em>ios=None</em><span class="sig-paren">)</span><a class="headerlink" href="#iap.register" title="Permalink to this definition">¶</a></dt>
 <dd><p>Registers a product with the in-app purchase system.</p>
 <dl class="docutils">
 <dt><cite>product</cite></dt>
@@ -163,6 +182,9 @@ If not given, defaults to <cite>identifier</cite>.</dd>
 <dt><cite>google</cite></dt>
 <dd>A string that identifies the product in the Google Play store.
 If not given, defaults to <cite>identifier</cite>.</dd>
+<dt><cite>ios</cite></dt>
+<dd>A string that identifies the product in the Apple App store for
+iOS. If not given, defaults to <cite>identifier</cite>.</dd>
 </dl>
 </dd></dl>
 
@@ -210,10 +232,10 @@ enabled, and the product has not already been purchased.)</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="problems.html" title="Dealing with Problems"
+          <a href="gesture.html" title="Gestures"
              >next</a> |</li>
         <li class="right" >
-          <a href="android.html" title="Android"
+          <a href="ios.html" title="iOS"
              >previous</a> |</li>
 
         <li> <img src="_static/logo.png" width=19 height=21 align=center> 

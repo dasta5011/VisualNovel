@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '6.18.3',
+        VERSION:     '6.99.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -57,7 +57,23 @@
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Full Changelog</a><ul>
-<li><a class="reference internal" href="#ren-py-6-18-3">Ren'Py 6.18.3</a></li>
+<li><a class="reference internal" href="#ren-py-6-99-1">Ren'Py 6.99.1</a></li>
+<li><a class="reference internal" href="#ren-py-6-99">Ren'Py 6.99</a><ul>
+<li><a class="reference internal" href="#sdl2">SDL2</a></li>
+<li><a class="reference internal" href="#ios-support">iOS Support</a></li>
+<li><a class="reference internal" href="#android-support">Android Support</a></li>
+<li><a class="reference internal" href="#steam">Steam</a></li>
+<li><a class="reference internal" href="#distribution-improvements">Distribution Improvements</a></li>
+<li><a class="reference internal" href="#languages-and-translations">Languages and Translations</a></li>
+<li><a class="reference internal" href="#clipboard-voicing">Clipboard Voicing</a></li>
+<li><a class="reference internal" href="#custom-text-tags">Custom Text Tags</a></li>
+<li><a class="reference internal" href="#other-improvements">Other Improvements</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ren-py-6-18-3">Ren'Py 6.18.3</a><ul>
+<li><a class="reference internal" href="#bug-fixes">Bug Fixes</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#ren-py-6-18-2">Ren'Py 6.18.2</a></li>
 <li><a class="reference internal" href="#ren-py-6-18-1">Ren'Py 6.18.1</a></li>
 <li><a class="reference internal" href="#ren-py-6-18">Ren'Py 6.18</a><ul>
@@ -158,31 +174,31 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#ren-py-6-12-0">Ren'Py 6.12.0</a><ul>
-<li><a class="reference internal" href="#android-support">Android Support</a></li>
+<li><a class="reference internal" href="#id13">Android Support</a></li>
 <li><a class="reference internal" href="#new-widgets-and-displayables">New Widgets and Displayables</a></li>
-<li><a class="reference internal" href="#id13">Image Prediction</a></li>
+<li><a class="reference internal" href="#id14">Image Prediction</a></li>
 <li><a class="reference internal" href="#screens">Screens</a></li>
-<li><a class="reference internal" href="#other-improvements">Other Improvements</a></li>
-<li><a class="reference internal" href="#bug-fixes">Bug Fixes</a></li>
+<li><a class="reference internal" href="#id15">Other Improvements</a></li>
+<li><a class="reference internal" href="#id16">Bug Fixes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ren-py-6-11-2">Ren'Py 6.11.2</a><ul>
 <li><a class="reference internal" href="#new-features">New Features</a></li>
 <li><a class="reference internal" href="#software-update">Software Update</a></li>
 <li><a class="reference internal" href="#behavior-changes">Behavior Changes</a></li>
-<li><a class="reference internal" href="#id14">Bug fixes</a></li>
+<li><a class="reference internal" href="#id17">Bug fixes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ren-py-6-11-1">Ren'Py 6.11.1</a><ul>
-<li><a class="reference internal" href="#id15">New Features</a></li>
-<li><a class="reference internal" href="#id16">Fixes</a></li>
+<li><a class="reference internal" href="#id18">New Features</a></li>
+<li><a class="reference internal" href="#id19">Fixes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#ren-py-6-11-0">Ren'Py 6.11.0</a><ul>
 <li><a class="reference internal" href="#opengl-support">OpenGL Support</a></li>
 <li><a class="reference internal" href="#screens-and-screen-language">Screens and Screen Language</a></li>
-<li><a class="reference internal" href="#id17">Transform Changes</a></li>
-<li><a class="reference internal" href="#id18">Other Changes</a></li>
+<li><a class="reference internal" href="#id20">Transform Changes</a></li>
+<li><a class="reference internal" href="#id21">Other Changes</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#older-changelogs">Older Changelogs</a></li>
@@ -217,6 +233,148 @@
             
   <div class="section" id="full-changelog">
 <h1>Full Changelog<a class="headerlink" href="#full-changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ren-py-6-99-1">
+<h2>Ren'Py 6.99.1<a class="headerlink" href="#ren-py-6-99-1" title="Permalink to this headline">¶</a></h2>
+<p>Added the <a class="reference internal" href="udd.html#renpy.load_image" title="renpy.load_image"><code class="xref py py-func docutils literal"><span class="pre">renpy.load_image()</span></code></a>, <a class="reference internal" href="udd.html#renpy.load_surface" title="renpy.load_surface"><code class="xref py py-func docutils literal"><span class="pre">renpy.load_surface()</span></code></a>, and
+<a class="reference internal" href="displaying_images.html#renpy.get_shown_tags" title="renpy.get_shown_tags"><code class="xref py py-func docutils literal"><span class="pre">renpy.get_shown_tags()</span></code></a> functions.</p>
+</div>
+<div class="section" id="ren-py-6-99">
+<h2>Ren'Py 6.99<a class="headerlink" href="#ren-py-6-99" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sdl2">
+<h3>SDL2<a class="headerlink" href="#sdl2" title="Permalink to this headline">¶</a></h3>
+<p>Ren'Py is now based on Pygame_SDL2, a reimplementation of the Pygame API
+based on the SDL2 library. One of the largest changes in Ren'Py's history,
+switching to SDL2 lays the groundwork for many improvements, in this
+and future releases.</p>
+</div>
+<div class="section" id="ios-support">
+<h3>iOS Support<a class="headerlink" href="#ios-support" title="Permalink to this headline">¶</a></h3>
+<p>Ren'Py now supports the iOS platform. To develop for iOS, you will need a
+Macintosh computer, Xcode, and a paid membership in the iOS developer
+program. (An iPad or iPhone to test with is highly recommended.)</p>
+<p>Ren'Py's iOS support includes the ability to create Xcode projects, and
+to update those projects with the latest version of a Ren'Py game. Xcode
+can be used to change project settings, and to create debug and release
+builds.</p>
+<p>The iOS port supports iOS 7 and higher. Almost all of Ren'Py is supported,
+with the exception being that video playback is limited to fullscreen video
+in formats the iOS device supports.</p>
+<p>For now, the default set of Ren'Py screens are not particularly compatible
+with iOS. You will need to customize your game to make it touch friendly and
+compliant with Apple's guidelines before submitting it to the iOS app store.</p>
+<p>Please see the iOS documentation for more information and a copyright
+notice you must include as part of your app description on iOS.</p>
+</div>
+<div class="section" id="android-support">
+<h3>Android Support<a class="headerlink" href="#android-support" title="Permalink to this headline">¶</a></h3>
+<p>Android support has been rewritten, and is now based in SDL2. This release
+brings Android support to parity with desktop platforms. Improvements
+include:</p>
+<ul class="simple">
+<li>Support for rotating the screen to match the user's preferred orientation.</li>
+<li>Improved in-app purchase support, with the ability to retrieve prices and
+create a single .apk that supports the Google and Amazon stores.</li>
+<li>Android audio playback is now based on the same code that's used on
+the desktop and iOS platforms. This enables support for features like
+panning and fading volume. It also means the same sound files can be
+used on Android, iOS, and desktop platforms.</li>
+<li>Keyboard input is now supported on Android.</li>
+<li>Languages requiring bidirectional text (like Arabic and Hebrew) are supported
+on Android.</li>
+</ul>
+<p>A number of issues with Android support have been fixed, including one that
+prevented Ren'Py from unzipping the android SDK automatically when the path
+to the Ren'Py install was too long.</p>
+<p>Please see the Android documentation for more information and a copyright
+notice that should be included as part of your app description.</p>
+</div>
+<div class="section" id="steam">
+<h3>Steam<a class="headerlink" href="#steam" title="Permalink to this headline">¶</a></h3>
+<p>Ren'Py now ships with Python bindings for the steam API. These bindings
+are built as part of the Ren'Py build process, which means they will be
+maintained alongside Ren'Py going forwards.</p>
+<p>For an explanation of how to use the Steam API, please contact the Ren'Py
+developers directly. The bindings make available:</p>
+<ul class="simple">
+<li>Initialization.</li>
+<li>User statistics and achievements.</li>
+<li>Retrieving other apps by the same developer that have been installed.</li>
+<li>DLC support.</li>
+<li>The in-game overlay, including the ability to launch a purchase flow.</li>
+<li>Session tickets.</li>
+</ul>
+<p>The steam bindings will be integrated with Ren'Py as appropriate. For now,
+this integration consists of binding the steam achievement system to the new
+Ren'Py achievement API.</p>
+</div>
+<div class="section" id="distribution-improvements">
+<h3>Distribution Improvements<a class="headerlink" href="#distribution-improvements" title="Permalink to this headline">¶</a></h3>
+<p>The launcher now has the ability to add from clauses to call statements,
+automatically turning:</p>
+<div class="highlight-renpy"><div class="highlight"><pre><span class="k">call</span> <span class="n">dayplanner</span>
+</pre></div>
+</div>
+<p>into:</p>
+<div class="highlight-renpy"><div class="highlight"><pre><span class="k">call</span> <span class="n">dayplanner</span> <span class="kn">from</span> <span class="nn">__call_dayplanner</span>
+</pre></div>
+</div>
+<p>From clauses, which are really labels, help Ren'Py to find the return
+site to use when a game is changed. This should help fix problem with games
+that may change greatly between releases.</p>
+<p>When asked to package a game that is more than about 2GB in size, Ren'Py
+will produce a ZIP64-format archive. These archives may be less compatible
+that smaller zip files.</p>
+</div>
+<div class="section" id="languages-and-translations">
+<h3>Languages and Translations<a class="headerlink" href="#languages-and-translations" title="Permalink to this headline">¶</a></h3>
+<p>There is now a Russian translation of the tutorial game, and a Finnish
+translation of the launcher.</p>
+<p>Ren'Py supports input methods (IMEs) on platforms where SDL2 makes that
+support available. (All platforms except for Linux.) Input methods make
+it possible to input complex non-ASCII text, such as Chinese, Japanese,
+and Korean.</p>
+</div>
+<div class="section" id="clipboard-voicing">
+<h3>Clipboard Voicing<a class="headerlink" href="#clipboard-voicing" title="Permalink to this headline">¶</a></h3>
+<p>Ren'Py now supports clipboard voicing, which is accessed by shift+C.</p>
+<p>Clipboard voicing is a form of self-voicing that works by copying the
+text to the clipboard, where a screenreader program is likely to read
+it using settings preferred by the player.</p>
+</div>
+<div class="section" id="custom-text-tags">
+<h3>Custom Text Tags<a class="headerlink" href="#custom-text-tags" title="Permalink to this headline">¶</a></h3>
+<p>Ren'Py snow supports a new form of <a class="reference internal" href="custom_text_tags.html#custom-text-tags"><em>custom text tags</em></a>.</p>
+<p>Custom text tags are applied after the text has been tokenized into tags and
+text. This makes it easier to write a custom text tag that manipulates text
+or applies multiple existing text tags to text.</p>
+<p>The previously-existing form of custom text tag has been renamed to
+style text tag, and is still supported.</p>
+</div>
+<div class="section" id="other-improvements">
+<h3>Other Improvements<a class="headerlink" href="#other-improvements" title="Permalink to this headline">¶</a></h3>
+<p>A high-level achievement API has been added to Ren'Py.</p>
+<p>Ren'Py now includes support for recognizing touch gestures on Android and
+iOS.</p>
+<p>It is possible to hide the editing buttons in the launcher, so they can't
+be used to open an absurd number of editor windows.</p>
+<p>The developer can choose if strings should be empty when generating
+translations.</p>
+<p>Three new set manipulation actions <code class="xref py py-func docutils literal"><span class="pre">AddToSet()</span></code>, <code class="xref py py-func docutils literal"><span class="pre">RemoveFromSet()</span></code>,
+and <code class="xref py py-func docutils literal"><span class="pre">ToggleSetMembership()</span></code> manipulate sets and lists-as-sets. (Such
+as inventory lists.)</p>
+<p>Drags (as in, drag-and-drop) now support the focus_mask style property.</p>
+<p>The complexity of the style system has been reduced, decreasing memory
+usage and startup time.</p>
+<p>The new <a class="reference internal" href="save_load_rollback.html#renpy.suspend_rollback" title="renpy.suspend_rollback"><code class="xref py py-func docutils literal"><span class="pre">renpy.suspend_rollback()</span></code></a> suspends the recording of rollback
+checkpoints, while still allowing rollback to occur.</p>
+<p>The RENPY_GL_CHECK_ERRORS controlls the logging of OpenGL/ANGLE function
+calls and errors.</p>
+<p>A completion progress indicator can be toggled by typing shift-alt-P or
+swiping up-down-left-right-left-right.</p>
+<p>As of this release, dictionary and set comprehensions are wrapped to
+support rollback.</p>
+</div>
+</div>
 <div class="section" id="ren-py-6-18-3">
 <h2>Ren'Py 6.18.3<a class="headerlink" href="#ren-py-6-18-3" title="Permalink to this headline">¶</a></h2>
 <p>This release adds the <a class="reference internal" href="screens.html#sl-showif"><em>showif statement</em></a> to screen language.
@@ -233,6 +391,20 @@ This will help to avoid unpredicted image loads at the very start of a game.</p>
 determines if an update is available.</p>
 <p>The new <a class="reference internal" href="other.html#renpy.invoke_in_thread" title="renpy.invoke_in_thread"><code class="xref py py-func docutils literal"><span class="pre">renpy.invoke_in_thread()</span></code></a> function runs a function in a background
 thread, and restarts the interaction when that thread finishes.</p>
+<p>While in self-voicing mode, the {w} and {p} tags are ignored.</p>
+<p>The Traditional Chinese and Russian translations have been updated.</p>
+<div class="section" id="bug-fixes">
+<h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline">¶</a></h3>
+<p>Fixed a regression that could cause hiding transforms to skip time.</p>
+<p>Fixed a bug that would cause the screen language if statement to show
+children from blocks with a false condition, if those child blocks were
+run during prediction.</p>
+<p>Fixed an issue where SetScreenVariable and ToggleScreenVariable were
+declared as pure functions, but weren't. They now have been reimplemented
+as pure functions.</p>
+<p>Fixed an issue where a grab could fail to transfer between interactions,
+leaving Ren'Py unresponsive.</p>
+</div>
 </div>
 <div class="section" id="ren-py-6-18-2">
 <h2>Ren'Py 6.18.2<a class="headerlink" href="#ren-py-6-18-2" title="Permalink to this headline">¶</a></h2>
@@ -1650,8 +1822,8 @@ for tracking this down.)</li>
 </div>
 <div class="section" id="ren-py-6-12-0">
 <h2>Ren'Py 6.12.0<a class="headerlink" href="#ren-py-6-12-0" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="android-support">
-<h3>Android Support<a class="headerlink" href="#android-support" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h3>Android Support<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <p>Ren'Py now supports the Android platform. This includes support for a large
 fraction of Ren'Py's functionality, although we were unable to add support
 for imagedissolves and movie playback. It should be possible to package a
@@ -1692,8 +1864,8 @@ can support:</p>
 <li>Drag-to-reorder systems.</li>
 </ul>
 </div>
-<div class="section" id="id13">
-<h3>Image Prediction<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>Image Prediction<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>Ren'Py is now better at predicting image usage. Along with predicting images
 used by normal gameplay, it now attempts to predict images that are used by
 screens one click away from the user. For example, during normal gameplay, it
@@ -1740,8 +1912,8 @@ imagebuttons.</p>
 <p>The <a class="reference internal" href="screen_actions.html#FilePageName" title="FilePageName"><code class="xref py py-func docutils literal"><span class="pre">FilePageName()</span></code></a> and <a class="reference internal" href="screen_actions.html#FileSlotName" title="FileSlotName"><code class="xref py py-func docutils literal"><span class="pre">FileSlotName()</span></code></a> functions make it easier to
 name slots</p>
 </div>
-<div class="section" id="other-improvements">
-<h3>Other Improvements<a class="headerlink" href="#other-improvements" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>Other Improvements<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>Ren'Py 6.12 includes a number of other improvements:</p>
 <ul class="simple">
 <li>We've continued writing the new manual. Notably, we have rewritten the
@@ -1758,8 +1930,8 @@ log other subsystems.</li>
 that filename mismatches on Linux should no longer be a problem.</li>
 </ul>
 </div>
-<div class="section" id="bug-fixes">
-<h3>Bug Fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>Bug Fixes<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference external" href="https://bugs.launchpad.net/renpy/+bug/680266">launchpad bug 680266</a> - Ensures that dynamic displayables update before
 Transforms that use them.</li>
@@ -1797,8 +1969,8 @@ and only activate when the button is focused.</p>
 changed their order. This may lead to differences in behavior from the old
 version, where the ordering was undefined.</p>
 </div>
-<div class="section" id="id14">
-<h3>Bug fixes<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id17">
+<h3>Bug fixes<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
 <p>Fixed <a class="reference external" href="https://bugs.launchpad.net/renpy/+bug/647686">launchpad bug 647686</a>, a regression that prevented sounds from looping
 properly.</p>
 <p>Fixed <a class="reference external" href="https://bugs.launchpad.net/renpy/+bug/661983">launchpad bug 661983</a>, which caused insensitive hotspots to default to the
@@ -1815,8 +1987,8 @@ scaled using OpenGL scaling.</p>
 </div>
 <div class="section" id="ren-py-6-11-1">
 <h2>Ren'Py 6.11.1<a class="headerlink" href="#ren-py-6-11-1" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id15">
-<h3>New Features<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id18">
+<h3>New Features<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 <p>Add the <a class="reference internal" href="displayables.html#AlphaBlend" title="AlphaBlend"><code class="xref py py-func docutils literal"><span class="pre">AlphaBlend()</span></code></a> displayable and the <a class="reference internal" href="transitions.html#AlphaDissolve" title="AlphaDissolve"><code class="xref py py-func docutils literal"><span class="pre">AlphaDissolve()</span></code></a>
 transition. These take two displayables, and use the alpha channel of a third
 displayable to blend them together. (The third displayable is often an
@@ -1848,8 +2020,8 @@ web servers.</p>
 update to the latest pre-release. Hitting shift+U at the launcher's main
 screen will cause Ren'Py to be updated.</p>
 </div>
-<div class="section" id="id16">
-<h3>Fixes<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h3>Fixes<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="transitions.html#MoveTransition" title="MoveTransition"><code class="xref py py-func docutils literal"><span class="pre">MoveTransition()</span></code></a> now respects the xoffset and yoffset parameters.</p>
 <p>Fixed several bugs with screen-language imagemaps.</p>
 <p>Fixed a bug (#626303) that was caused by an incorrect texture unit check.
@@ -1901,8 +2073,8 @@ game from the main menu, without extensive Python code.</p>
 form of Actions and BarValues. This makes it possible to pick and choose
 functionality, and add it to screens as is deemed necessary.</p>
 </div>
-<div class="section" id="id17">
-<h3>Transform Changes<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3>Transform Changes<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">If a transform does not define one of the position properties
 <a class="reference internal" href="style_properties.html#style-property-xpos"><code class="xref std std-propref docutils literal"><span class="pre">xpos</span></code></a>, <a class="reference internal" href="style_properties.html#style-property-ypos"><code class="xref std std-propref docutils literal"><span class="pre">ypos</span></code></a>, <a class="reference internal" href="style_properties.html#style-property-xanchor"><code class="xref std std-propref docutils literal"><span class="pre">xanchor</span></code></a>, or
@@ -1933,8 +2105,8 @@ result be (50, 100) in size.</p>
 </li>
 </ul>
 </div>
-<div class="section" id="id18">
-<h3>Other Changes<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3>Other Changes<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">The Ren'Py documentation is in the process of being rewritten. This
 changelog is now being maintained as part of the Ren'Py documentation.</p>

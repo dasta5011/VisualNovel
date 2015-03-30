@@ -114,3 +114,10 @@ translate arabic strings:
     old "Recompiling all rpy files into rpyc files..."
     new "يتم إعادة حزم الملفات من صيغة rpy إلى rpyc..."
 
+
+translate arabic strings:
+
+    # game/front_page.rpy:246
+    old "iOS"
+    new "iOS نظام تشغيل"
+

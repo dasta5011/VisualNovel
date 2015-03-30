@@ -144,7 +144,7 @@ def make_tar(iface, fn, source_dirs):
         return rv
 
     # zf = zipfile.ZipFile(fn, "w")
-    tf = tarfile.open(fn, "w:gz")
+    tf = tarfile.open(fn, "w:gz", format=tarfile.USTAR_FORMAT)
 
     added = set()
 
@@ -267,7 +267,7 @@ def zip_directory(zf, dn):
 
 def copy_icon(directory, name, default):
     """
-    Copys icon or presplash files ending with `name` found in `directory` to
+    Copys icon ending with `name` found in `directory` to
     the appropriate res/drawables directory. If the file doesn't exist,
     copies in default instead.
     """
@@ -330,6 +330,23 @@ def copy_icon(directory, name, default):
     copy(default, os.path.join(res, "drawable", name))
 
 
+def copy_presplash(directory, name, default):
+    """
+    Copies the presplash file.
+    """
+
+    for ext in [ ".png", ".jpg" ]:
+
+        fn = os.path.join(directory, name + ext)
+
+        if os.path.exists(fn):
+            break
+    else:
+        fn = default
+        ext = os.path.splitext(fn)[1]
+
+    shutil.copy(fn, plat.path("assets/" + name + ext))
+
 def split_renpy(directory):
     """
     Takes a built Ren'Py game, and splits it into the private and assets
@@ -369,7 +386,7 @@ def split_renpy(directory):
     return private, assets
 
 
-def build(iface, directory, commands):
+def build(iface, directory, commands, launch=False):
 
     # Are we doing a Ren'Py build?
 
@@ -386,6 +403,9 @@ def build(iface, directory, commands):
     config = configure.Configuration(directory)
     if config.package is None:
         iface.fail("Run configure before attempting to build the app.")
+
+    if (config.store == "play" or config.store == "all") and (config.google_play_key is None):
+        iface.fail("Google Play support is enabled, but build.google_play_key is not set. Please set in your game.")
 
     global blacklist
     global whitelist
@@ -419,7 +439,9 @@ def build(iface, directory, commands):
             public_dir = join_and_check(directory, "external")
             assets_dir = join_and_check(directory, "assets")
 
-    versioned_name = config.name.replace(" ", "").replace("'", "") + "-" + config.version
+    versioned_name = config.name
+    versioned_name = re.sub(r'[^\w]', '', versioned_name)
+    versioned_name += "-" + config.version
 
     # Annoying fixups.
     config.name = config.name.replace("'", "\\'")
@@ -559,9 +581,11 @@ def build(iface, directory, commands):
         iface.info("Packaging external data.")
         make_tar(iface, plat.path("assets/public.mp3"), [ public_dir ])
 
-    # Copy over the icon and presplash files.
+    # Copy over the icon files.
     copy_icon(directory, "icon.png", default_icon)
-    copy_icon(directory, "presplash.jpg", default_presplash)
+
+    # Copy the presplash files.
+    copy_presplash(directory, "android-presplash", default_presplash)
 
     # Copy over the OUYA icon.
     ouya_icon = join_and_check(directory, "ouya-icon.png") or join_and_check(directory, "ouya_icon.png")
@@ -577,8 +601,9 @@ def build(iface, directory, commands):
 
     try:
 
-        # Clean is required, so we don't use old code.
-        iface.call([plat.ant, "clean"] +  commands, cancel=True)
+        # Clean is required, so we don't use old code. (Not true anymore?)
+        # iface.call([plat.ant, "clean" ] +  commands, cancel=True)
+        iface.call([ plat.ant ] +  commands, cancel=True)
 
         if (expansion_file is not None) and ("install" in commands):
             iface.info("Uploading expansion file.")
@@ -592,6 +617,22 @@ def build(iface, directory, commands):
 
     except subprocess.CalledProcessError:
         iface.fail("The build seems to have failed.")
+
+    if launch:
+        iface.info("Launching app.")
+
+        if expansion_file:
+            launch_activity = "DownloaderActivity"
+        else:
+            launch_activity = "PythonSDLActivity"
+
+        iface.call([
+            plat.adb, "shell",
+            "am", "start",
+            "-W",
+            "-a", "android.intent.action.MAIN",
+            "{}/org.renpy.android.{}".format(config.package, launch_activity),
+            ], cancel=True)
 
     iface.final_success("The build seems to have succeeded.")
 

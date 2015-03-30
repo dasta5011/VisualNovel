@@ -379,7 +379,7 @@ screen preferences:
 
                 label _("Language")
                 textbutton "English" action Language(None)
-                textbutton u"Arabic" text_font "tl/None/AdvertisingBold.ttf" action Language("arabic")    
+                textbutton u"Arabic" action Language("arabic") #text_font "tl/None/DejaVuSans.ttf"   
 
             frame:
                 style_group "pref"
