@@ -31,3 +31,8 @@ Writing: I have included the Notepad++ installation inside the Scripts folder.  
 Scripting:  Renpy comes with its own editor that launches when you select a script to edit.  It has Renpy specific code recognition highlighting to make your life easier.  The engine uses Python for scripting, so use "#" for commenting lines of code.
 
 
+
+RESOURCES:
+
+http://www.freesfx.co.uk
+http://freerangestock.com/
