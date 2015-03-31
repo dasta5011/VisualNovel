@@ -32,7 +32,7 @@ Mechanics:
 *crack* !! *smack* *slam* !!
 "They brought all sorts of stuff.  Guns, bats, hammers, knives, and chains were just the basics.  They had more.  Gasoline, car batteries, pliers..shit, they even had a fish tank with piranhas. But that's my family, we never skimp on an expense."
 "Speaking of birthdays, aren't your friends suppose to be there to celebrate with you?"
-"I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."\
+"I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."
 #cut to image showing man with the shit beat out of him
 "<friends name>.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
 *crack* !! *smack* *slam* !! 
@@ -44,3 +44,8 @@ Mechanics:
 "I haven't been able to cry for eleven years as of today.  Not since that day."
 "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."
 
+---------------------------------------------------------------------------------------------------
+
+Thinking of having 4-5 (or more) mafia type families in this city.  All or most of them have a kid in this one big college that's located near the middle of the city, in a spot of neutral ground. (since its college there's no real age cap).  The story follows the protagonist and his position from just a child of the family to being deeply involved in it and how it affects his life, his school life, and his friends.  Eventually, it his school life gets involved when the kids/students from the other families get into it, and soon it seems that neutral ground/truce at the school is in jeopardy.  
+
+-I think I'd like to see a city map at points where the character can make choices, with different click-able locations, i.e. Shopping district, docks, school, abandon warehouse, etc.  Each choice involves him meeting different people from different families and brings out different consequences.
