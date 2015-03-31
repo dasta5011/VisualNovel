@@ -1,11 +1,11 @@
-Mon Mar 30 01:04:02 2015
+Mon Mar 30 20:35:34 2015
 Windows-8-6.2.9200
 Ren'Py 6.99.1.329
 GreenT 0.0
 
 
 Windowed mode.
-Screen sizes: virtual=(1280, 720) physical=(1168, 657)
+Screen sizes: virtual=(1280, 720) physical=(1280, 720)
 Vendor: 'NVIDIA Corporation'
 Renderer: 'GeForce GTX 680/PCIe/SSE2'
 Version: '4.4.0 NVIDIA 344.75'
@@ -325,8 +325,8 @@ Texture testing:
 Performance test:
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.035000 seconds.
 - Frame drawn at 0.036000 seconds.
-- Frame drawn at 0.038000 seconds.
-- Frame drawn at 0.041000 seconds.
-- Frame drawn at 0.047000 seconds.
-- 0.047000 seconds to render 5 frames.
+- Frame drawn at 0.040000 seconds.
+- Frame drawn at 0.042000 seconds.
+- 0.042000 seconds to render 5 frames.
