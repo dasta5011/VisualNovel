@@ -1,0 +1,123 @@
+Script Idea #1 --
+
+Type of Game:  Mystery, action, some romance
+
+Theme:  Underground crime, Contested Territory/Warring Factions, Avoid getting caught by police/detectives
+
+Setting:  2020's, inner city, cyberpunk, throwback to 1950's detective work
+
+Protagonist:  Son/Daughter/grandon/grandaughter ? of someone central to the mafia family line of power. 
+Few different arcs it could follow:
+-Doesn't want to be part of the family, but gets dragged in regardless.  Maybe he/she just wants to start a peaceful game company and make games all day.
+-Could want vengeance for a sibling that was murdered by rivals, could be driven by revenge and/or protect a younger sibling.
+-Could blame self for a relatives death, gets involved more to feel like he/she is taking responsibility/self punishment.
+
+
+Mechanics:  
+-Depending on choices related to dealing with family business and territorial affairs, reputation points are earned with the different factions.  Depending on your current faction points with certain factions, alter what happens at key story points.  I.e. "You need 3 Bloodz faction points by the end of Day 7 or you will die" or "Not having 4 Cripz faction points by the beginning of Day 12 makes negotiating peace not an option" or "Having more than 5 Illuminati points on Day 8 will make peace talks with the Bloodz not an option" type of stuff, obviously this isn't told to the player, but sets up story paths.
+-Bounty.  Bounty points increase by a different amount depending on the polices findings of the characters involvement in different crimes. I.e. depending on the characters actions, they may get caught at the scene of a crime, leave fingerprints on a murder weapon, or only be leaving footprints behind (or maybe the character wasn't involved at all!  But don't forget evil people framing them..).  If this value ever gets too high, it could lead to the police going after the player directly.
+
+--------------------------------------------------------------------------
+
+"Birthdays are suppose to be fun, right?"
+"That's what I was always told."
+*crack* !! *smack* *slam* !!
+"Especially your 21st, right?"
+"Am I suppose to be enjoying this?  Is this fun?"
+*crack* *scream* !!!!!!!!!!!!!!!!!!!!!
+"Initiation.  Initiation is what they call it."
+*more screaming*
+" "We're going to make a man of you today.  You get to help in the business today.  Congratulations!" "
+"That's what they told me.  Then gave me this private shed and this snitch.  Something about leaking information to our enemies."
+*crack* !! *smack* *slam* !!
+"They brought all sorts of stuff.  Guns, bats, hammers, knives, and chains were just the basics.  They had more.  Gasoline, car batteries, pliers..shit, they even had a fish tank with piranhas. But that's my family, we never skimp on an expense."
+"Speaking of birthdays, aren't your friends suppose to be there to celebrate with you?"
+"I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."
+#cut to image showing man with the shit beat out of him
+"<friends name>.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
+*crack* !! *smack* *slam* !! 
+"This may look like I'm being a bad friend, but in reality, I'm helping him right now.  If it was anyone else taking care of this, they'd hurt him a lot worse and make sure he didn't survive.  I really hope he understands I'm doing this for him."
+"..."
+"He's crying.  How pitiful.  By my calculations, this will have to continue for another ten minutes before everyone is satisfied."
+*crack* !! *smack* *slam* !!
+"He's still crying.  I wonder if he'd laugh if I told him I envied him."
+"I haven't been able to cry for eleven years as of today.  Not since that day."
+"Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."
+
+---------------------------------------------------------------------------------------------------
+
+Thinking of having 4-5 (or more) mafia type families in this city.  All or most of them have a kid in this one big college that's located near the middle of the city, in a spot of neutral ground. (since its college there's no real age cap).  The story follows the protagonist and his position from just a child of the family to being deeply involved in it and how it affects his life, his school life, and his friends.  Eventually, it his school life gets involved when the kids/students from the other families get into it, and soon it seems that neutral ground/truce at the school is in jeopardy.  
+
+-I think I'd like to see a city map at points where the character can make choices, with different click-able locations, i.e. Shopping district, docks, school, abandon warehouse, etc.  Each choice involves him meeting different people from different families and brings out different consequences. 
+
+------------------------------------------------------------------------------------------------------
+
+Thinking right now, 5 Families
+
+City Name/Location:  
+
+Family #1:
+Family Name: 
+Family Head: 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+Hierarchy of Power: 
+
+List Details of Each Character involved with this Family below::
+-
+
+_________________________________________________
+
+Family #2:
+Family Name: 
+Family Head: 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+Hierarchy of Power: 
+
+List Details of Each Character involved with this Family below::
+-
+
+______________________________________________________
+
+Family #3:
+Family Name: 
+Family Head: 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+Hierarchy of Power: 
+
+List Details of Each Character involved with this Family below::
+-
+
+______________________________________________________________
+
+Family #4:
+Family Name: 
+Family Head: 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+Hierarchy of Power: 
+
+List Details of Each Character involved with this Family below::
+-
+
+______________________________________________________________
+
+Family #5:
+Family Name: 
+Family Head: 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+Hierarchy of Power: 
+
+List Details of Each Character involved with this Family below::
+-
+
+----------------------------------------------------------------
+
+Some ideas for the later half of the story:
+-Might be interesting if the reason each families got their wealth power might be from an origin each family shares and keeps hidden.
+	-If we're open to the idea of adding a bit of magic/supernatural, each family could have part of a magical artifact or grimoire that they use.  Or maybe each item is mysteriously different.
+	-Could relate to the layout of the land, back a few or several generations, something that gave them power and influence and also a reason to fight each other for the other families mysterious item to have more wealth and power themselves.
+	-The families might even keep special beings/entities in the crypts beneath their houses, depending how far down the magical road we want to travel, we could have specters, ghosts, vampires, etc.  Maybe even a special pit filled with a sort of demonic/grotesque crypt worm that rapidly devours flesh (used for corpse disposal).
