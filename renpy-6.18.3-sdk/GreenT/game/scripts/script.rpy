@@ -12,6 +12,8 @@ define e = Character('Derek', color="#c8ffc8")
 define robo = Character('Robot', color="#c8ffc8")
 
 image blackscreen = "#000000"
+image bg caveh = "images/backgrounds/cave_hallway.png"
+#imges below this are test
 image bg cave = "images/backgrounds/cave.jpg"
 image derek happy = "images/characters/lucy_happy.png"
 image derek mad = "images/characters/lucy_mad.png"
@@ -30,9 +32,8 @@ label start:
     with slowdissolve
     play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
     $ renpy.pause(0.70)
-    scene bg cave
+    scene bg caveh
     with slowdissolve
-    #play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
     
     n "{i}Several generations ago, when this land was barren, there came to be rumors of a great power lying within the land.{/i}"
     n "{i}It didn't take long for feuds to break out, and before long, it turned into war.{/i}"
