@@ -4,10 +4,14 @@
 # eg. image eileen happy = "eileen_happy.png"
 
 # Declare characters used by this game.
-define e = Character('Derek', color="#c8ffc8")
-define robo = Character('Robot', color="#c8ffc8")
 #character n is for narrator, and represents the characters internal monologue and scene descriptions
 define n = Character(' ', color="#c8ffc8")
+
+##tests delete characters after this
+define e = Character('Derek', color="#c8ffc8")
+define robo = Character('Robot', color="#c8ffc8")
+
+image blackscreen = "#000000"
 image bg cave = "images/backgrounds/cave.jpg"
 image derek happy = "images/characters/lucy_happy.png"
 image derek mad = "images/characters/lucy_mad.png"
@@ -16,9 +20,26 @@ define slowdissolve = Dissolve(1.0)
 
 # The game starts here.
 label start:
+    #keep this beginning section clean
+    #used as a master jump sequences to control flow of the game
+    jump prologue
+    
+    label prologue:
+    #Dramatic Music - Opening - Goes over premise of the past/ancient times and explains in little detail how the families came to be
+    scene blackscreen
+    with slowdissolve
+    play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
+    $ renpy.pause(0.70)
     scene bg cave
     with slowdissolve
-    play music "audio/bgm/iron_man_01.mp3" fadeout 1
+    #play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
+    
+    n "{i}Several generations ago, when this land was barren, there came to be rumors of a great power lying within the land.{/i}"
+    n "{i}It didn't take long for feuds to break out, and before long, it turned into war.{/i}"
+    n "{i}What happened in this days has been lost to history, but the consequences remain.{/i}"
+    n "{i}Five lineages who fought to discover the treasure still reside in that very land today.{/i}"
+    n "{i}Only in their dark and cloudy pasts can the answers be found.{/i}"
+    
     show derek happy
 
     e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."

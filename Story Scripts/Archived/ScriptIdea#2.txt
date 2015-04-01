@@ -1,0 +1,22 @@
+Script Idea #2 --
+
+Type of Game:  Horror, Mystery, Suspense
+
+Theme: Derelict ships, Missing persons, Hostile Scary Aliens/Phenomenons, Focused on a Team/Group of People
+
+Setting:  Future, Space oriented, Search and Rescue/Salvaging/Investigation
+
+Protagonist:  Member of the Rescue/Recon/Salvage Team
+Few different arcs it could follow:
+-Rescue - Several missing persons/ship cases coming from a far reaching area of colonized space, not enough to draw massive attention since it's basically the North Dakota of space. As a lower rated, not top-tier trained rescue team, they send you to find out what's happening, bring back anyone you can, and report back.  But what you find is something far more disturbing than you've ever imagined.
+-Salvage - As above, with reports of people missing, but your team knows nothing of saving people, but you do know there's a good chance of finding ship wreckage, or even entire ships to make profit on. To your surprise, you find a large, high end ship completely intact, and you can't find any crew.  With little thought, your team is ready to fly the ship back to where you can outfit it with your Salvaging weapons, but it doesn't take long for things to take a turn to the worse in the dark corridors of the ship.
+-Freelancers - Your team is basically mercenaries, and when they get a request to find a missing ship in the middle of nowhere with a very large payout, everyone can see their tight budget and borderline poverty lifestyle disappearing.  Objectives: Find the ship, rescue the precious cargo.  Other than a few space parasites infesting the ship, you quickly secure the large mysterious cargo crate.  Yet, it feels off.  After loading it onto your ship, small electrical malfunctions keep cropping up.  After feeling an intense presence calling out to you from inside, your mind feels almost mad, and despite the demands of everyone else, you open the crate. Inside is a black space capsule standing up, about the size of a person.  You press your hand on it to feel its texture, nothing like you've imagined before, then it opens.  Before you know it, a young child has collapsed out of it into your hands.  Seeing that her/his condition seems critical, and with the malfunctions on the ship getting more serious, you stop at a small outpost, just on the edge of civilized space.  The few medical staff available rush the child to infirmary, while the rest of the crew gets the shipped repaired, and relax at the station.  The lights and power at the station dim for just a second, like a shockwave running through it.  You feel the same strange feeling that caused you to open the crate, and you start running towards the infirmary...
+
+
+Mechanics:
+-Health.  Making choices that lead to you getting injured deplete your hp.  Lose it all and die.
+-Psych.  Depending on your choices, you may end up in situations that require drastic measures.  Each time the player goes through a traumatic event, add a Psych point.  The more Psych points, the weirder the story gets.  New scenes involving illusions will start creeping up more frequent with more Psych points.  The player won't be sure which is real, which is an illusion, and can easily lead to a decision where the player is killed or sees allies as enemies.
+-Favor.  Favor points relate to the characters relationship with the unknown entity causing the trouble.  Maybe only applicable in the third scenario with the little girl, but if the character doesn't have enough favor at certain stages, the character will be killed by the mysterious force rather than spared by it due to its unique fancy with the character.
+
+--------------------------------------------------------------------------------------------------
+
