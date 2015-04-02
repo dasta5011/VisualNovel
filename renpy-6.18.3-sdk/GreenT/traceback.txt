@@ -1,65 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 54, in script
-    e "I bet it's that fucker, Greg."
-IOError: Couldn't find file 'robo_default_01.png'.
+  File "game/scripts/script.rpy", line 36, in script call
+    call opening
+  File "game/scripts/script.rpy", line 95, in script
+    n "you have [ikida] ikida point. test."
+KeyError: u'ikida'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 54, in script
-    e "I bet it's that fucker, Greg."
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 593, in execute
+  File "game/scripts/script.rpy", line 36, in script call
+    call opening
+  File "game/scripts/script.rpy", line 95, in script
+    n "you have [ikida] ikida point. test."
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 593, in execute
     renpy.exports.say(who, what, interact=self.interact)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\exports.py", line 999, in say
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\exports.py", line 1033, in say
     who(what, interact=interact)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 826, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 688, in do_display
-    **display_args)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 491, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\ui.py", line 247, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2149, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2478, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 1677, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 363, in renpy.display.render.render_screen (gen\renpy.display.render.c:5330)
-  File "render.pyx", line 174, in renpy.display.render.render (gen\renpy.display.render.c:2537)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\layout.py", line 618, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 98, in renpy.display.render.render (gen\renpy.display.render.c:2849)
-  File "render.pyx", line 174, in renpy.display.render.render (gen\renpy.display.render.c:2537)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\layout.py", line 618, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 98, in renpy.display.render.render (gen\renpy.display.render.c:2849)
-  File "render.pyx", line 174, in renpy.display.render.render (gen\renpy.display.render.c:2537)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\layout.py", line 618, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 98, in renpy.display.render.render (gen\renpy.display.render.c:2849)
-  File "render.pyx", line 174, in renpy.display.render.render (gen\renpy.display.render.c:2537)
-  File "accelerator.pyx", line 108, in renpy.display.accelerator.transform_render (gen\renpy.display.accelerator.c:1922)
-  File "render.pyx", line 174, in renpy.display.render.render (gen\renpy.display.render.c:2537)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\image.py", line 207, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\image.py", line 82, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 98, in renpy.display.render.render (gen\renpy.display.render.c:2849)
-  File "render.pyx", line 174, in renpy.display.render.render (gen\renpy.display.render.c:2537)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\im.py", line 465, in render
-    im = cache.get(self)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\im.py", line 198, in get
-    surf = image.load()
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\display\im.py", line 509, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "C:\VisualNovel\renpy-6.18.3-sdk\renpy\loader.py", line 438, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'robo_default_01.png'.
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 817, in __call__
+    what = what_pattern.replace("[what]", sub(what, translate=translate))
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\character.py", line 799, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\substitutions.py", line 229, in substitute
+    s = formatter.vformat(s, (), kwargs)
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 543, in vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 565, in _vformat
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 626, in get_field
+  File "/home/tom/ab/x64lucid-deps/install/lib/python2.7/string.py", line 585, in get_value
+KeyError: u'ikida'
 
-Windows-post2008Server-6.2.9200
-Ren'Py 6.18.3.761
+Windows-8-6.2.9200
+Ren'Py 6.99.1.329
 GreenT 0.0

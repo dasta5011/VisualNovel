@@ -6,7 +6,7 @@ Theme:  Underground crime, Contested Territory/Warring Factions, Avoid getting c
 
 Setting:  2020's, inner city, cyberpunk, throwback to 1950's detective work
 
-Protagonist:  Son/Daughter/grandon/grandaughter ? of someone central to the mafia family line of power. 
+Protagonist:  Son/Daughter/grandson/granddaughter ? of someone central to the mafia family line of power. 
 Few different arcs it could follow:
 -Doesn't want to be part of the family, but gets dragged in regardless.  Maybe he/she just wants to start a peaceful game company and make games all day.
 -Could want vengeance for a sibling that was murdered by rivals, could be driven by revenge and/or protect a younger sibling.
@@ -59,7 +59,7 @@ City Name/Location:  Kahira
 Family #1:
 Family Name: Ikida
 Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Black
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
 Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
@@ -70,9 +70,12 @@ _________________________________________________
 
 Family #2:
 Family Name: Jagura
-Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Family Head: Ilith Jagura, late 40's, still looks young, visually attractive. Often without patience and aggressive, she is considered dangerous by most that meet her. Took over when her mother past away. Mother of the student character.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Their color is red, most symbolized by the roses they often wear in their breast pockets, often heavily accented by black. Places a strong regard in fashion and appearances.  They also manage most arms dealing within the city.
+
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+
 Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
@@ -81,9 +84,9 @@ List Details of Each Character involved with this Family below::
 ______________________________________________________
 
 Family #3:
-Family Name: Kenshida
+Family Name: Kenshido
 Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): White
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
 Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
@@ -95,8 +98,11 @@ ______________________________________________________________
 Family #4:
 Family Name: O'MacLynn
 Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Name is obviously Irish, although you can only barely see in in their genetics anymore, they have mostly native DNA.  They still carry the name proudly and favor more Gothic and European architecture.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Name is obviously Irish, although you can only barely see in in their genetics anymore, they have mostly native DNA.  They still carry the name proudly and favor more Gothic and European architecture.  Their color is Gold.  Most notably this is seen in the teeth of the family head, who has a majority of his teeth gold plated. This can also be seen in the golden cross necklaces they usually wear and have as crests on their car.  They are responsible for most of the extortion and stolen goods trafficking inside the city.
+
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
+
 Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
