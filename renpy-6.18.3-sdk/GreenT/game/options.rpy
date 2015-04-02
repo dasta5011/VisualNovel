@@ -14,6 +14,7 @@ init -1 python hide:
     ## cheat using developer tools.
 
     config.developer = True
+    config.framerate = 60
 
     ## These control the width and height of the screen.
 
