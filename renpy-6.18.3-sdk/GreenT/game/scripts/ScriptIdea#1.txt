@@ -54,14 +54,14 @@ Thinking of having 4-5 (or more) mafia type families in this city.  All or most 
 
 Thinking right now, 5 Families
 
-City Name/Location:  
+City Name/Location:  Kahira
 
 Family #1:
-Family Name: 
+Family Name: Ikida
 Family Head: 
 Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power: 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
 -
@@ -69,11 +69,11 @@ List Details of Each Character involved with this Family below::
 _________________________________________________
 
 Family #2:
-Family Name: 
+Family Name: Jagura
 Family Head: 
 Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power: 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
 -
@@ -81,11 +81,11 @@ List Details of Each Character involved with this Family below::
 ______________________________________________________
 
 Family #3:
-Family Name: 
+Family Name: Kenshida
 Family Head: 
 Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power: 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
 -
@@ -93,26 +93,33 @@ List Details of Each Character involved with this Family below::
 ______________________________________________________________
 
 Family #4:
-Family Name: 
+Family Name: O'MacLynn
 Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Name is obviously Irish, although you can only barely see in in their genetics anymore, they have mostly native DNA.  They still carry the name proudly and favor more Gothic and European architecture.
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power: 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
 -
 
 ______________________________________________________________
 
-Family #5:
-Family Name: 
-Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): 
+Family #5: 
+Family Name: Akosnov
+Family Head: Kenchitsu Akosnov, the Father of the student in college. He took control when he deemed his father too old to safely manage family affairs.  He is physically fit, muscular, and well into his sixties.  He is a cunning and direct business man who has no issue declaring and exercising his power.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Similar to the O'MacLynn's, their origin is from a different country, but their lineage is now filled heavily with natives, but not as much as the O'MacLynn's.  They still keep strong ties with their counterparts back in their home country.  Their color is Blue, a dark navy blue, often seen in their blue suits, flat top caps, and their car colors. It represents style, class, and wealth.  They run a majority of the drug trade inside the city.
+
 Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power: 
+
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Father -> Grandfather (mainly by respect of the rest of the family) -> Mother -> Uncles 
 
 List Details of Each Character involved with this Family below::
--
+-Coranine Akosnov - Central character for this family, Student at the college.  At 19 years old she is in her second year.  She is quiet, reserved, and though she is sometimes too quiet to the point of where people think she's being rude, she's known to be very polite when she speaks up. Even her family has a hard time reading her, but she never causes trouble.
+-Kenchitse Akosnov, see above, father, family head.
+-Sonna Akosnov, mother, in her mid 40's. Seems disinterested with her husband, but vigorously handles any family affairs that come her way. Quick to anger, quick to forgive. 
+-Ichizo Akosnov, younger brother, still in high school. Often out at sporting events, very active, and popular. More interested in himself than family affairs.
+-Bruzgov Yeltsin, highly entrusted member the family employs. Big, tall, and intimidating. Isn't afraid to get his hands dirty and does what's asked of him. Often sent to escort/guard the kids and used in carrying out any shady business that needs to be done.
 
 ----------------------------------------------------------------
 
