@@ -74,13 +74,16 @@ Family Head: Ilith Jagura, late 40's, still looks young, visually attractive. Of
 
 Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Their color is red, most symbolized by the roses they often wear in their breast pockets, often heavily accented by black. Places a strong regard in fashion and appearances.  They also manage most arms dealing within the city.
 
-Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-
-Hierarchy of Power (from the understanding the the main character of the family (the student)): 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Mother -> Uncle -> Aunt -> Father
 
 List Details of Each Character involved with this Family below::
--
-
+-Mayu Jagura. Daughter of the family head. Student at the college. Age 22. Having spent a year or two internationally, she is currently in her 2nd year. Often seen as somewhat difficult by her family, she is brash, to the point, and offensively direct with her words. She imposes a presence of superiority and sophistication. She often worries about her brother and wonders if he's mad at her for taking his spot to power.
+-Ilith Jagura, mother, family head, see above.
+-Nori Jagura, father. While he is the father, he has very little power in the family. His marriage was more of a business advantage for Ilith, and he was forced to take her name to keep that family name the same. While generally a calm and gentle man, he is kept out of most family decisions and does what he can for his children.
+-Taro Jagura. Older brother. Since his family sticks to a matriarchy, he was passed up as heir to the family when his sister came along. He still has power over people lower than him, and is often put to work hustling merchandise and taking risks.
+-Aki Jagura. Little sister. 10 years old. Carefree, a bit spoiled, skewed moral compass.
+-Shin Kato. A man in his mid forties, yet still physically fit and mentally sharp. He spent many years as an hitman for hire and has military training. Often seen as the Jagura families right hand when it comes to exercising power.
+-Ado Kato. Shin's younger brother who has followed in his footsteps. While being a decade younger, he has worked hard to try and match his brothers impressive skill, and having earned his keep, he often follows lesser orders on behalf of his brother.
 ______________________________________________________
 
 Family #3:
@@ -97,17 +100,20 @@ ______________________________________________________________
 
 Family #4:
 Family Name: O'MacLynn
-Family Head: 
+Family Head: Conan O'MacLynn. Early 50's, most teeth plated in gold, lots of gold jewelry, typically has a cigar in his mouth, a little bit overweight, mostly bald on top. Took over when his father past away.
 
 Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Name is obviously Irish, although you can only barely see in in their genetics anymore, they have mostly native DNA.  They still carry the name proudly and favor more Gothic and European architecture.  Their color is Gold.  Most notably this is seen in the teeth of the family head, who has a majority of his teeth gold plated. This can also be seen in the golden cross necklaces they usually wear and have as crests on their car.  They are responsible for most of the extortion and stolen goods trafficking inside the city.
-
-Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
 
 Hierarchy of Power (from the understanding the the main character of the family (the student)): 
 
 List Details of Each Character involved with this Family below::
--
-
+-Fin O'MacLynn. Student at college. Age 23. Second year. Oldest son, therefor heir. On the shorter end, very muscular. Big into jewelry, often aggressive and pushy, sticks to his word.
+-Conan O'MacLynn. Father, head of family, see above.
+-Yoko O'MacLynn. Mother. Deceased.
+-Shane O'MacLynn. Middle brother. Age 20. First year student at college. Often seen as opposite to his older brother, wears glasses, skinny frame, taller than his older brother.  Typically much more reserved than his older brother, but is quick to anger and resort to violence.
+-Toran O'MacLynn. Youngest brother. Age 13. Was very much a mommy's boy until she died. Often quiet and doesn't talk much anymore.
+-Goro Nakada. An accomplished martial arts fighter with an unusually large frame, he has been working for the O'MacLynn family for several years now. In his early thirties, he still has a lot of energy and fighting ability left. Often the O'MacLynn's answer to many problems.
+-Nora Moran. An acquaintance of the family branch back in their homeland, she was brought over to be a maid/servant to take care of the kids after their mother passed. She has a strong bond with Toran, who originally rejected her. Often times, she is the only one he will talk to.
 ______________________________________________________________
 
 Family #5: 
@@ -116,8 +122,6 @@ Family Head: Kenchitsu Akosnov, the Father of the student in college. He took co
 
 Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Similar to the O'MacLynn's, their origin is from a different country, but their lineage is now filled heavily with natives, but not as much as the O'MacLynn's.  They still keep strong ties with their counterparts back in their home country.  Their color is Blue, a dark navy blue, often seen in their blue suits, flat top caps, and their car colors. It represents style, class, and wealth.  They run a majority of the drug trade inside the city.
 
-Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-
 Hierarchy of Power (from the understanding the the main character of the family (the student)): Father -> Grandfather (mainly by respect of the rest of the family) -> Mother -> Uncles 
 
 List Details of Each Character involved with this Family below::
@@ -125,7 +129,8 @@ List Details of Each Character involved with this Family below::
 -Kenchitse Akosnov, see above, father, family head.
 -Sonna Akosnov, mother, in her mid 40's. Seems disinterested with her husband, but vigorously handles any family affairs that come her way. Quick to anger, quick to forgive. 
 -Ichizo Akosnov, younger brother, still in high school. Often out at sporting events, very active, and popular. More interested in himself than family affairs.
--Bruzgov Yeltsin, highly entrusted member the family employs. Big, tall, and intimidating. Isn't afraid to get his hands dirty and does what's asked of him. Often sent to escort/guard the kids and used in carrying out any shady business that needs to be done.
+-Bruzgov Yeltsin, highly entrusted member the family employs. Big, tall, and intimidating. Isn't afraid to get his hands dirty and does what's asked of him. Often sent to escort/guard the kids and used in carrying out any shady business that needs to be done. Born in Russia, he is blond.
+-Katya Konev, a side-kick to Bruzgov, also from Russia and blond.  Often support of Bruzgov, she is works less for the honor, but more for the power.
 
 ----------------------------------------------------------------
 
@@ -134,3 +139,12 @@ Some ideas for the later half of the story:
 	-If we're open to the idea of adding a bit of magic/supernatural, each family could have part of a magical artifact or grimoire that they use.  Or maybe each item is mysteriously different.
 	-Could relate to the layout of the land, back a few or several generations, something that gave them power and influence and also a reason to fight each other for the other families mysterious item to have more wealth and power themselves.
 	-The families might even keep special beings/entities in the crypts beneath their houses, depending how far down the magical road we want to travel, we could have specters, ghosts, vampires, etc.  Maybe even a special pit filled with a sort of demonic/grotesque crypt worm that rapidly devours flesh (used for corpse disposal).
+    
+    -------------------------------------------
+    
+Ideas for prologue/overall story arch:  Way back when, the reason these families are here is because they were sent a mysterious letter from an unknown monk/priest/whatever promising them eternal life if they brought a legendary artifact with them, and to prove his words, he sent a small vial of a potion capable of curing any disease. When it worked, each family scoured their country or planet to find a legendary item to bring with them.
+
+http://en.wikipedia.org/wiki/List_of_mythological_objects#Stones
+
+Each family arrived as they were told, and brought many of their family with and settled down.  The monk/priest/whatever asked them to wait in a location with nothing more than a few farms.  When the time came, he sent for each family to meet him in the catacombs below the land. He had the family head of each family bring their legendary items with them into a room and had everyone else wait outside.  Once everyone was in, the entrance to the room collapsed and the rock itself sealed almost magically. The other family members went to get help, but when they got back the room had simply vanished and there was no sign of a cave in. After asking the locals, no one knew anything about any special room that they had spoke of, except they were told a certain monk/priest often conducted holy magic within the catacombs and apparently he had been for as long as they can remember, even the ones well into their 70's recalled him doing the same thing when they were children. Before the priest ever returned, the families had fallen to dramatic power struggles with the loss of their leaders and the story was soon lost either to murder, fire, forgetfulness. 
+However, the area flourished from favorable crops, weather, and the large influx of new people who had set up the basis of a town that would soon grow to be a large metropolis.  But, each family has some sort of recollection of what happened and in the confusion place blame on each other. They faced scrutiny and shame for losing precious worldly artifacts.  That was the ignition of the lingering turmoil that pits these families into a war they can barely remember having a reason.
