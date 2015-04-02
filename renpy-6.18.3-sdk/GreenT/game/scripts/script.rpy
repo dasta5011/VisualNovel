@@ -22,18 +22,25 @@ define fastdissolve = Dissolve(0.25)
 
 # The game starts here.
 label start:
+    #variables for game tracking
+    #family reputation
+    $ikida = 0
+    $jagura = 0
+    $kenshido = 0
+    $maclynn = 0
+    $akosnov = 0
     #keep this beginning section clean
     #used as a master jump sequences to control flow of the game
     call prologue
     call opening
     
-    label prologue:
+label prologue:
     #Dramatic Music - Opening - Goes over premise of the past/ancient times and explains in little detail how the families came to be
     #blackscreen keeps transitions between music tracks from overlapping
     scene blackscreen
     with slowdissolve
     play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
-    $ renpy.pause(0.70)
+    $renpy.pause(0.70)
     scene bg caveh
     with slowdissolve
     
@@ -46,11 +53,11 @@ label start:
     #more to add here obviously, and refine it
     return
     
-    label opening:
+label opening:
     scene blackscreen
     with slowdissolve
     play music "audio/bgm/Schmetterling.mp3" fadeout 1.0 fadein 1.0
-    $ renpy.pause(0.70)
+    $renpy.pause(0.70)
     scene storageshed
     with fastdissolve   #Trio_for_Piano_Cello_and_Clarinet.mp3
     n "Birthdays are suppose to be fun, right?"
@@ -79,10 +86,10 @@ label start:
     n "He's still crying.  I wonder if he'd laugh if I told him I envied him."
     n "I haven't been able to cry for eleven years as of today.  Not since that day."
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
-    
+    #all test after this
     show derek happy
-
     e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
+    n "you have [ikida] ikida point. test."
     n "Well, this should be interesting. D-Man never lets anyone see his Dotes lair."
     
     menu:
