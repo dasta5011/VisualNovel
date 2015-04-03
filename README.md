@@ -18,6 +18,9 @@ When saving different character poses/expressions, please use the following nami
 
 Background Art:  The game resolution will be 1280x720.  This is a 16:9 Aspect Ratio.  
 
+Tutorials/Guides: http://lemmasoft.renai.us/forums/viewtopic.php?p=90809#p90809
+                  http://lemmasoft.renai.us/forums/viewtopic.php?f=26&t=5547
+
 -----------------------------------------------------
 
 Audio: When making music or SFX, please save the file to be used in game as an .OGG where possible.  Also, please save the editable file with separate audio tracks in the appropriate folder.   VisualNovel\renpy-6.18.3-sdk\GreenT\game\audio\audio_Raw
