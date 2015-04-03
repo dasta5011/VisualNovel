@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/scripts/script.rpy", line 28: expected statement.
-    jagura = 0
-           ^
+File "game/scripts/script.rpy", line 19: expected 'comma or end of line' not found.
+    hide blood_splat_01_pulse
+    ^
 
 Ren'Py Version: Ren'Py 6.99.1.329
