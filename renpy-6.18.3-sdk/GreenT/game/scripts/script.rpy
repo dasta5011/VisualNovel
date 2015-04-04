@@ -1,30 +1,4 @@
-﻿# Declare characters used by this game.
-#character n is for narrator, and represents the characters internal monologue and scene descriptions
-#character uk is for unknown
-define n = Character(' ', color="#c8ffc8")
-define uk = Character('???', color="#c8ffc8")
-
-##tests delete characters after this
-define e = Character('Derek', color="#c8ffc8")
-define robo = Character('Robot', color="#c8ffc8")
-
-#define images
-image blackscreen = "#000000"
-image bg caveh = "images/backgrounds/cave_hallway.png"
-image storageshed = "images/backgrounds/storage_shed.png"
-
-image blood_splat_01 = "images/effects/blood_splat_01.png"
-#images below this are test
-image bg cave = "images/backgrounds/cave.jpg"
-image derek happy = "images/characters/lucy_happy.png"
-image derek mad = "images/characters/lucy_mad.png"
-image robo = "images/characters/robo_default_01.png"
-
-#Transitions
-define slowdissolve = Dissolve(1.0)
-define fastdissolve = Dissolve(0.25)
-
-# The game starts here.
+﻿# The game starts here.
 label start:
     #variables for game tracking
     #family reputation
@@ -37,6 +11,10 @@ label start:
     #used as a master jump sequences to control flow of the game
     call prologue
     call opening
+    
+    call day1_reflection
+    
+    call test
     
 label prologue:
     #Dramatic Music - Opening - Goes over premise of the past/ancient times and explains in little detail how the families came to be
@@ -77,6 +55,7 @@ label opening:
     hide blood_splat_01 at truecenter with slowdissolve
     n "{color=#f00}{b}*crack* !! *smack* *slam* !!{/b}{/color}"
     n "Especially your 21st, right?"
+    stop sound fadeout 0.25
     n "Am I suppose to be enjoying this?  Is this fun?"
     show blood_splat_01 at truecenter with Dissolve(0.4):
         alpha 0.3
@@ -89,6 +68,7 @@ label opening:
     hide blood_splat_01 at truecenter with slowdissolve
     n "{color=#f00}{b}*crack* *scream* !!!!!!!!!!!!!!!!!!!!!{/b}{/color}"
     n "Initiation.  Initiation is what they call it."
+    stop sound fadeout 0.25
     n "{color=#f00}{b}*more screaming*{/b}{/color}"
     n "\"We're going to make a man of you today.  You get to help in the business today.  Congratulations!\""
     n "That's what they told me.  Then gave me this private shed and this snitch.  Something about leaking information to our enemies."
@@ -103,6 +83,7 @@ label opening:
     hide blood_splat_01 at truecenter with slowdissolve
     n "{color=#f00}{b}*crack* !! *smack* *slam* !!{/b}{/color}"
     n "They brought all sorts of stuff.  Guns, bats, hammers, knives, and chains were just the basics.  They had more.  Gasoline, car batteries, pliers..shit, they even had a fish tank with piranhas. But that's my family, we never skimp on an expense."
+    stop sound fadeout 0.25
     n "Speaking of birthdays, aren't your friends suppose to be there to celebrate with you?"
     n "I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."    
     #cut to image showing man with the shit beat out of him
@@ -120,6 +101,7 @@ label opening:
     hide blood_splat_01 at truecenter with slowdissolve
     n "{color=#f00}{b}*crack* !! *smack* *slam* !!{/b}{/color}" 
     n "This may look like I'm being a bad friend, but in reality, I'm helping him right now.  If it was anyone else taking care of this, they'd hurt him a lot worse and make sure he didn't survive.  I really hope he understands I'm doing this for him."
+    stop sound fadeout 0.25
     n "..."
     n "He's crying.  How pitiful.  By my calculations, this will have to continue for another ten minutes before everyone is satisfied."
     show blood_splat_01 at truecenter with Dissolve(0.1):
@@ -134,10 +116,26 @@ label opening:
     n "{color=#f00}{b}*crack* !! *smack* *slam* !!{/b}{/color}"
     n "He's still crying.  I wonder if he'd laugh if I told him I envied him."
     n "I haven't been able to cry for eleven years as of today.  Not since that day."
+    stop sound fadeout 0.25
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
-    #all test after this
+    return
     
+    #add a scene where he goes and hangs out with his friends at a cafe/diner/arcade/whatever before this
+label day1_reflection:
+    #add a fitting music track
+    scene ikidahome with slowdissolve
+    show aido def at center
+    aido "I heard you did an incomplete job of dealing with your initiation present, Koji."
+    koji "I thought I was able to treat my {i}presents{/i} however I wanted?"
+    show aido dis
+    aido "That boy may have just well ruined the peaceful life I've built you, and after all these years of keeping you off the radar."
+    koji "That may be, grandfather.  But, what's done is done, and killing him would have only caused more trouble for you, the family, and myself."
+    aido "Hmmf."
+    koji "And besides, I'd like to keep him as a friend...if he ever comes back to school that is."
+    return
     
+    #all test after this    
+label test:
     show derek happy
     e "I'll show you my new Dotes lair, man, but so fucking help me, if you tell anyone..."
     n "you have [ikida] ikida point. test."
