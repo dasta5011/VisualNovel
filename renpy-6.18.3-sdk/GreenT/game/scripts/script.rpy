@@ -151,7 +151,9 @@ label day1_meetup:
     return
 
 label day1_reflection:
-    #add a fitting music track
+    scene blackscreen with slowdissolve
+    play music "audio/bgm/mourning_song.ogg" fadeout 1.0 fadein 1.0
+    $renpy.pause(0.70)
     scene ikidahome with slowdissolve
     show aido def at center
     aido "I heard you did an incomplete job of dealing with your gift, Koji."
