@@ -58,14 +58,21 @@ City Name/Location:  Kahira
 
 Family #1:
 Family Name: Ikida
-Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Black
-Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power (from the understanding the the main character of the family (the student)): 
+Family Head: Aido Ikida, grandpa to protagonist, and family head. Age 71. His son and daughter in law died several years ago and he has kept the protagonist a secret to protect him too. While often kind, friendly, and typically cheerful, when it comes to business and family matters he is calculated, harsh, and demanding.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Black, black ties, black cars, black shoes, black socks.  Specialty in blackmail, and run most of the underground and illegal gambling inside the city.
+ 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Grandpa -> Older Sister
 
 List Details of Each Character involved with this Family below::
--
-
+-Koji Ikida (fake name: Tasura), protagonist. Age 21, in college. Attends school under a fake last name, in fact, his existence has been secret from public eye since his birth to protect him. The other families don't know he is part of the Ikida family. He leaves out a back entrance to his home, and walks to school. He is friends with Mayu Jagura, but that's because she doesn't know his real identity. 
+-Aido Ikida, grandpa, family head, see above.
+-Yukino Ikida, older sister. Age 23. Third year college student. Often seen as the next family head (since her brothers existence has been kept secret), she plays her role of next in line well by showing strength and determination in her personality. She does not want her brother to have to become the next family head, so she has done whatever is possible to help hide his true identity, even pretending she doesn't know him at school.
+-Saku Ikida, younger sister. Deceased at age 15. (3 years ago)
+-Kana Ikida, mother, deceased.
+-Masachi Ikida, father, deceased.
+-Denji Yamazaki. Best friend of Masachi Ikida when he was alive. He has continued his work as the right hand man of the Ikida family.
+-Haruka Matsu. Denji's fiance, also works for the Ikida family as escort/security, ex-police officer.
 _________________________________________________
 
 Family #2:
@@ -88,14 +95,18 @@ ______________________________________________________
 
 Family #3:
 Family Name: Kenshido
-Family Head: 
-Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): White
-Notable Characters (immediate family members, high ranking/important members/hirelings, etc.): 
-Hierarchy of Power (from the understanding the the main character of the family (the student)): 
+Family Head: Masaru Kenshido, mid fifties, a physically frail and skinny man, fond of a good joke, reputation for a sadistic streak.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): White, as often seen in their clothing and cars. They control most of the human and sex trafficking within the city.
+
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Father -> Mother -> Tatsu
 
 List Details of Each Character involved with this Family below::
--
-
+-Tatsu Kenshido. Age 20, student in college. Next in line to power. Glasses, often quiet but concise. Has a weird fancy for knives, somewhat erratic and hard to read.
+-Masaru Kenshido, father, family head, see above.
+-Chaka Kenshido, mother, places her family before everything, no regard for anyone else other than her family, good housewife.
+-Emi Ueda, aunt (mothers side), also right hand of the Kenshido family. Loud, brash, and military trained.
+-Taizo Kikuchi, butler/house servant, gets along well with Tatsu who is usually too difficult to speak to for most. Well trained in combat if necessary.
 ______________________________________________________________
 
 Family #4:
@@ -126,7 +137,7 @@ Hierarchy of Power (from the understanding the the main character of the family 
 
 List Details of Each Character involved with this Family below::
 -Coranine Akosnov - Central character for this family, Student at the college.  At 19 years old she is in her second year.  She is quiet, reserved, and though she is sometimes too quiet to the point of where people think she's being rude, she's known to be very polite when she speaks up. Even her family has a hard time reading her, but she never causes trouble.
--Kenchitse Akosnov, see above, father, family head.
+-Kenchitsu Akosnov, see above, father, family head.
 -Sonna Akosnov, mother, in her mid 40's. Seems disinterested with her husband, but vigorously handles any family affairs that come her way. Quick to anger, quick to forgive. 
 -Ichizo Akosnov, younger brother, still in high school. Often out at sporting events, very active, and popular. More interested in himself than family affairs.
 -Bruzgov Yeltsin, highly entrusted member the family employs. Big, tall, and intimidating. Isn't afraid to get his hands dirty and does what's asked of him. Often sent to escort/guard the kids and used in carrying out any shady business that needs to be done. Born in Russia, he is blond.

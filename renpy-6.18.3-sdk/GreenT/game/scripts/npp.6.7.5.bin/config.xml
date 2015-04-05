@@ -86,7 +86,7 @@
         <GUIConfig name="ScintillaGlobalSettings" enableMultiSelection="no" />
         <GUIConfig name="openSaveDir" value="0" defaultDirPath="" />
         <GUIConfig name="titleBar" short="no" />
-        <GUIConfig name="stylerTheme" path="E:\Work\VisualNovel\renpy-6.18.3-sdk\GreenT\game\scripts\npp.6.7.5.bin\stylers.xml" />
+        <GUIConfig name="stylerTheme" path="C:\VisualNovel\renpy-6.18.3-sdk\GreenT\game\scripts\npp.6.7.5.bin\stylers.xml" />
         <GUIConfig name="delimiterSelection" leftmostDelimiter="40" rightmostDelimiter="41" delimiterSelectionOnEntireDocument="no" />
         <GUIConfig name="MISC" fileSwitcherWithoutExtColumn="no" backSlashIsEscapeCharacterForSql="yes" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="200">
