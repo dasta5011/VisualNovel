@@ -11,7 +11,7 @@ label start:
     #used as a master jump sequences to control flow of the game
     call prologue
     call opening
-    
+    call day1_meetup
     call day1_reflection
     
     call test
@@ -87,9 +87,8 @@ label opening:
     n "Speaking of birthdays, aren't your friends suppose to be there to celebrate with you?"
     n "I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."    
     #cut to image showing man with the shit beat out of him
-    show robo at center    
-    #add name
-    n "<friends name>.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
+    show hiro def at center
+    n "Hiroshi Omura.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
     show blood_splat_01 at truecenter with Dissolve(0.2):
         alpha 0.7
     $renpy.pause(0.25)
@@ -120,18 +119,49 @@ label opening:
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
     return
     
-    #add a scene where he goes and hangs out with his friends at a cafe/diner/arcade/whatever before this
+label day1_meetup:
+    scene blackscreen with slowdissolve
+    play music "audio/bgm/easy_lemon.ogg" fadeout 1.0 fadein 1.0
+    $renpy.pause(0.70)
+    scene bg sidewalk1 with slowdissolve    
+    n "That incident was over three hours ago, but I still feel sick."
+    n "At the time I was so focused on doing what I had to do that I didn't notice, but I've thrown up three times after it has sunk in."
+    n "That was Hiroshi. And I nearly killed him."
+    n "I know I broke at least a bone or two. The sound of it cracking still rings in my ears."
+    n "I'm sweating. I feel cold. My breathing is off."
+    n "I can't think about this anymore. I need a distraction."
+    mayu "I told you that was Koji. Hey! Hey, Koji!"
+    n "The blood washed off well enough, but there was so much...it felt like too much."
+    n "No, I need to stop this. I just need to focus on the positive. Hiroshi is alive. Hiroshi is alive because of me."
+    show mayu def at center
+    mayu "Kooooooo-Jiiiiiiii."
+    n "Lost in my own head, I nearly crashed right into someone who had just run in front of me."
+    koji "Mayu! Where did you come from?"
+    mayu "Are you ok, Koji? You look pale. And you totally ignored me while we were trying to get your attention!"
+    koji "\"We?\""
+    show mayu smile1 at center with moveinbottom
+    $renpy.pause(0.15)
+    show kaori def at left with moveinleft
+    $renpy.pause(0.25)
+    show toshi def at right with moveinright
+    mayu "Kaori and Toshi wanted to come get food over here, then we saw you on our way."
+    show mayu def at center
+    mayu "So, will you join us or will we have to drag you by force?"
+    
+    return
+
 label day1_reflection:
     #add a fitting music track
     scene ikidahome with slowdissolve
     show aido def at center
-    aido "I heard you did an incomplete job of dealing with your initiation present, Koji."
+    aido "I heard you did an incomplete job of dealing with your gift, Koji."
     koji "I thought I was able to treat my {i}presents{/i} however I wanted?"
     show aido dis
     aido "That boy may have just well ruined the peaceful life I've built you, and after all these years of keeping you off the radar."
     koji "That may be, grandfather.  But, what's done is done, and killing him would have only caused more trouble for you, the family, and myself."
     aido "Hmmf."
     koji "And besides, I'd like to keep him as a friend...if he ever comes back to school that is."
+    aido "Koji, you're free to have your own friends, but do keep them away from the house, will you? I'd hate having to talk to the police about missing persons."
     return
     
     #all test after this    
@@ -167,17 +197,15 @@ label test:
     with slowdissolve
     show derek mad at left
     with move
-    show robo at right
+    show hiro def at right
     
     e "I bet it's that fucker, Greg."
-    show robo at offscreenright
+    show hiro def at offscreenright
     with move
     e "Get back here!  Gnnh..!"
     show derek mad at offscreenright
     with move
     n "And with that, Derek took off down the tunnel with a murderous look in his eyes."
     n "I wonder if there'll be cake..."
-    
-    jump start2
 
     return
