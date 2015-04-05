@@ -23,7 +23,7 @@ label prologue:
     with slowdissolve
     play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
     $renpy.pause(0.70)
-    scene bg caveh
+    scene caveh
     with slowdissolve    
     n "{i}Several generations ago, when this land was barren, there came to be rumors of a great power lying within the land.{/i}"
     n "{i}Following the call of the promise of untold power, it drew in people from all corners of the world.{/i}"
@@ -123,7 +123,7 @@ label day1_meetup:
     scene blackscreen with slowdissolve
     play music "audio/bgm/easy_lemon.ogg" fadeout 1.0 fadein 1.0
     $renpy.pause(0.70)
-    scene bg sidewalk1 with slowdissolve    
+    scene sidewalk1 with slowdissolve    
     n "That incident was over three hours ago, but I still feel sick."
     n "At the time I was so focused on doing what I had to do that I didn't notice, but I've thrown up three times after it has sunk in."
     n "That was Hiroshi. And I nearly killed him."

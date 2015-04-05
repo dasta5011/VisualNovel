@@ -1,7 +1,7 @@
 #define backgrounds
 image blackscreen = "#000000"
-image bg caveh = "images/backgrounds/cave_hallway.png"
-image bg sidewalk1 = "images/backgrounds/sidewalk_01.png"
+image caveh = "images/backgrounds/cave_hallway.png"
+image sidewalk1 = "images/backgrounds/sidewalk_01.png"
 
 ##ikida family
 image storageshed = "images/backgrounds/storage_shed.png"
@@ -14,13 +14,13 @@ image aido def = "images/characters/Comic3_001.png"
 image aido dis = "images/characters/lucy_mad.png"
 
 #Jagura Family
-image mayu def = "images/characters/jagura_mayu/smile.png"
-image mayu smile1 = "images/characters/jagura_mayu/smile1.png"
+image mayu def = "images/characters/mayu/default1.png"
+image mayu smile1 = "images/characters/mayu/smile1.png"
 
 #other characters
-image hiro def = "images/characters/omura_hiroshi/hiro_def_01.png"
-image kaori def = "images/characters/kaori/kaori_def_01.png"
-image toshi def = "images/characters/toshi/toshi_def_01.png"
+image hiro def = "images/characters/hiroshi/default1.png"
+image kaori def = "images/characters/kaori/default1.png"
+image toshi def = "images/characters/toshi/default1.png"
 
 #define effects
 image blood_splat_01 = "images/effects/blood_splat_01.png"
