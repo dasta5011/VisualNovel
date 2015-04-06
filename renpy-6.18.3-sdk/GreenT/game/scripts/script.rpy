@@ -12,6 +12,8 @@ label start:
     call prologue
     call opening
     call day1_meetup
+    
+    call day1_gunshop
     call day1_reflection
     
     call test
@@ -36,12 +38,10 @@ label prologue:
     return
     
 label opening:
-    scene blackscreen
-    with slowdissolve
+    scene blackscreen with slowdissolve
     play music "audio/bgm/Schmetterling.mp3" fadeout 1.0 fadein 1.0
     $renpy.pause(0.70)
-    scene storageshed
-    with fastdissolve   #Trio_for_Piano_Cello_and_Clarinet.mp3
+    scene storageshed with fastdissolve
     n "Birthdays are suppose to be fun, right?"
     n "That's what I was always told."
     show blood_splat_01 at truecenter with Dissolve(0.5):
@@ -114,7 +114,7 @@ label opening:
     hide blood_splat_01 at truecenter with slowdissolve
     n "{color=#f00}{b}*crack* !! *smack* *slam* !!{/b}{/color}"
     n "He's still crying.  I wonder if he'd laugh if I told him I envied him."
-    n "I haven't been able to cry for eleven years as of today.  Not since that day."
+    n "I haven't been able to cry for six years as of today.  Not since that day."
     stop sound fadeout 0.25
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
     return
@@ -140,27 +140,45 @@ label day1_meetup:
     mayu "Are you ok, Koji? You look pale. And you totally ignored me while we were trying to get your attention!"
     koji "\"We?\""
     show mayu smile at center with moveinbottom
-    $renpy.pause(0.15)
-    show kaori def at left with moveinleft
-    $renpy.pause(0.2)
-    show toshi def at right with moveinright
+    show kaori def at mymoveinleft(0.45, 0.2, 1.0)
+    show toshi def at mymoveinright(0.45, 0.8, 1.0)
     mayu "Kaori and Toshi wanted to come get food over here, then we saw you on our way."
     show mayu def at center
     mayu "So, will you join us or will we have to drag you by force?"
     koji "Actually, I was just thinking about how to spend my afternoon, so this sounds great!"
     show mayu smile at center
     mayu "Awesome, we'll start with lunch at the cafe over here then shopping!"
-    
+    hide mayu with Dissolve(0.7)
+    hide kaori with Dissolve(0.7)
+    hide toshi with Dissolve(0.7)
     n "This should be exactly what I need. But..."
     n "I don't know if I should be around Mayu anytime soon. Mayu Jagura is the daughter of the infamous Jagura family, one of my families direct rivals."
     n "The Jagura's run most of the arms dealing in Kahira city, legal and illegal. And we still don't know who Hiroshi was working for, but with the way sensitive information like this travels, it'll be well known within the week by four other families."
     n "Which means I'll have to give up my friendship with Mayu. If I stay around too long, she may very well be the one who kills me when we're alone."
     n "But today should be fine. Anything to get Hiroshi's screams out of my head."
+    show kaori def at mymoveinleft(0.5, 0.2, 1.0)
+    kaori "Mayu sure is in high spirits today, huh? She called us up and told us to get ready in ten minutes before she'd be there to pick us up and take us shopping."
+    show toshi def at mymoveinright(0.5, 0.8, 1.0)
+    toshi "She even insisted she'd pay for everything. The only thing I don't like is her driver. He always looks like he's ready for trouble."
+    koji "Hmm, well he's not here anymore, so just enjoy it."
+    koji "Hey, Mayu?"
+    show mayu surprised
+    mayu "Hmm?"
+    koji "Did something happen to put you in such a generous mood today?"
+    show mayu smile
+    mayu "My father arranged to get special present today. That's where we're going shopping."
+    koji "That's right, you've said he's usually out on business, right?"
+    mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever."
+    toshi "Must be nice being that rich."
     
-    #either next or eventually cut to inside a gun store which is what she meant by shopping
+    return
     
-    #most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
-    
+#most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
+label day1_gunshop:
+    play music "audio/bgm/marty_plant.ogg" fadeout 1.0 fadein 0.5
+    scene gunshop with slowdissolve
+    #at some point when she's getting a gun, she gets Koji something cheap (maybe a pocket knife or something), he says something about thanks for the birthday present, then she finds out its his birthday and gets him a gun.
+    n "test"
     return
 
 label day1_reflection:

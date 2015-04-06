@@ -25,7 +25,7 @@ init -1 python hide:
     ## running in a window.
 
     config.window_title = u"GreenT"
-
+    
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "GreenT"

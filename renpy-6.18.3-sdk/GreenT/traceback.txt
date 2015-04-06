@@ -1,19 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/script.rpy", line 39, in script call
-    call opening
-  File "game/scripts/script.rpy", line 71, in script
-    show blood_splat_01 at truecenter with Dissolve(0.5):
-IOError: Couldn't find file 'audio/effects/heartbeat_01.ogg'.
+  File "game/scripts/script.rpy", line 14, in script call
+    call day1_meetup
+  File "game/scripts/script.rpy", line 153, in script
+    hide mayu with Dissolve(0.7)
+Exception: Parameter 'new_widget' is not known by ATL Transform.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/script.rpy", line 39, in script call
-    call opening
-  File "game/scripts/script.rpy", line 71, in script
-    show blood_splat_01 at truecenter with Dissolve(0.5):
+  File "game/scripts/script.rpy", line 14, in script call
+    call day1_meetup
+  File "game/scripts/script.rpy", line 153, in script
+    hide mayu with Dissolve(0.7)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1236, in execute
     renpy.exports.with_statement(trans, paired)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\exports.py", line 1263, in with_statement
@@ -22,19 +22,11 @@ Full traceback:
     clear=clear)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2243, in interact
     repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2522, in interact_core
-    renpy.audio.audio.interact()
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 792, in interact
-    periodic()
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 726, in periodic
-    c.periodic()
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 342, in periodic
-    topf = load(self.file_prefix + topq.filename + self.file_suffix)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\audio\audio.py", line 76, in load
-    rv = renpy.loader.load(fn)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\loader.py", line 450, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'audio/effects/heartbeat_01.ogg'.
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2450, in interact_core
+    new_widget=layers_root)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\atl.py", line 384, in __call__
+    raise Exception('Parameter %r is not known by ATL Transform.' % k)
+Exception: Parameter 'new_widget' is not known by ATL Transform.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.1.329
