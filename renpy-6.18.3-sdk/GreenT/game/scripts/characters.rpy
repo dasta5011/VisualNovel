@@ -52,6 +52,7 @@ define katya = Character('Katya Konev', color="#346295")
 define hiro = Character('Hiroshi Omura', color="#64c533")
 define kaori = Character('Kaori', color="#64c533")
 define toshi = Character('Toshi', color="#64c533")
+define shop = Character('Shopkeep', color="#64c533")
 
 ##tests delete characters after this
 define e = Character('Derek', color="#c8ffc8")

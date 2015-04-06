@@ -167,7 +167,7 @@ label day1_meetup:
     koji "Did something happen to put you in such a generous mood today?"
     show mayu smile
     mayu "My father arranged to get special present today. That's where we're going shopping."
-    koji "That's right, you've said he's usually out on business, right?"
+    koji "That's right, you've said he's usually out on business?"
     mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever."
     toshi "Must be nice being that rich."
     
@@ -185,34 +185,54 @@ label day1_gunshop:
     n "Uh oh. She looks shocked."
     mayu "It's your birthday?!"
     koji "Yeah, but don't be so loud about it."
-    mayu "Shut up. We're picking you out something nicer."
+    mayu "Shut up. We're picking you out something better."
     mayu "See these handguns? Pick one out."
     koji "Oh, I can't do that. Really. These are all way more expensive that that knife was."
     mayu "Do it or I'll pick one out for you. And just maybe it'll be pink."
     
     #add a choice in here somewhere, about letting her pick or choosing your own with a few options maybe.
-    n "We were just about to leave the store after paying, then.."
+    shop "No worries, Mayu. Your father said whatever you want is fine. You sure you trust this other guy with a firearm though?"
+    mayu "It's fine. It's his birthday, and if he can't figure it out I can bring him back to use the range."
+    shop "More business is always better I say. Take care on your way back now, and if you get stopped by the police-"
+    mayu "I know, I know, you didn't sell us anything."
+    
+    mayu "Actually, Koji, would you like to use the range real quick just to see how you do?"
+    koji "I don't know, and we have Kaori and Toshi here who--"
+    kaori "It's alright, we're actually going to go across the street and get some ice cream."
+    toshi "Yeah, you two have fun. I don't think this environment is really for me anyways. But Kaori, onward to ice cream."
+    
+    #add range scene where Mayu shows Koji how to shoot
+    #end it with her sticking the loaded gun into his waste line
+    scene gunrange with wipeleft
+    n "For being such a normal looking and average shop out front, the range here was extravagent. There was at least a dozen lanes, a dedicated break room attached, and enough ammo boxes to fill a van. I guess this really is a Jagura business."
+    
+    scene gunshop with slowdissolve
+    toshi "Ah, perfect timing. We just got back. All set?"
+    
+    n "We were just about to leave, then.."
     n "*ring* *buzz* *ring* *buzz*"
     mayu "Oh sorry, phone call. I'll be right back."
-    #add more intense/emergency music track 
     play music "audio/bgm/the_complex.ogg" fadeout 1.0 fadein 1.0
     n "Mayu stepped away to the other end of the store. I have a bad feeling about this."
-    n "If news got around already. If she finds out I'm not really Koji Tasura, but really Koji Ikida, the Ikida successor thought to be dead, I'll really be dead."
+    n "If news got around already. If she finds out I'm not really Koji Tasura, but really Koji Ikida, the Ikida successor thought to be deceased, I'll really be dead."
     n "She takes a look back at me while listening on the phone."
     n "Our eyes meet."
     n "Fuck. This is it, isn't it?"
-    n "It's loaded with bullets in the magazine. I just have to chamber it. That would let me be able to react to her attack in just a few seconds.  My hand is gripping the handle so tightly it hurts."
+    n "It's already loaded with bullets in the magazine. I just have to chamber it. That would let me be able to react to her attack in just a few seconds."
     n "Wait. What am I thinking? It's probably just a normal phone call. She was just looking over here to see if I'm ok waiting for her."
     n "Her expression changed. Not fully, just her eyes. It's hard to tell. It was so fast. Does she know?"
     n "Does she know I'm really Koji Ikida, one of her families blood rivals? Worse yet, that I've been deceiving her all this time? What if she thinks our entire friendship was just be manipulating her?!"
     n "Fucking shit. She's hanging up the call. I need to be ready. Or do I deserve whatever happens? Even though I spared Hiroshi...people have died protecting my identity. And here I am, about to be executed for it. She'll probably have to kill Kaori and Toshi too."
+    n "I'm some Kaori, Toshi. I guess you got inadvertantly dragged into this too."
     n "This shop is run by associates of her family. They'll cover it all up. I'm in their hunting grounds right now."
     n "Damnit, she's already right in front of me."
     koji "Eh, ummm...ready to go?"
     n "She looks at me with a complexed expression before speaking."
+    play music "audio/bgm/marty_plant.ogg"
     mayu "It turns out I need to go. Um, I'm sorry everyone that I won't be able to give you rides back to your houses even though I drove you out here. Excuse me!"
     n "She turned back to me just before leaving the store."
     mayu "Happy birthday, Koji. I hope you like your present."
+    koji "..Whew."
     n "And with that she quickly disappeared, as should I. I quickly say my goodbyes and head the way opposite of her."
     
     return

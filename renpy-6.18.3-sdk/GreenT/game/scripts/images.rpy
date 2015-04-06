@@ -3,6 +3,7 @@ image blackscreen = "#000000"
 image caveh = "images/backgrounds/cave_hallway.png"
 image sidewalk1 = "images/backgrounds/sidewalk_01.png"
 image gunshop = "images/backgrounds/gunshop.png"
+image gunrange ="images/backgrounds/gunrange.png"
 
 ##ikida family
 image storageshed = "images/backgrounds/storage_shed.png"

@@ -1,32 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/script.rpy", line 14, in script call
-    call day1_meetup
-  File "game/scripts/script.rpy", line 153, in script
-    hide mayu with Dissolve(0.7)
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "game/scripts/script.rpy", line 16, in script call
+    call day1_gunshop
+  File "game/scripts/script.rpy", line 201, in script
+    karoi "It's alright, we're actually going to go across the street and get some ice cream."
+Exception: Sayer 'karoi' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/script.rpy", line 14, in script call
-    call day1_meetup
-  File "game/scripts/script.rpy", line 153, in script
-    hide mayu with Dissolve(0.7)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1236, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\exports.py", line 1263, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 1827, in do_with
-    clear=clear)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2243, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\display\core.py", line 2450, in interact_core
-    new_widget=layers_root)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\atl.py", line 384, in __call__
-    raise Exception('Parameter %r is not known by ATL Transform.' % k)
-Exception: Parameter 'new_widget' is not known by ATL Transform.
+  File "game/scripts/script.rpy", line 16, in script call
+    call day1_gunshop
+  File "game/scripts/script.rpy", line 201, in script
+    karoi "It's alright, we're actually going to go across the street and get some ice cream."
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 573, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 491, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'karoi' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.1.329
