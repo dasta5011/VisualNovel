@@ -139,14 +139,27 @@ label day1_meetup:
     koji "Mayu! Where did you come from?"
     mayu "Are you ok, Koji? You look pale. And you totally ignored me while we were trying to get your attention!"
     koji "\"We?\""
-    show mayu smile1 at center with moveinbottom
+    show mayu smile at center with moveinbottom
     $renpy.pause(0.15)
     show kaori def at left with moveinleft
-    $renpy.pause(0.25)
+    $renpy.pause(0.2)
     show toshi def at right with moveinright
     mayu "Kaori and Toshi wanted to come get food over here, then we saw you on our way."
     show mayu def at center
     mayu "So, will you join us or will we have to drag you by force?"
+    koji "Actually, I was just thinking about how to spend my afternoon, so this sounds great!"
+    show mayu smile at center
+    mayu "Awesome, we'll start with lunch at the cafe over here then shopping!"
+    
+    n "This should be exactly what I need. But..."
+    n "I don't know if I should be around Mayu anytime soon. Mayu Jagura is the daughter of the infamous Jagura family, one of my families direct rivals."
+    n "The Jagura's run most of the arms dealing in Kahira city, legal and illegal. And we still don't know who Hiroshi was working for, but with the way sensitive information like this travels, it'll be well known within the week by four other families."
+    n "Which means I'll have to give up my friendship with Mayu. If I stay around too long, she may very well be the one who kills me when we're alone."
+    n "But today should be fine. Anything to get Hiroshi's screams out of my head."
+    
+    #either next or eventually cut to inside a gun store which is what she meant by shopping
+    
+    #most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
     
     return
 

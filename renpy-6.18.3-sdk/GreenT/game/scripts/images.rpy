@@ -14,13 +14,13 @@ image aido def = "images/characters/Comic3_001.png"
 image aido dis = "images/characters/lucy_mad.png"
 
 #Jagura Family
-image mayu def = "images/characters/mayu/default1.png"
-image mayu smile1 = "images/characters/mayu/smile1.png"
+image mayu def = "images/characters/mayu/default.png"
+image mayu smile = "images/characters/mayu/smile.png"
 
 #other characters
-image hiro def = "images/characters/hiroshi/default1.png"
-image kaori def = "images/characters/kaori/default1.png"
-image toshi def = "images/characters/toshi/default1.png"
+image hiro def = "images/characters/hiroshi/default.png"
+image kaori def = "images/characters/kaori/default.png"
+image toshi def = "images/characters/toshi/default.png"
 
 #define effects
 image blood_splat_01 = "images/effects/blood_splat_01.png"
