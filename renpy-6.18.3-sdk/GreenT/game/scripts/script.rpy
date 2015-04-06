@@ -21,16 +21,16 @@ label start:
 label prologue:
     #Dramatic Music - Opening - Goes over premise of the past/ancient times and explains in little detail how the families came to be
     #blackscreen keeps transitions between music tracks from overlapping
-    scene blackscreen
-    with slowdissolve
     play music "audio/bgm/Virtutes_Vocis.mp3" fadeout 1.0 fadein 1.0
+    scene blackscreen with slowdissolve
     $renpy.pause(0.70)
-    scene caveh
-    with slowdissolve    
+    scene caveh with slowdissolve
     n "{i}Several generations ago, when this land was barren, there came to be rumors of a great power lying within the land.{/i}"
-    n "{i}Following the call of the promise of untold power, it drew in people from all corners of the world.{/i}"
-    n "{i}In the covers of secrecy, the peoples greatest treasures vanished.{/i}"
-    n "{i}It didn't take long for feuds to break out, and before long, it turned into war.{/i}"
+    n "{i}\"Great power requires great sacrifice.\"{/i}"
+    n "{i}Upon hearing that, several powerful and wealthy families scoured their countries and the globe for a suitable sacrifice.{/i}"
+    n "{i}Following the call of the promise of untold power, they came to the rumored place of power.{/i}"
+    n "{i}In the covers of secrecy and deception, the peoples greatest treasures vanished.{/i}"
+    n "{i}It didn't take long for blame to spread, feuds to break out, and before long, it turned into war.{/i}"
     n "{i}What happened in this days has been lost to history, but the consequences remain.{/i}"
     n "{i}Five lineages who fought to recover their greatest loss and to discover the unknown treasure still reside in that very land today.{/i}"
     n "{i}Only in their bloody and violent pasts can the answers be found.{/i}"
@@ -38,8 +38,8 @@ label prologue:
     return
     
 label opening:
-    scene blackscreen with slowdissolve
     play music "audio/bgm/Schmetterling.mp3" fadeout 1.0 fadein 1.0
+    scene blackscreen with slowdissolve
     $renpy.pause(0.70)
     scene storageshed with fastdissolve
     n "Birthdays are suppose to be fun, right?"
@@ -178,7 +178,43 @@ label day1_gunshop:
     play music "audio/bgm/marty_plant.ogg" fadeout 1.0 fadein 0.5
     scene gunshop with slowdissolve
     #at some point when she's getting a gun, she gets Koji something cheap (maybe a pocket knife or something), he says something about thanks for the birthday present, then she finds out its his birthday and gets him a gun.
-    n "test"
+    mayu "Here."
+    koji "What's this?"
+    mayu "Since I can't be the only one getting something here, you might as well get this pocketknife or something. Here."
+    koji "Alright, well thanks! It'll be the best birthday present I've gotten in a while."
+    n "Uh oh. She looks shocked."
+    mayu "It's your birthday?!"
+    koji "Yeah, but don't be so loud about it."
+    mayu "Shut up. We're picking you out something nicer."
+    mayu "See these handguns? Pick one out."
+    koji "Oh, I can't do that. Really. These are all way more expensive that that knife was."
+    mayu "Do it or I'll pick one out for you. And just maybe it'll be pink."
+    
+    #add a choice in here somewhere, about letting her pick or choosing your own with a few options maybe.
+    n "We were just about to leave the store after paying, then.."
+    n "*ring* *buzz* *ring* *buzz*"
+    mayu "Oh sorry, phone call. I'll be right back."
+    #add more intense/emergency music track 
+    play music "audio/bgm/the_complex.ogg" fadeout 1.0 fadein 1.0
+    n "Mayu stepped away to the other end of the store. I have a bad feeling about this."
+    n "If news got around already. If she finds out I'm not really Koji Tasura, but really Koji Ikida, the Ikida successor thought to be dead, I'll really be dead."
+    n "She takes a look back at me while listening on the phone."
+    n "Our eyes meet."
+    n "Fuck. This is it, isn't it?"
+    n "It's loaded with bullets in the magazine. I just have to chamber it. That would let me be able to react to her attack in just a few seconds.  My hand is gripping the handle so tightly it hurts."
+    n "Wait. What am I thinking? It's probably just a normal phone call. She was just looking over here to see if I'm ok waiting for her."
+    n "Her expression changed. Not fully, just her eyes. It's hard to tell. It was so fast. Does she know?"
+    n "Does she know I'm really Koji Ikida, one of her families blood rivals? Worse yet, that I've been deceiving her all this time? What if she thinks our entire friendship was just be manipulating her?!"
+    n "Fucking shit. She's hanging up the call. I need to be ready. Or do I deserve whatever happens? Even though I spared Hiroshi...people have died protecting my identity. And here I am, about to be executed for it. She'll probably have to kill Kaori and Toshi too."
+    n "This shop is run by associates of her family. They'll cover it all up. I'm in their hunting grounds right now."
+    n "Damnit, she's already right in front of me."
+    koji "Eh, ummm...ready to go?"
+    n "She looks at me with a complexed expression before speaking."
+    mayu "It turns out I need to go. Um, I'm sorry everyone that I won't be able to give you rides back to your houses even though I drove you out here. Excuse me!"
+    n "She turned back to me just before leaving the store."
+    mayu "Happy birthday, Koji. I hope you like your present."
+    n "And with that she quickly disappeared, as should I. I quickly say my goodbyes and head the way opposite of her."
+    
     return
 
 label day1_reflection:
