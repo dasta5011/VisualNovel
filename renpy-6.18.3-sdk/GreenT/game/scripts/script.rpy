@@ -9,6 +9,7 @@ label start:
     $akosnov = 0
     #keep this beginning section clean
     #used as a master jump sequences to control flow of the game
+    window show
     call prologue
     call opening
     call day1_meetup
@@ -175,31 +176,59 @@ label day1_meetup:
     
 #most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
 label day1_gunshop:
-    play music "audio/bgm/marty_plant.ogg" fadeout 1.0 fadein 0.5
+    play music "audio/bgm/marty_plant.ogg"
     scene gunshop with slowdissolve
-    #at some point when she's getting a gun, she gets Koji something cheap (maybe a pocket knife or something), he says something about thanks for the birthday present, then she finds out its his birthday and gets him a gun.
+    show shopkeep def at left with Dissolve(1.0)
+    shop "Well, what about this one here? It's got great aim, a double stack magazine, night sights, 9mm, and thing is damn near indestructible."
+    show mayu def at right with Dissolve(0.55)
+    n "She takes the gun and holds it in her hand, getting a feel for it. Then, after looking down and sights and racking the slide, she hands it back dissatisfied."
+    mayu "Ugh, no. It's too bulky and unwieldly. And do you have anything in a bigger calibur?"
+    shop "Come on, you're really limiting our options here. You want smaller, but bigger. Alright, let me see what I got."
+    n "Meanwhile, on the other end of the store."
+    hide shopkeep with moveoutleft 
+    hide mayu with moveoutleft
+    $renpy.pause(0.1)
+    show kaori def at center with Dissolve(1)
+    kaori "Hey, they got some great stuff here, huh? Look at this, it has so many pockets!"
+    show toshi def at right with Dissolve(1)
+    toshi "For what would you need tactical underwear for?"
+    n "Kaori looks at him like the answer would be obvious."
+    kaori "Carry all my makeup without a purse."
+    hide toshi with moveoutright
+    hide kaori with moveoutright
+    
+    show mayu def at center with Dissolve(0.25)
     mayu "Here."
     koji "What's this?"
     mayu "Since I can't be the only one getting something here, you might as well get this pocketknife or something. Here."
     koji "Alright, well thanks! It'll be the best birthday present I've gotten in a while."
+    show mayu surprised with Dissolve(0.2)
     n "Uh oh. She looks shocked."
     mayu "It's your birthday?!"
     koji "Yeah, but don't be so loud about it."
+    show mayu dis with Dissolve(0.2)
     mayu "Shut up. We're picking you out something better."
+    show mayu def with Dissolve(0.2)
     mayu "See these handguns? Pick one out."
     koji "Oh, I can't do that. Really. These are all way more expensive that that knife was."
     mayu "Do it or I'll pick one out for you. And just maybe it'll be pink."
     
     #add a choice in here somewhere, about letting her pick or choosing your own with a few options maybe.
+    show shopkeep def at left with fastdissolve
     shop "No worries, Mayu. Your father said whatever you want is fine. You sure you trust this other guy with a firearm though?"
     mayu "It's fine. It's his birthday, and if he can't figure it out I can bring him back to use the range."
     shop "More business is always better I say. Take care on your way back now, and if you get stopped by the police-"
+    hide shopkeep with moveoutleft
     mayu "I know, I know, you didn't sell us anything."
     
     mayu "Actually, Koji, would you like to use the range real quick just to see how you do?"
     koji "I don't know, and we have Kaori and Toshi here who--"
+    show kaori def at left with moveinright
     kaori "It's alright, we're actually going to go across the street and get some ice cream."
+    show toshi def at right with moveinright
     toshi "Yeah, you two have fun. I don't think this environment is really for me anyways. But Kaori, onward to ice cream."
+    hide toshi with moveoutright
+    hide kaori with moveoutright
     
     #add range scene where Mayu shows Koji how to shoot
     #end it with her sticking the loaded gun into his waste line
