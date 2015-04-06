@@ -19,11 +19,13 @@ image aido dis = "images/characters/lucy_mad.png"
 image mayu def = "images/characters/mayu/default.png"
 image mayu smile = "images/characters/mayu/smile.png"
 image mayu surprised = "images/characters/mayu/surprised.png"
+image mayu dis = "images/characters/mayu/displeased.png"
 
 #other characters
 image hiro def = "images/characters/hiroshi/default.png"
 image kaori def = "images/characters/kaori/default.png"
 image toshi def = "images/characters/toshi/default.png"
+image shopkeep def ="images/characters/shopkeep_default.png"
 
 #define effects
 image blood_splat_01 = "images/effects/blood_splat_01.png"
