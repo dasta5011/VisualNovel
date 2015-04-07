@@ -36,6 +36,7 @@ Scripting:  Use the Notepad++ app included inside the scripts folder for editing
 
 
 RESOURCES:
+-Include links/credits to any royalty free/free sources you use.
 
 http://www.freesfx.co.uk
 http://freerangestock.com/
