@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/scripts/script.rpy", line 182: end of line expected.
-    show mayu at def right with Dissolve(1)
-                     ^
+File "game/scripts/script.rpy", line 297: choice menuitem expects a non-empty block.
+    "Take my gun out quickly.":
+                               ^
 
 Ren'Py Version: Ren'Py 6.99.1.329
