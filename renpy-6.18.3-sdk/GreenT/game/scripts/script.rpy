@@ -7,14 +7,17 @@ label start:
     $kenshido = 0
     $maclynn = 0
     $akosnov = 0
-    #keep this beginning section clean
-    #used as a master jump sequences to control flow of the game
-    window show
+    $gameover = False
+    #keep this beginning section clean ## used as a master jump sequences to control flow of the game
+    window show #keeps text window from hiding during transitions
     call prologue
     call opening
     call day1_meetup
     
     call day1_gunshop
+    #returns to main menu if gameover condition variable is set
+    if gameover:
+        return
     call day1_reflection
     
     call test
@@ -233,7 +236,8 @@ label day1_gunshop:
     #add range scene where Mayu shows Koji how to shoot
     #end it with her sticking the loaded gun into his waste line
     scene gunrange with wipeleft
-    n "For being such a normal looking and average shop out front, the range here was extravagent. There was at least a dozen lanes, a dedicated break room attached, and enough ammo boxes to fill a van. I guess this really is a Jagura business."
+    n "For being such a normal looking and average shop out front, the range here was extravagant. There was at least a dozen lanes, a dedicated break room attached, and enough ammo boxes to fill a van. I guess this really is a Jagura business."
+    mayu "Alright, for now just leave it unchambered since you're still new to this. Don't want it giving you a heart attack if it suddenly goes off."
     
     scene gunshop with slowdissolve
     toshi "Ah, perfect timing. We just got back. All set?"
@@ -262,10 +266,74 @@ label day1_gunshop:
     n "She turned back to me just before leaving the store."
     mayu "Happy birthday, Koji. I hope you like your present."
     koji "..Whew."
-    n "And with that she quickly disappeared, as should I. I quickly say my goodbyes and head the way opposite of her."
+    n "And with that she quickly disappeared, as should I. I quickly say my goodbyes and..."
     
-    return
-
+    menu:
+        "Quickly head the opposite way from her.":
+            jump day1_c1_away
+        "If she knows, I have to explain to her!":
+            jump day1_c1_follow
+    
+    label day1_c1_away:
+        n "It's best if I just avoid her for now, no telling what she'll do if she knew the truth."
+        return
+        
+    label day1_c1_follow:
+        n "I can't have her get the wrong idea. I can only hope she'll listen to me. And if she doesn't know, I can explain it to her before hand."
+        n "I just barely catch a glimpse of her from behind as she takes a turn behind a building. I'm not too late!"
+        n "I turn and follow the way she went. Where did she go?"
+        n "Then I hear it. The footsteps from behind me."
+        n "I turn around and there she is. Gun drawn."
+        n "This is my end. And I was just trying to make this better."
+        mayu "Is it true, Koji?"
+        n "She looks serious."
+        koji "Mayu, I can explai--"
+        mayu "Is it true? Are you Koji Ikida?"
+        koji "Yes, yes it's true. After my parents died, they said I had died in the hospital and tried to make it seem like I didn't exist anymore."
+        mayu "So you've just been keeping tabs on me for your family? Thought we'd just be friends until it was convenient for you to try something?"
+        n "Her hand was shaking with something that was probably filled with anger and fear."
+        koji "Hey, do you remember when we first met? I didn't even know your last name was Jagura until the second week. And I haven't told anyone anything regarding you. Do you think my grandfather would approve me spending time alone with anyone from another family?"
+        n "Her breathing is getting heavier. She's getting emotional and angrier. This is bad. I'm going to die here."
+        mayu "You've been lying to me since we met, and you want me to believe all that?"
+        n "She faulters her stance as she makes hand motions when speaking, she's really mad. But it's an opening! I..."
+        
+        menu:
+            "Take my gun out quickly.":
+                jump day1_c1_follow_c1_attack
+            "She her that I mean no harm, no matter what it takes.":
+                jump day1_c1_follow_c1_surrender
+            
+        label day1_c1_follow_c1_attack:
+            n "In her quick falter and distraction, I pull out the gun she just bought me and aim it at her center."
+            n "I'm sorry, Mayu. But you won't listen to reason and I don't want to die. I'm so sorry."
+            n "*click* ... *click*"
+            koji "Fuck."
+            mayu "You never chambered a round after we left the range, Koji. I'm sorry for this, I really am. I liked having you as a friend."
+            koji "No, Mayu you don--"
+            mayu "Please forgive me."
+            n "With that, I felt nothing but pain and darkness afterwards."
+            #maybe have him get paralyzed and him and mayu become friends as he is hospitalized and cant move on his own anymore. still, bad end..
+            jump badend1
+            return
+        label day1_c1_follow_c1_surrender:
+            n "I can't hurt her. I'm not that type of person, yet anyways. It almost gave me a panic attack thinking back to what I did to Hiroshi, how could I go on if I killed Mayu?"
+            n "I do the only thing I can do. It's childish, but I'm scared for my life right now. Anything to fix this situation."
+            n "She gasps as I touch her, she must have just realized how off guard she was. It could have been a deadly mistake."
+            n "I embrace her. What else could I do? I'm not ready for this life yet. Since I've been hiding my identity, I haven't made many good friends. I can't lose one over family rivalries."
+            mayu "What do you think you're doing?"
+            koji "Please just listen. You're my friend, Mayu. Yes, I lied about who I was. No, I've never betrayed your trust other than that. I followed you here, because I want to tell you the truth before you found out. I don't want to lose you as one of my few friends. If you must still kill me, fine..I won't blame you."
+            n "A strange silence lingers in the air as we stand there frozen."
+            mayu "What are you saying? Of course I'm not going to kill you. I just had a hunch you might follow me and thought you were going to kill me."
+            koji "That's stupid, I wouldn't do that."
+            mayu "Hey, don't take my lines."
+            mayu "You can let go now.."
+            n "Realizing I was still hugging her, I let go. My entire body was sweating, but the fear I felt was finally dying down."
+            koji "Eh, um, sorry."
+            mayu "I do have to go though, my driver will be here shortly. I'm sure everyone knows about you by now and they'll expect me to be extra cautious. We may need to keep some distance for a while. I'll call you later and you can fill me in about some details I'm curious about."
+            n "With that, we said our goodbyes. It wouldn't be good for her driver to see me."
+            $jagura += 1
+            return
+        return
 label day1_reflection:
     scene blackscreen with slowdissolve
     play music "audio/bgm/mourning_song.ogg" fadeout 1.0 fadein 1.0
@@ -282,6 +350,7 @@ label day1_reflection:
     aido "Koji, you're free to have your own friends, but do keep them away from the house, will you? I'd hate having to talk to the police about missing persons."
     return
     
+
     #all test after this    
 label test:
     show derek happy
@@ -327,3 +396,6 @@ label test:
     n "I wonder if there'll be cake..."
 
     return
+
+    
+label endgame:
