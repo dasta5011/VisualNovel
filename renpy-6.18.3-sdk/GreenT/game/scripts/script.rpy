@@ -107,6 +107,9 @@ label opening:
     stop sound fadeout 0.25
     n "..."
     n "He's crying.  How pitiful.  By my calculations, this will have to continue for another ten minutes before everyone is satisfied."
+    n "My fists hurt."
+    n "Everyone is watching. I don't even know if I'm doing this right."
+    n "I hate this."
     show blood_splat_01 at truecenter with Dissolve(0.1):
         alpha 0.9
     $renpy.pause(0.25)
@@ -116,10 +119,12 @@ label opening:
         alpha 1.0
     $renpy.pause(0.25)
     hide blood_splat_01 at truecenter with slowdissolve
+    n "Fucking old man, of course he'd put me up to this. I guess I had to too. Cat's out of the bag and my quiet life is over."
     n "{color=#f00}{b}*crack* !! *smack* *slam* !!{/b}{/color}"
     n "He's still crying.  I wonder if he'd laugh if I told him I envied him."
     n "I haven't been able to cry for six years as of today.  Not since that day."
-    stop sound fadeout 0.25
+    n "What would she tell me at a time like this?"
+    stop sound fadeout 0.2
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
     return
     
