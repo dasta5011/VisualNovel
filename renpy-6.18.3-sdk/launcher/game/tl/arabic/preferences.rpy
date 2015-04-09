@@ -82,3 +82,14 @@ translate arabic strings:
     old "Large fonts"
     new "خط كبير"
 
+
+translate arabic strings:
+
+    # game/preferences.rpy:174
+    old "Show edit file section"
+    new "عرض قسم تعديل الملف"
+
+    # game/preferences.rpy:176
+    old "Generate empty strings for translations"
+    new "صنع خانات فارغة للترجمات"
+

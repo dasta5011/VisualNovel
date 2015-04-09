@@ -1,0 +1,168 @@
+Script Idea #1 --
+
+Type of Game:  Mystery, action, some romance
+
+Theme:  Underground crime, Contested Territory/Warring Factions, Avoid getting caught by police/detectives
+
+Setting:  2020's, inner city, cyberpunk, throwback to 1950's detective work
+
+Protagonist:  Son/Daughter/grandson/granddaughter ? of someone central to the mafia family line of power. 
+Few different arcs it could follow:
+-Doesn't want to be part of the family, but gets dragged in regardless.  Maybe he/she just wants to start a peaceful game company and make games all day.
+-Could want vengeance for a sibling that was murdered by rivals, could be driven by revenge and/or protect a younger sibling.
+-Could blame self for a relatives death, gets involved more to feel like he/she is taking responsibility/self punishment.
+
+
+Mechanics:  
+-Depending on choices related to dealing with family business and territorial affairs, reputation points are earned with the different factions.  Depending on your current faction points with certain factions, alter what happens at key story points.  I.e. "You need 3 Bloodz faction points by the end of Day 7 or you will die" or "Not having 4 Cripz faction points by the beginning of Day 12 makes negotiating peace not an option" or "Having more than 5 Illuminati points on Day 8 will make peace talks with the Bloodz not an option" type of stuff, obviously this isn't told to the player, but sets up story paths.
+-Bounty.  Bounty points increase by a different amount depending on the polices findings of the characters involvement in different crimes. I.e. depending on the characters actions, they may get caught at the scene of a crime, leave fingerprints on a murder weapon, or only be leaving footprints behind (or maybe the character wasn't involved at all!  But don't forget evil people framing them..).  If this value ever gets too high, it could lead to the police going after the player directly.
+
+--------------------------------------------------------------------------
+
+"Birthdays are suppose to be fun, right?"
+"That's what I was always told."
+*crack* !! *smack* *slam* !!
+"Especially your 21st, right?"
+"Am I suppose to be enjoying this?  Is this fun?"
+*crack* *scream* !!!!!!!!!!!!!!!!!!!!!
+"Initiation.  Initiation is what they call it."
+*more screaming*
+" "We're going to make a man of you today.  You get to help in the business today.  Congratulations!" "
+"That's what they told me.  Then gave me this private shed and this snitch.  Something about leaking information to our enemies."
+*crack* !! *smack* *slam* !!
+"They brought all sorts of stuff.  Guns, bats, hammers, knives, and chains were just the basics.  They had more.  Gasoline, car batteries, pliers..shit, they even had a fish tank with piranhas. But that's my family, we never skimp on an expense."
+"Speaking of birthdays, aren't your friends suppose to be there to celebrate with you?"
+"I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."
+#cut to image showing man with the shit beat out of him
+"<friends name>.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
+*crack* !! *smack* *slam* !! 
+"This may look like I'm being a bad friend, but in reality, I'm helping him right now.  If it was anyone else taking care of this, they'd hurt him a lot worse and make sure he didn't survive.  I really hope he understands I'm doing this for him."
+"..."
+"He's crying.  How pitiful.  By my calculations, this will have to continue for another ten minutes before everyone is satisfied."
+*crack* !! *smack* *slam* !!
+"He's still crying.  I wonder if he'd laugh if I told him I envied him."
+"I haven't been able to cry for eleven years as of today.  Not since that day."
+"Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."
+
+---------------------------------------------------------------------------------------------------
+
+Thinking of having 4-5 (or more) mafia type families in this city.  All or most of them have a kid in this one big college that's located near the middle of the city, in a spot of neutral ground. (since its college there's no real age cap).  The story follows the protagonist and his position from just a child of the family to being deeply involved in it and how it affects his life, his school life, and his friends.  Eventually, it his school life gets involved when the kids/students from the other families get into it, and soon it seems that neutral ground/truce at the school is in jeopardy.  
+
+-I think I'd like to see a city map at points where the character can make choices, with different click-able locations, i.e. Shopping district, docks, school, abandon warehouse, etc.  Each choice involves him meeting different people from different families and brings out different consequences. 
+
+------------------------------------------------------------------------------------------------------
+
+Thinking right now, 5 Families
+
+City Name/Location:  Kahira
+
+Family #1:
+Family Name: Ikida
+Family Head: Aido Ikida, grandpa to protagonist, and family head. Age 71. His son and daughter in law died several years ago and he has kept the protagonist a secret to protect him too. While often kind, friendly, and typically cheerful, when it comes to business and family matters he is calculated, harsh, and demanding.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Black, black ties, black cars, black shoes, black socks.  Specialty in blackmail, and run most of the underground and illegal gambling inside the city.
+ 
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Grandpa -> Older Sister
+
+List Details of Each Character involved with this Family below::
+-Koji Ikida (fake name: Tasura), protagonist. Age 21, in college. Attends school under a fake last name, in fact, his existence has been secret from public eye since his birth to protect him. The other families don't know he is part of the Ikida family. He leaves out a back entrance to his home, and walks to school. He is friends with Mayu Jagura, but that's because she doesn't know his real identity. 
+-Aido Ikida, grandpa, family head, see above.
+-Yukino Ikida, older sister. Age 23. Third year college student. Often seen as the next family head (since her brothers existence has been kept secret), she plays her role of next in line well by showing strength and determination in her personality. She does not want her brother to have to become the next family head, so she has done whatever is possible to help hide his true identity, even pretending she doesn't know him at school.
+-Saku Ikida, younger sister. Deceased at age 15. (3 years ago)
+-Kana Ikida, mother, deceased.
+-Masachi Ikida, father, deceased.
+-Denji Yamazaki. Best friend of Masachi Ikida when he was alive. He has continued his work as the right hand man of the Ikida family.
+-Haruka Matsu. Denji's fiance, also works for the Ikida family as escort/security, ex-police officer.
+_________________________________________________
+
+Family #2:
+Family Name: Jagura
+Family Head: Ilith Jagura, late 40's, still looks young, visually attractive. Often without patience and aggressive, she is considered dangerous by most that meet her. Took over when her mother past away. Mother of the student character.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Their color is red, most symbolized by the roses they often wear in their breast pockets, often heavily accented by black. Places a strong regard in fashion and appearances.  They also manage most arms dealing within the city.
+
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Mother -> Uncle -> Aunt -> Father
+
+List Details of Each Character involved with this Family below::
+-Mayu Jagura. Daughter of the family head. Student at the college. Age 22. Having spent a year or two internationally, she is currently in her 2nd year. Often seen as somewhat difficult by her family, she is brash, to the point, and offensively direct with her words. She imposes a presence of superiority and sophistication. She often worries about her brother and wonders if he's mad at her for taking his spot to power.
+-Ilith Jagura, mother, family head, see above.
+-Nori Jagura, father. While he is the father, he has very little power in the family. His marriage was more of a business advantage for Ilith, and he was forced to take her name to keep that family name the same. While generally a calm and gentle man, he is kept out of most family decisions and does what he can for his children.
+-Taro Jagura. Older brother. Since his family sticks to a matriarchy, he was passed up as heir to the family when his sister came along. He still has power over people lower than him, and is often put to work hustling merchandise and taking risks.
+-Aki Jagura. Little sister. 10 years old. Carefree, a bit spoiled, skewed moral compass.
+-Shin Kato. A man in his mid forties, yet still physically fit and mentally sharp. He spent many years as an hitman for hire and has military training. Often seen as the Jagura families right hand when it comes to exercising power.
+-Ado Kato. Shin's younger brother who has followed in his footsteps. While being a decade younger, he has worked hard to try and match his brothers impressive skill, and having earned his keep, he often follows lesser orders on behalf of his brother. Shaved head.
+______________________________________________________
+
+Family #3:
+Family Name: Kenshido
+Family Head: Masaru Kenshido, mid fifties, a physically frail and skinny man, fond of a good joke, reputation for a sadistic streak.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): White, as often seen in their clothing and cars. They control most of the human and sex trafficking within the city.
+
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Father -> Mother -> Tatsu
+
+List Details of Each Character involved with this Family below::
+-Tatsu Kenshido. Age 20, student in college. Next in line to power. Glasses, often quiet but concise. Has a weird fancy for knives, somewhat erratic and hard to read.
+-Masaru Kenshido, father, family head, see above.
+-Chaka Kenshido, mother, places her family before everything, no regard for anyone else other than her family, good housewife.
+-Emi Ueda, aunt (mothers side), also right hand of the Kenshido family. Loud, brash, and military trained.
+-Taizo Kikuchi, butler/house servant, gets along well with Tatsu who is usually too difficult to speak to for most. Well trained in combat if necessary.
+______________________________________________________________
+
+Family #4:
+Family Name: O'MacLynn
+Family Head: Conan O'MacLynn. Early 50's, most teeth plated in gold, lots of gold jewelry, typically has a cigar in his mouth, a little bit overweight, mostly bald on top. Took over when his father past away.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Name is obviously Irish, although you can only barely see in in their genetics anymore, they have mostly native DNA.  They still carry the name proudly and favor more Gothic and European architecture.  Their color is Gold.  Most notably this is seen in the teeth of the family head, who has a majority of his teeth gold plated. This can also be seen in the golden cross necklaces they usually wear and have as crests on their car.  They are responsible for most of the extortion and stolen goods trafficking inside the city.
+
+Hierarchy of Power (from the understanding the the main character of the family (the student)): 
+
+List Details of Each Character involved with this Family below::
+-Fin O'MacLynn. Student at college. Age 23. Second year. Oldest son, therefor heir. On the shorter end, very muscular. Big into jewelry, often aggressive and pushy, sticks to his word.
+-Conan O'MacLynn. Father, head of family, see above.
+-Yoko O'MacLynn. Mother. Deceased.
+-Shane O'MacLynn. Middle brother. Age 20. First year student at college. Often seen as opposite to his older brother, wears glasses, skinny frame, taller than his older brother.  Typically much more reserved than his older brother, but is quick to anger and resort to violence.
+-Toran O'MacLynn. Youngest brother. Age 13. Was very much a mommy's boy until she died. Often quiet and doesn't talk much anymore.
+-Goro Nakada. An accomplished martial arts fighter with an unusually large frame, he has been working for the O'MacLynn family for several years now. In his early thirties, he still has a lot of energy and fighting ability left. Often the O'MacLynn's answer to many problems.
+-Nora Moran. An acquaintance of the family branch back in their homeland, she was brought over to be a maid/servant to take care of the kids after their mother passed. She has a strong bond with Toran, who originally rejected her. Often times, she is the only one he will talk to.
+______________________________________________________________
+
+Family #5: 
+Family Name: Akosnov
+Family Head: Kenchitsu Akosnov, the Father of the student in college. He took control when he deemed his father too old to safely manage family affairs.  He is physically fit, muscular, and well into his sixties.  He is a cunning and direct business man who has no issue declaring and exercising his power.
+
+Distinguishing Characteristics (i.e. preferred color, specialty in something, etc.): Similar to the O'MacLynn's, their origin is from a different country, but their lineage is now filled heavily with natives, but not as much as the O'MacLynn's.  They still keep strong ties with their counterparts back in their home country.  Their color is Blue, a dark navy blue, often seen in their blue suits, flat top caps, and their car colors. It represents style, class, and wealth.  They run a majority of the drug trade inside the city.
+
+Hierarchy of Power (from the understanding the the main character of the family (the student)): Father -> Grandfather (mainly by respect of the rest of the family) -> Mother -> Uncles 
+
+List Details of Each Character involved with this Family below::
+-Coranine Akosnov - Central character for this family, Student at the college.  At 19 years old she is in her second year.  She is quiet, reserved, and though she is sometimes too quiet to the point of where people think she's being rude, she's known to be very polite when she speaks up. Even her family has a hard time reading her, but she never causes trouble.
+-Kenchitsu Akosnov, see above, father, family head.
+-Sonna Akosnov, mother, in her mid 40's. Seems disinterested with her husband, but vigorously handles any family affairs that come her way. Quick to anger, quick to forgive. 
+-Ichizo Akosnov, younger brother, still in high school. Often out at sporting events, very active, and popular. More interested in himself than family affairs.
+-Bruzgov Yeltsin, highly entrusted member the family employs. Big, tall, and intimidating. Isn't afraid to get his hands dirty and does what's asked of him. Often sent to escort/guard the kids and used in carrying out any shady business that needs to be done. Born in Russia, he is blond.
+-Katya Konev, a side-kick to Bruzgov, also from Russia and blond.  Often support of Bruzgov, she is works less for the honor, but more for the power.
+
+----------------------------------------------------------------
+
+Supporting Characters:
+Hiroshi Omura - was best friend to Koji, ended up snitching about his true identity. use to work for the family until betrayal. goes to school with him
+kaori - Friend of Koji and Mayu, female
+toshi - friend of koji and mayu, male
+
+--------------------------------------------1
+
+Some ideas for the later half of the story:
+-Might be interesting if the reason each families got their wealth power might be from an origin each family shares and keeps hidden.
+	-If we're open to the idea of adding a bit of magic/supernatural, each family could have part of a magical artifact or grimoire that they use.  Or maybe each item is mysteriously different.
+	-Could relate to the layout of the land, back a few or several generations, something that gave them power and influence and also a reason to fight each other for the other families mysterious item to have more wealth and power themselves.
+	-The families might even keep special beings/entities in the crypts beneath their houses, depending how far down the magical road we want to travel, we could have specters, ghosts, vampires, etc.  Maybe even a special pit filled with a sort of demonic/grotesque crypt worm that rapidly devours flesh (used for corpse disposal).
+    
+    -------------------------------------------
+    
+Ideas for prologue/overall story arch:  Way back when, the reason these families are here is because they were sent a mysterious letter from an unknown monk/priest/whatever promising them eternal life if they brought a legendary artifact with them, and to prove his words, he sent a small vial of a potion capable of curing any disease. When it worked, each family scoured their country or planet to find a legendary item to bring with them.
+
+http://en.wikipedia.org/wiki/List_of_mythological_objects#Stones
+
+Each family arrived as they were told, and brought many of their family with and settled down.  The monk/priest/whatever asked them to wait in a location with nothing more than a few farms.  When the time came, he sent for each family to meet him in the catacombs below the land. He had the family head of each family bring their legendary items with them into a room and had everyone else wait outside.  Once everyone was in, the entrance to the room collapsed and the rock itself sealed almost magically. The other family members went to get help, but when they got back the room had simply vanished and there was no sign of a cave in. After asking the locals, no one knew anything about any special room that they had spoke of, except they were told a certain monk/priest often conducted holy magic within the catacombs and apparently he had been for as long as they can remember, even the ones well into their 70's recalled him doing the same thing when they were children. Before the priest ever returned, the families had fallen to dramatic power struggles with the loss of their leaders and the story was soon lost either to murder, fire, forgetfulness. 
+However, the area flourished from favorable crops, weather, and the large influx of new people who had set up the basis of a town that would soon grow to be a large metropolis.  But, each family has some sort of recollection of what happened and in the confusion place blame on each other. They faced scrutiny and shame for losing precious worldly artifacts.  That was the ignition of the lingering turmoil that pits these families into a war they can barely remember having a reason.

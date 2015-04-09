@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 185: u'menu' is not a keyword argument or valid child for the window statement.
-    menu bg cave
-        ^
+File "game/scripts/script.rpy", line 297: choice menuitem expects a non-empty block.
+    "Take my gun out quickly.":
+                               ^
 
-Ren'Py Version: Ren'Py 6.18.3.761
+Ren'Py Version: Ren'Py 6.99.1.329

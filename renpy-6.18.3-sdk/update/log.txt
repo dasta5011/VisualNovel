@@ -1,1 +1,13 @@
-running ['E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\lib\\windows-i686\\zsync.exe', '-o', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update.new', '-k', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.zsync', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update', 'http://update.renpy.org/6.18.3/renpy-6.18.3-rapt.zsync']
+running ['E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\lib\\windows-i686\\zsync.exe', '-o', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update.new', '-k', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.zsync', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\rapt.update', 'http://update.renpy.org/release/renpy-6.99.1-rapt.zsync']
+rename: Permission denied
+Unable to back up old file E:\Work\VisualNovel\renpy-6.18.3-sdk\update\rapt.update.new - completed download left in E:\Work\VisualNovel\renpy-6.18.3-sdk\update\rapt.update.new.part
+running ['E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\lib\\windows-i686\\zsync.exe', '-o', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\editra-windows.update.new', '-k', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\editra-windows.zsync', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\editra-windows.update', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\editra-windows.update', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\editra-windows.update', 'http://update.renpy.org/release/renpy-6.99.1-editra-windows.zsync']
+running ['E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\lib\\windows-i686\\zsync.exe', '-o', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\sdk.update.new', '-k', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\sdk.zsync', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\sdk.update', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\sdk.update', '-i', 'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\update\\sdk.update', 'http://update.renpy.org/release/renpy-6.99.1-sdk.zsync']
+partfile does not exist
+partfile does not exist
+could not rename file E:\Work\VisualNovel\renpy-6.18.3-sdk\launcher/game/Roboto-Light.ttfR E:\Work\VisualNovel\renpy-6.18.3-sdk\launcher/game/Roboto-Light.ttfTraceback (most recent call last):
+  File "renpy/common/00updater.rpy", line 109, in process_deferred
+    process_deferred_line(l)
+  File "renpy/common/00updater.rpy", line 75, in process_deferred_line
+    os.unlink(fn)
+WindowsError: [Error 32] The process cannot access the file because it is being used by another process: u'E:\\Work\\VisualNovel\\renpy-6.18.3-sdk\\launcher/game/Roboto-Light.ttf'

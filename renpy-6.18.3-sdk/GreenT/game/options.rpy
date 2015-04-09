@@ -14,6 +14,7 @@ init -1 python hide:
     ## cheat using developer tools.
 
     config.developer = True
+    config.framerate = 60
 
     ## These control the width and height of the screen.
 
@@ -24,7 +25,7 @@ init -1 python hide:
     ## running in a window.
 
     config.window_title = u"GreenT"
-
+    
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "GreenT"
@@ -71,7 +72,7 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "tree_fall.jpg",
+        mm_root = "images/backgrounds/city_night_title.png",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
@@ -187,7 +188,7 @@ init -1 python hide:
 
     ## Music that is played while the user is at the main menu.
 
-    # config.main_menu_music = "main_menu_theme.ogg"
+    config.main_menu_music = "audio/bgm/Trio_for_Piano_Cello_and_Clarinet.mp3"
 
 
     #########################################
@@ -278,7 +279,7 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 0
+    config.default_text_cps = 60
 
     ## The default auto-forward time setting.
 
