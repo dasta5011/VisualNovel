@@ -21,6 +21,7 @@ label start:
     call day1_reflection
     
     call test
+    return
     
 label prologue:
     #Dramatic Music - Opening - Goes over premise of the past/ancient times and explains in little detail how the families came to be
@@ -190,7 +191,7 @@ label day1_gunshop:
     shop "Well, what about this one here? It's got great aim, a double stack magazine, night sights, 9mm, and thing is damn near indestructible."
     show mayu def at right with Dissolve(0.55)
     n "She takes the gun and holds it in her hand, getting a feel for it. Then, after looking down and sights and racking the slide, she hands it back dissatisfied."
-    mayu "Ugh, no. It's too bulky and unwieldly. And do you have anything in a bigger calibur?"
+    mayu "Ugh, no. It's too bulky and unwieldy. And do you have anything in a bigger caliber?"
     shop "Come on, you're really limiting our options here. You want smaller, but bigger. Alright, let me see what I got."
     n "Meanwhile, on the other end of the store."
     hide shopkeep with moveoutleft 
@@ -339,6 +340,7 @@ label day1_gunshop:
             $jagura += 1
             return
         return
+        
 label day1_reflection:
     scene blackscreen with slowdissolve
     play music "audio/bgm/mourning_song.ogg" fadeout 1.0 fadein 1.0
@@ -401,6 +403,3 @@ label test:
     n "I wonder if there'll be cake..."
 
     return
-
-    
-label endgame:

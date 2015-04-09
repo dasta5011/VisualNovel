@@ -4,14 +4,15 @@ image caveh = "images/backgrounds/cave_hallway.png"
 image sidewalk1 = "images/backgrounds/sidewalk_01.png"
 image gunshop = "images/backgrounds/gunshop.png"
 image gunrange ="images/backgrounds/gunrange.png"
+image alley = "images/backgrounds/alley.png"
 
 ##ikida family
 image storageshed = "images/backgrounds/storage_shed.png"
 image ikidahome = "images/backgrounds/110614.jpg"
 
 #define character images
-##ikida family
 #the spaces are important, they keep the game knowing which character is which so they can jump between expressions without a hide command
+##ikida family
 image aido def = "images/characters/Comic3_001.png"
 image aido dis = "images/characters/lucy_mad.png"
 
