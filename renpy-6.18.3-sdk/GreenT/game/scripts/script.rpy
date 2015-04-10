@@ -136,13 +136,19 @@ label day1_meetup:
     scene sidewalk1 with slowdissolve    
     n "That incident was over three hours ago, but I still feel sick."
     n "At the time I was so focused on doing what I had to do that I didn't notice, but I've thrown up three times after it has sunk in."
+    n "I haven't even had breakfast yet, but maybe that's a good thing for now."
     n "That was Hiroshi. And I nearly killed him."
     n "I know I broke at least a bone or two. The sound of it cracking still rings in my ears."
+    n "Betrayal, huh? My older sister always did tell me to be careful who I'm friends with. I wonder if she's had to do the same?"
+    n "Knowing the old man, I wouldn't put it past him. Seriously, on my birthday of all things."
+    n "But still...was it right? Does that matter? I'm sure he was taught a lesson and won't ever come around my family or myself again, so that should keep him out of harms way."
     n "I'm sweating. I feel cold. My breathing is off."
     n "I can't think about this anymore. I need a distraction."
     mayu "I told you that was Koji. Hey! Hey, Koji!"
     n "The blood washed off well enough, but there was so much...it felt like too much."
     n "No, I need to stop this. I just need to focus on the positive. Hiroshi is alive. Hiroshi is alive because of me."
+    n "His face...that look he had. I couldn't tell if it was fear or anger or even disgust. I've never seen him look at me like that before."
+    n "I guess you really can't escape this life."
     show mayu def at center
     mayu "Kooooooo-Jiiiiiiii."
     n "Lost in my own head, I nearly crashed right into someone who had just run in front of me."
@@ -152,6 +158,7 @@ label day1_meetup:
     show mayu smile at center with moveinbottom
     show kaori def at mymoveinleft(0.45, 0.2, 1.0)
     show toshi def at mymoveinright(0.45, 0.8, 1.0)
+    mayu "That's right, ignore us again and it'll be painful when we have to get your attention."
     mayu "Kaori and Toshi wanted to come get food over here, then we saw you on our way."
     show mayu def at center
     mayu "So, will you join us or will we have to drag you by force?"
@@ -185,8 +192,11 @@ label day1_meetup:
     
 #most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
 label day1_gunshop:
+    scene blackscreen with slowdissolve
+    n "Damn it...why here of all places? This isn't good. What if someone here knows my secret already? This is basically a Jagura stronghold."
     play music "audio/bgm/marty_plant.ogg"
     scene gunshop with slowdissolve
+    n "There's a few employees in the store, they all give us the once over visually, but return to their work. Maybe I worry too much."
     show shopkeep def at left with Dissolve(1.0)
     shop "Well, what about this one here? It's got great aim, a double stack magazine, night sights, 9mm, and thing is damn near indestructible."
     show mayu def at right with Dissolve(0.55)
@@ -243,6 +253,10 @@ label day1_gunshop:
     #end it with her sticking the loaded gun into his waste line
     scene gunrange with wipeleft
     n "For being such a normal looking and average shop out front, the range here was extravagant. There was at least a dozen lanes, a dedicated break room attached, and enough ammo boxes to fill a van. I guess this really is a Jagura business."
+    n "Most impressive yet was the fact this whole section was underground and well hidden. We had to get buzzed in behind a locked door then take a narrow staircase down."
+    
+    #add gun range practice scene
+    
     mayu "Alright, for now just leave it unchambered since you're still new to this. Don't want it giving you a heart attack if it suddenly goes off."
     
     scene gunshop with slowdissolve
@@ -355,6 +369,23 @@ label day1_reflection:
     aido "Hmmf."
     koji "And besides, I'd like to keep him as a friend...if he ever comes back to school that is."
     aido "Koji, you're free to have your own friends, but do keep them away from the house, will you? I'd hate having to talk to the police about missing persons."
+    
+    n "With a few words of goodbye I left to my room. Today has been too much."
+    
+    #add scene of self reflection dicking around in bedroom
+    
+    #have the butler come in and offer words of wisdom
+    n "*Knock* *Knock*"
+    n "With a few knocks against the door I finally pull my head back into the present. Guess I got carried away."
+    n "Yes?"
+    denji "It's Denji, may I come in?"
+    n "Denji Yamazaki, one of the most dangerous, well, I guess you can call them henchmen, employed by my family."
+    n "He was my fathers best friend and now he's my grandfathers right hand man. But, he's also been kind to me ever since I've known him."
+    n "I don't know why he bounces between housework and taking care of family business, but I do appreciate having him around."
+    koji "Come on in, what can I help you with?"
+    denji "Actually, I wanted to talk to you earlier today but it you were out. How are doing after this morning?"
+    koji "Oh, you mean that. I'm honestly not sure..um, feel free to have a seat if you'd like."
+    
     return
     
 
