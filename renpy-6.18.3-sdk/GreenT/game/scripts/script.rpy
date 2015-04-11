@@ -276,7 +276,7 @@ label day1_gunshop:
     n "Her expression changed. Not fully, just her eyes. It's hard to tell. It was so fast. Does she know?"
     n "Does she know I'm really Koji Ikida, one of her families blood rivals? Worse yet, that I've been deceiving her all this time? What if she thinks our entire friendship was just be manipulating her?!"
     n "Fucking shit. She's hanging up the call. I need to be ready. Or do I deserve whatever happens? Even though I spared Hiroshi...people have died protecting my identity. And here I am, about to be executed for it. She'll probably have to kill Kaori and Toshi too."
-    n "I'm some Kaori, Toshi. I guess you got inadvertantly dragged into this too."
+    n "I'm some Kaori, Toshi. I guess you got inadvertently dragged into this too."
     n "This shop is run by associates of her family. They'll cover it all up. I'm in their hunting grounds right now."
     n "Damnit, she's already right in front of me."
     koji "Eh, ummm...ready to go?"
@@ -300,22 +300,27 @@ label day1_gunshop:
         
     label day1_c1_follow:
         n "I can't have her get the wrong idea. I can only hope she'll listen to me. And if she doesn't know, I can explain it to her before hand."
+        scene alley with fastdissolve
+        show mayu dis at right with moveinbottom
+        $renpy.pause(0.25)
+        hide mayu with moveoutright
         n "I just barely catch a glimpse of her from behind as she takes a turn behind a building. I'm not too late!"
         n "I turn and follow the way she went. Where did she go?"
         n "Then I hear it. The footsteps from behind me."
+        show mayu sad at center with fastdissolve
         n "I turn around and there she is. Gun drawn."
         n "This is my end. And I was just trying to make this better."
         mayu "Is it true, Koji?"
         n "She looks serious."
         koji "Mayu, I can explai--"
-        mayu "Is it true? Are you Koji Ikida?"
+        mayu "Is it true?! Are you Koji Ikida?"
         koji "Yes, yes it's true. After my parents died, they said I had died in the hospital and tried to make it seem like I didn't exist anymore."
         mayu "So you've just been keeping tabs on me for your family? Thought we'd just be friends until it was convenient for you to try something?"
         n "Her hand was shaking with something that was probably filled with anger and fear."
         koji "Hey, do you remember when we first met? I didn't even know your last name was Jagura until the second week. And I haven't told anyone anything regarding you. Do you think my grandfather would approve me spending time alone with anyone from another family?"
         n "Her breathing is getting heavier. She's getting emotional and angrier. This is bad. I'm going to die here."
         mayu "You've been lying to me since we met, and you want me to believe all that?"
-        n "She faulters her stance as she makes hand motions when speaking, she's really mad. But it's an opening! I..."
+        n "She falters her stance as she makes hand motions when speaking, she's really mad. But her aim wavers off of me for a moment...it's an opening! I..."
         
         menu:
             "Take my gun out quickly.":
@@ -328,6 +333,7 @@ label day1_gunshop:
             n "I'm sorry, Mayu. But you won't listen to reason and I don't want to die. I'm so sorry."
             n "*click* ... *click*"
             koji "Fuck."
+            koji "..."
             mayu "You never chambered a round after we left the range, Koji. I'm sorry for this, I really am. I liked having you as a friend."
             koji "No, Mayu you don--"
             mayu "Please forgive me."
@@ -335,6 +341,7 @@ label day1_gunshop:
             #maybe have him get paralyzed and him and mayu become friends as he is hospitalized and cant move on his own anymore. still, bad end..
             jump badend1
             return
+            
         label day1_c1_follow_c1_surrender:
             n "I can't hurt her. I'm not that type of person, yet anyways. It almost gave me a panic attack thinking back to what I did to Hiroshi, how could I go on if I killed Mayu?"
             n "I do the only thing I can do. It's childish, but I'm scared for my life right now. Anything to fix this situation."
@@ -351,6 +358,8 @@ label day1_gunshop:
             koji "Eh, um, sorry."
             mayu "I do have to go though, my driver will be here shortly. I'm sure everyone knows about you by now and they'll expect me to be extra cautious. We may need to keep some distance for a while. I'll call you later and you can fill me in about some details I'm curious about."
             n "With that, we said our goodbyes. It wouldn't be good for her driver to see me."
+            mayu "Oh, and Koji...Don't make me have to kill you. Avoid getting dragged in if you can, but if you can't, stay out of Jagura business."
+            n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I, even if I wanted to?"
             $jagura += 1
             return
         return
@@ -369,16 +378,31 @@ label day1_reflection:
     aido "Hmmf."
     koji "And besides, I'd like to keep him as a friend...if he ever comes back to school that is."
     aido "Koji, you're free to have your own friends, but do keep them away from the house, will you? I'd hate having to talk to the police about missing persons."
+    aido "The right you had to live in the dark was abandoned when you picked your friends poorly. The family needs to make big changes starting tomorrow. Be prepared, tomorrow we take a look at how you can do your part. Don't go to school tomorrow."
     
     n "With a few words of goodbye I left to my room. Today has been too much."
     
     #add scene of self reflection dicking around in bedroom
-    
+    play music "audio/bgm/Trio_for_Piano_Cello_and_Clarinet.mp3" fadein 0.5
+    scene bedroom with wipeleft
+    n "What a ridiculous day."
+    n "But maybe it's just compounded interest from everything I've avoided up until now."
+    n "When my parents died ten years ago, I was with them but survived. I don't know how much money it took, but when the paperwork was all done, I had died along with them and no longer existed."
+    n "I think my grandfather was distraught during that time too, having just lost his son and probably felt bad for me or it was just an inconvenient excuse to get one of his grandchildren off the radar."
+    n "There isn't any doubt about it, it was an attack from a rival family that killed them."
+    koji "Yukino.."
+    n "My older sister, Yukino, has had to play the part as the next family successor since that day."
+    n "I don't know if she hated me for that or if she was happy. It's hard talking to her about it, she was older when the accident happened and always stayed strong. I don't think I ever once saw her cry since it happened. Maybe she thought it was her responsibility as the oldest to keep her composure."
+    n "Not even when Saku, my younger sister died three years ago."
+    n "I can't think about this right now, my stomach gets in a knot and my chest hurts whenever I do."
+    n "Is it guilt? Regret?"
     #have the butler come in and offer words of wisdom
     n "*Knock* *Knock*"
     n "With a few knocks against the door I finally pull my head back into the present. Guess I got carried away."
+    play music "audio/bgm/marty_plant.ogg" fadein 0.5
     n "Yes?"
     denji "It's Denji, may I come in?"
+    show denji def at mymoveinleft(0.35, 0.5, 1)
     n "Denji Yamazaki, one of the most dangerous, well, I guess you can call them henchmen, employed by my family."
     n "He was my fathers best friend and now he's my grandfathers right hand man. But, he's also been kind to me ever since I've known him."
     n "I don't know why he bounces between housework and taking care of family business, but I do appreciate having him around."
