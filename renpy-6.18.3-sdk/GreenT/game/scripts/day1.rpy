@@ -161,15 +161,38 @@ label day1_meetup:
     mayu "My father arranged to get special present today. That's where we're going shopping."
     koji "That's right, you've said he's usually out on business?"
     mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever."
-    toshi "Must be nice being that rich."
+    toshi "Must be nice being that rich."    
+    return
+    
+label day1_cafe:
+    play music "audio/bgm/bright_wish.ogg" fadein 1.0
+    scene cafe with wipeleft
+    show kaori def at center with Dissolve(1.0)
+    kaori "Thanks so much for taking us here, Mayu! I've been wanting to try this place out for so long, but the...erm...the prices.."
+    n "Kaori stumbled open her words when she opened the menu. She knew they were high, but I guess she didn't know just how high."
+    
+    show mayu def at left with Dissolve(1.0)
+    mayu "Don't start with the glum faces. Let's get extra today. Kaori, get your fill today. I mean it, no holding back like you always do."
+    show toshi def at right with Dissolve(1.0)
+    toshi "Can do! Though I'd love it if you made treating us like this a habbit, I still feel kind of bad."
+    show mayu dis at left with Dissolve(1.0)
+    toshi "Oh, I'm definitely getting three of these."
+    koji "Well, don't worry, Mayu. You can take me out to eat all the time and I'll never have a hint of guilt."
+    mayu "That's because you're a trouble maker."
+    koji "What?! Since when?"
+    mayu "Since the first time I met you. What was it again? Oh yes..You were running to the restroom in between classes and hit me like a truck when you turned the corner."
+    koji "Eh, well..Yeah, that's right. That's when I found out how unforgiving you are."
+    mayu "Then I made you pick up all my stuff, bring it to my classroom, and buy my lunch before you made it to the restroom. I was waiting for you to run off yelling about not being able to hold it anymore, but you kept doing everything I said while apologizing. I thought you were going to wet yourself."
+    koji "I was at fault, I had to make amends."
+    n "The truth is that I was terrified she was going to have me killed. I was taught who to watch out for by my family, and the Jagura's were near the top. You can imagine how they might be over protective of their family heir and eldest daughter."
     
     return
     
 #most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
 label day1_gunshop:
+    play music "audio/bgm/marty_plant.ogg"
     scene blackscreen with slowdissolve
     n "Damn it...why here of all places? This isn't good. What if someone here knows my secret already? This is basically a Jagura stronghold."
-    play music "audio/bgm/marty_plant.ogg"
     scene gunshop with slowdissolve
     n "There's a few employees in the store, they all give us the once over visually, but return to their work. Maybe I worry too much."
     show shopkeep def at left with Dissolve(1.0)
