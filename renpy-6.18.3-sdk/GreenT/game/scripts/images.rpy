@@ -6,6 +6,7 @@ image gunshop = "images/backgrounds/gunshop.png"
 image gunrange ="images/backgrounds/gunrange.png"
 image alley = "images/backgrounds/alley.png"
 image bedroom = "images/backgrounds/bedroom.png"
+image cafe = "images/backgrounds/cafe.png"
 
 ##ikida family
 image storageshed = "images/backgrounds/storage_shed.png"

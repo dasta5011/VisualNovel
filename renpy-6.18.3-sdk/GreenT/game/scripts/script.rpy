@@ -12,7 +12,7 @@ label start:
     call prologue
     call opening
     call day1_meetup
-    
+    call day1_cafe
     call day1_gunshop
     #returns to main menu if gameover condition variable is set
     if gameover:
