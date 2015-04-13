@@ -183,12 +183,23 @@ label day1_cafe:
     mayu "Since the first time I met you. What was it again? Oh yes..You were running to the restroom in between classes and hit me like a truck when you turned the corner."
     koji "Eh, well..Yeah, that's right. That's when I found out how unforgiving you are."
     mayu "Then I made you pick up all my stuff, bring it to my classroom, and buy my lunch before you made it to the restroom. I was waiting for you to run off yelling about not being able to hold it anymore, but you kept doing everything I said while apologizing. I thought you were going to wet yourself."
+    show mayu def with fastdissolve
     koji "I was at fault, I had to make amends."
     n "The truth is that I was terrified she was going to have me killed. I was taught who to watch out for by my family, and the Jagura's were near the top. You can imagine how they might be over protective of their family heir and eldest daughter."
     
+    waiter "Is everyone all set to order?"
+    n "Mayu, Kaori, and Toshi all seem set and look at me for approval."
+    n "Damnit, I'm the only one who hasn't decided yet. That's what I get for not paying attention and making too much conversation."
+    show cafe with fade
+    kaori "Please...please...no...more..."
+    show mayu cry with fastdissolve
+    mayu "Ugh...maybe thirds was a bad idea.."
+    toshi "Never again am I listening to you."
+    n "Sitting here with a smile on my face, I take another bite from my plate. They really did get their fill and make in count just like they said. Fortunately, I didn't feel to try and keep up with them."
+    
     return
     
-#most likely want Mayu to get a phone call before the evening is over telling her the truth about Koji. She doesn't let him know she knows yet, but makes an awkward goodbye.
+
 label day1_gunshop:
     play music "audio/bgm/marty_plant.ogg"
     scene blackscreen with slowdissolve

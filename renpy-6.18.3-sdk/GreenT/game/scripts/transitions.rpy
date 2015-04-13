@@ -18,3 +18,6 @@ transform mymoveinright(timing, x, y):
     parallel:
         alpha 0.0
         linear timing alpha 1.0
+        
+#fade to black and back
+define fade = Fade(0.75, 0.25, 0.75)

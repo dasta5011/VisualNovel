@@ -26,6 +26,7 @@ image mayu smile = "images/characters/mayu/smile.png"
 image mayu surprised = "images/characters/mayu/surprised.png"
 image mayu dis = "images/characters/mayu/displeased.png"
 image mayu sad = "images/characters/mayu/sad.png"
+image mayu cry = "images/characters/mayu/cry.png"
 
 #other characters
 image hiro def = "images/characters/hiroshi/default.png"
