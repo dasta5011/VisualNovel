@@ -520,7 +520,7 @@ init -2:
         text_align 0.5
         layout "subtitle"
 
-
+#####THIS IS WHERE YOU CHANGE IN-GAME MENU
 ##############################################################################
 # Quick Menu
 #
@@ -533,7 +533,7 @@ screen quick_menu():
         style_group "quick"
 
         xalign 1.0
-        yalign 1.0
+        yalign 0.82
 
         textbutton _("Back") action Rollback()
         textbutton _("Save") action ShowMenu('save')
@@ -553,7 +553,7 @@ init -2:
     style quick_button_text:
         is default
         size 12
-        idle_color "#8888"
+        idle_color "#f4f4f4"
         hover_color "#ccc"
         selected_idle_color "#cc08"
         selected_hover_color "#cc0"

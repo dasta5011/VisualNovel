@@ -5,6 +5,8 @@ image sidewalk1 = "images/backgrounds/sidewalk_01.png"
 image gunshop = "images/backgrounds/gunshop.png"
 image gunrange ="images/backgrounds/gunrange.png"
 image alley = "images/backgrounds/alley.png"
+image bedroom = "images/backgrounds/bedroom.png"
+image cafe = "images/backgrounds/cafe.png"
 
 ##ikida family
 image storageshed = "images/backgrounds/storage_shed.png"
@@ -16,11 +18,15 @@ image ikidahome = "images/backgrounds/110614.jpg"
 image aido def = "images/characters/Comic3_001.png"
 image aido dis = "images/characters/lucy_mad.png"
 
+image denji def = "images/characters/denji/denji_default.png"
+
 #Jagura Family
 image mayu def = "images/characters/mayu/default.png"
 image mayu smile = "images/characters/mayu/smile.png"
 image mayu surprised = "images/characters/mayu/surprised.png"
 image mayu dis = "images/characters/mayu/displeased.png"
+image mayu sad = "images/characters/mayu/sad.png"
+image mayu cry = "images/characters/mayu/cry.png"
 
 #other characters
 image hiro def = "images/characters/hiroshi/default.png"
