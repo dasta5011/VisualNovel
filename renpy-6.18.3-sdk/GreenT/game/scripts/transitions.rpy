@@ -21,3 +21,7 @@ transform mymoveinright(timing, x, y):
         
 #fade to black and back
 define fade = Fade(0.75, 0.25, 0.75)
+
+##important, make sure to use floats. 1.0, 0.0, etc. Not 1 or 0.
+transform setloc(x,y):
+    xanchor 0.5 yanchor 1.0 ypos y xpos x

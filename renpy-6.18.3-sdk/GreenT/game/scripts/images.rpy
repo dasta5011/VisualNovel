@@ -18,6 +18,8 @@ image ikidahome = "images/backgrounds/110614.jpg"
 image aido def = "images/characters/Comic3_001.png"
 image aido dis = "images/characters/lucy_mad.png"
 
+image yukino def = "images/characters/yukino/default.png"
+
 image denji def = "images/characters/denji/denji_default.png"
 
 #Jagura Family
