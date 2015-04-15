@@ -44,3 +44,13 @@ label test:
     n "I wonder if there'll be cake..."
 
     return
+    
+
+
+#images below this are test
+image bg cave = "images/backgrounds/cave.jpg"
+image derek happy = "images/characters/lucy_happy.png"
+image derek mad = "images/characters/lucy_mad.png"
+
+##tests delete characters after this
+define e = Character('Derek', color="#c8ffc8")
