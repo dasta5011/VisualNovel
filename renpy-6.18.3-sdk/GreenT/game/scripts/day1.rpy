@@ -7,6 +7,7 @@ label prologue:
     $renpy.pause(0.70)
     scene caveh with slowdissolve
     
+    #maybe make this a scene with Koji as a child hearing a story from his parent or grandparent
     n "{i}Several generations ago, when this land was barren, there came to be rumors of a great power lying within the land.{/i}"
     n "{i}\"Great power requires great sacrifice.\"{/i}"
     n "{i}Upon hearing that, several powerful and wealthy families scoured their countries and the globe for a suitable sacrifice.{/i}"
@@ -84,6 +85,7 @@ label opening:
     
     #cut to image showing man with the shit beat out of him
     show hiro def at center
+    
     n "Hiroshi Omura.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
     
     show blood_splat_01 at truecenter with Dissolve(0.2):
@@ -126,6 +128,7 @@ label opening:
     stop sound fadeout 0.2
     
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
+    
     return
     
 label day1_meetup:
@@ -149,14 +152,15 @@ label day1_meetup:
     n "No, I need to stop this. I just need to focus on the positive. Hiroshi is alive. Hiroshi is alive because of me."
     n "His face...that look he had. I couldn't tell if it was fear or anger or even disgust. I've never seen him look at me like that before."
     n "I guess you really can't escape this life."
+    n "It's a shame really."
     
     show mayu def at center
     
     mayu "Kooooooo-Jiiiiiiii."
     n "Lost in my own head, I nearly crashed right into someone who had just run in front of me."
     koji "Mayu! Where did you come from?"
-    mayu "Are you ok, Koji? You look pale. And you totally ignored me while we were trying to get your attention!"
-    koji "\"We?\""
+    mayu "Are you ok, Koji? You look like your dog died. And you totally ignored me while we were trying to get your attention!  Your dog didn't really die did it?!  You never even told me you had a dog!"
+    koji "Uh, no, I don't. \"We?\""
     
     show mayu smile at center with moveinbottom
     show kaori def at mymoveinleft(0.45, 0.2, 1.0)
@@ -191,6 +195,7 @@ label day1_meetup:
     show toshi def at mymoveinright(0.5, 0.8, 1.0)
     
     toshi "She even insisted she'd pay for everything. The only thing I don't like is her driver. He always looks like he's ready for trouble."
+    n "If only you knew Toshi, if only you knew."
     koji "Hmm, well he's not here anymore, so just enjoy it."
     koji "Hey, Mayu?"
     
@@ -203,8 +208,9 @@ label day1_meetup:
     
     mayu "My father arranged to get special present today. That's where we're going shopping."
     koji "That's right, you've said he's usually out on business?"
-    mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever."
+    mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever. Although, I wonder how well you three will fit in."
     toshi "Must be nice being that rich."    
+    
     return
     
 label day1_cafe:
@@ -459,8 +465,9 @@ label day1_c1_follow_c1_surrender:
     mayu "I do have to go though, my driver will be here shortly. I'm sure everyone knows about you by now and they'll expect me to be extra cautious. We may need to keep some distance for a while. I'll call you later and you can fill me in about some details I'm curious about."
     n "With that, we said our goodbyes. It wouldn't be good for her driver to see me."
     mayu "Oh, and Koji...Don't make me have to kill you. Avoid getting dragged in if you can, but if you can't, stay out of Jagura business."
-    n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I, even if I wanted to?"
+    n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I go against my own family, even if I wanted to?"
     $jagura += 1
+    
     return
         
 label day1_home:
