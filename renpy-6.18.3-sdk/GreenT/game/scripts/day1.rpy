@@ -465,8 +465,9 @@ label day1_c1_follow_c1_surrender:
     mayu "I do have to go though, my driver will be here shortly. I'm sure everyone knows about you by now and they'll expect me to be extra cautious. We may need to keep some distance for a while. I'll call you later and you can fill me in about some details I'm curious about."
     n "With that, we said our goodbyes. It wouldn't be good for her driver to see me."
     mayu "Oh, and Koji...Don't make me have to kill you. Avoid getting dragged in if you can, but if you can't, stay out of Jagura business."
-    n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I, even if I wanted to?"
+    n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I go against my own family, even if I wanted to?"
     $jagura += 1
+    
     return
         
 label day1_home:
