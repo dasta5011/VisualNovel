@@ -20,7 +20,8 @@ image aido dis = "images/characters/lucy_mad.png"
 
 image yukino def = "images/characters/yukino/default.png"
 
-image denji def = "images/characters/denji/denji_default.png"
+image denji def = "images/characters/denji/default.png"
+image denji alt = "images/characters/denji/eyesclosed.png"
 
 #Jagura Family
 image mayu def = "images/characters/mayu/default.png"
