@@ -55,8 +55,6 @@ define toshi = Character('Toshi', color="#64c533")
 define shop = Character('Shopkeep', color="#64c533")
 define waiter = Character('Waiter', color="#64c533")
 
-##tests delete characters after this
-define e = Character('Derek', color="#c8ffc8")
 # Characters can have dynamic names. Change the variable at any time to change her name.
 #define ec = Character('name_ec', dynamic=True, image='ebby')
 #$ name_ec = 'Ebola-chan'
