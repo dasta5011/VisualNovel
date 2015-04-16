@@ -7,6 +7,7 @@ label start:
     $kenshido = 0
     $maclynn = 0
     $akosnov = 0
+    
     $gameover = False
     
     #keep this beginning section clean ## used as a master jump sequences to control flow of the game
@@ -21,7 +22,7 @@ label start:
     if gameover:
         return
     call day1_home
-    
+    call day1_nightdream
     call day2_open
     call test
     return

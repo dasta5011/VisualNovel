@@ -84,7 +84,7 @@ label opening:
     n "I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."  
     
     #cut to image showing man with the shit beat out of him
-    show hiro def at center
+    show hiro beat at center
     
     n "Hiroshi Omura.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
     
@@ -546,5 +546,26 @@ label day1_home:
     koji "Come on in, what can I help you with?"
     denji "Actually, I wanted to talk to you earlier today but it you were out. How are doing after this morning?"
     koji "Oh, you mean that. I'm honestly not sure..um, feel free to have a seat if you'd like."
+    
+    return
+    
+label day1_nightdream:
+    play music "audio/bgm/Trio_for_Piano_Cello_and_Clarinet.mp3"
+    scene blackscreen with slowdissolve
+    
+    n "It's like this every time."
+    n "Dark. {w=1.5} Lonely. {w=1.5} A place where I've kept all those tears."
+    
+    show saku smile at alphacon(0.5, 0.5, 1.0)
+    
+    n "I see her face. {w=1.5} Smiling. {w=1.5} Then she leaves."
+    
+    hide saku with slowdissolve
+    show bedroom dream at alphacon(0.1, 0.5, 1.0) with slowdissolve
+    
+    n "When she does, the walls of the room fade to a pale gray color. {w=1.5} My chests clamps up. {w=1.5} My eyes burn."
+    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
+    n "That's when I realize all over again."
+    n "She's gone."
     
     return
