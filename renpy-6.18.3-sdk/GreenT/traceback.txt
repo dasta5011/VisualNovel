@@ -1,24 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/script.rpy", line 16, in script call
-    call day1_gunshop
-  File "game/scripts/script.rpy", line 312, in script
-    jump badend_1
-ScriptError: could not find label 'badend_1'.
+  File "game/scripts/script.rpy", line 25, in script call
+    call day1_nightdream
+  File "game/scripts/day1.rpy", line 561, in script
+    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
+  File "game/scripts/day1.rpy", line 561, in <module>
+    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
+Exception: Too many arguments passed to ATL transform.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/script.rpy", line 16, in script call
-    call day1_gunshop
-  File "game/scripts/script.rpy", line 312, in script
-    jump badend_1
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1480, in execute
-    rv = renpy.game.script.lookup(target)
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\script.py", line 602, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'badend_1'.
+  File "game/scripts/script.rpy", line 25, in script call
+    call day1_nightdream
+  File "game/scripts/day1.rpy", line 561, in script
+    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1040, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1003, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\python.py", line 1466, in py_eval
+    return eval(py_compile(source, 'eval'), globals, locals)
+  File "game/scripts/day1.rpy", line 561, in <module>
+    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\atl.py", line 371, in __call__
+    raise Exception("Too many arguments passed to ATL transform.")
+Exception: Too many arguments passed to ATL transform.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.1.329
