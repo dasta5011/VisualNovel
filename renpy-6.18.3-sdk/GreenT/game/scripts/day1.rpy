@@ -546,6 +546,40 @@ label day1_home:
     koji "Come on in, what can I help you with?"
     denji "Actually, I wanted to talk to you earlier today but it you were out. How are doing after this morning?"
     koji "Oh, you mean that. I'm honestly not sure..um, feel free to have a seat if you'd like."
+    n "This is so awkward. Is this going to be like a therapy for violent criminals in training?"
+    denji "Ah, thank you. I heard you took off soon after all the commotion was over this morning."
+    n "He took a seat at my desk chair and turned it around to face me."
+    n "A silence took over the room for a few seconds before he started speaking again."
+    denji "It's not easy is it? Having to do that to another person. It's even harder when it's someone you know. Koji, how do you feel about what you did?"
+    n "My brain racked for a few moments, but in the end, it was my heart that spoke."
+    
+    ##this could be a choice? like if we wanted him to have choices to decide how reckless he gets?
+    koji "It made me sick. I threw up all morning whenever I thought back to it. There was so much blood, so many awful sounds. But I also realized later, I didn't hold back. If I really felt that bad about it, why was I able to do it without more resistance? I had already accepted it as necessary and just started."
+    koji "What's wrong with me?"
+    
+    show denji alt
+    
+    denji "I don't think there's anything wrong with you, Koji. You have just been exposed to this all your life, whether or not you were involved before."
+    
+    show denji def
+    
+    denji "You've known great loss, both ten and three years ago. I'm sure you've carried a lot of heavy emotions with you for a long time now. When you see something that has been identified as a threat to your family, do you feel like you'd do whatever it takes to stop it? That may be what made you not even question your orders."
+    n "I couldn't even reply. Perhaps he was right. I let his words sink in as I starred off."
+    denji "Well, don't let it eat you up too much. I think you did the right thing, letting him live, but teaching him his lesson. I've never been big on needless murder. If you need anything, Koji, come talk to me. It's the least I could do for you and your father."
+    koji "Thank you. I'll try to keep your words in mind."
+    n "He gave my should a pat before heading to the door."
+    denji "Oh, and happy birthday, Koji. It's not much, but it was originally a present from your father. I think it'll be better off with you from now on though."
+    n "He left a small box on my desk and headed out."
+    
+    hide denji with slowdissolve
+    
+    n "I picked up and unwrapped the small box. It was tied together with a simple leather lace and opened easily enough."
+    n "Inside was a decently sized folding pocketknife. It was high quality, still very sharp, and engraved with the phrase, \"A man with an unwavering will always have a chance.\""
+    n "A bit dramatic, but I'm sure it fit my father's and Denji's youth quite well."
+    n "Laying in bed I looked the knife over as I sifted through everything that happened today."    
+    n "My losses, huh?"
+    n "I don't know if I'd say they made me stronger, I'd normally think they made me weaker if anything."
+    n "Maybe I'll feel better tomorrow. I can't take anything more today."
     
     return
     
