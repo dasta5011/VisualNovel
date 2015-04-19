@@ -571,15 +571,21 @@ label day1_home:
     denji "Oh, and happy birthday, Koji. It's not much, but it was originally a present from your father. I think it'll be better off with you from now on though."
     n "He left a small box on my desk and headed out."
     
-    hide denji with slowdissolve
+    hide denji with meddissolve
     
     n "I picked up and unwrapped the small box. It was tied together with a simple leather lace and opened easily enough."
     n "Inside was a decently sized folding pocketknife. It was high quality, still very sharp, and engraved with the phrase, \"A man with an unwavering will always have a chance.\""
     n "A bit dramatic, but I'm sure it fit my father's and Denji's youth quite well."
-    n "Laying in bed I looked the knife over as I sifted through everything that happened today."    
+    n "Laying in bed I looked the knife over as I sifted through everything that happened today."
     n "My losses, huh?"
     n "I don't know if I'd say they made me stronger, I'd normally think they made me weaker if anything."
     n "Maybe I'll feel better tomorrow. I can't take anything more today."
+    n "I go and set the knife down on my nightstand and place it in the drawer right next to the gun Mayu bought for me today."
+    
+    if jagura > 0:
+        n "I'm glad I at least have a truce with Mayu, that should hopefully keep myself, as well as Kaori and Toshi relatively safe."
+    else:
+        n "She must know for sure by now. I can only hope our friendship keeps her from coming after me herself."
     
     return
     
