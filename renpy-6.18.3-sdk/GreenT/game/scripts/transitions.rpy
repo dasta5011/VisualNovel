@@ -1,6 +1,7 @@
 #Transitions
 define slowdissolve = Dissolve(2.0)
 define fastdissolve = Dissolve(0.25)
+define meddissolve = Dissolve(1.0)
 
 #timing = seconds for transition, x and y are 0-1 coordinates on screen to be placed
 transform mymoveinleft(timing, x, y):
