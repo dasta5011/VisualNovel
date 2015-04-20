@@ -13,6 +13,9 @@ image cafe = "images/backgrounds/cafe.png"
 image storageshed = "images/backgrounds/storage_shed.png"
 image ikidahome = "images/backgrounds/110614.jpg"
 
+##jagura family
+image jagurahome = "images/backgrounds/jagura_home.jpg"
+
 #define character images
 #the spaces are important, they keep the game knowing which character is which so they can jump between expressions without a hide command
 ##ikida family

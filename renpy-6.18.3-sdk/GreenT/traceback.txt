@@ -1,32 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/script.rpy", line 25, in script call
-    call day1_nightdream
-  File "game/scripts/day1.rpy", line 561, in script
-    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
-  File "game/scripts/day1.rpy", line 561, in <module>
-    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
-Exception: Too many arguments passed to ATL transform.
+  File "game/scripts/script.rpy", line 26, in script call
+    call day1_mayuhome
+  File "game/scripts/day1.rpy", line 630, in script
+    show ilith mad with quickdissolve
+  File "game/scripts/day1.rpy", line 630, in <module>
+    show ilith mad with quickdissolve
+NameError: name 'quickdissolve' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/script.rpy", line 25, in script call
-    call day1_nightdream
-  File "game/scripts/day1.rpy", line 561, in script
-    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1040, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1003, in show_imspec
-    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "game/scripts/script.rpy", line 26, in script call
+    call day1_mayuhome
+  File "game/scripts/day1.rpy", line 630, in script
+    show ilith mad with quickdissolve
+  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1232, in execute
+    paired = renpy.python.py_eval(self.paired)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\python.py", line 1466, in py_eval
     return eval(py_compile(source, 'eval'), globals, locals)
-  File "game/scripts/day1.rpy", line 561, in <module>
-    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
-  File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\atl.py", line 371, in __call__
-    raise Exception("Too many arguments passed to ATL transform.")
-Exception: Too many arguments passed to ATL transform.
+  File "game/scripts/day1.rpy", line 630, in <module>
+    show ilith mad with quickdissolve
+NameError: name 'quickdissolve' is not defined
 
 Windows-8-6.2.9200
 Ren'Py 6.99.1.329

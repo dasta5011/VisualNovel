@@ -12,4 +12,6 @@ label day2_open:
     ##might add in a scene of Mayu talking with her mother
     
     
+    
+    
     return

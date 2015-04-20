@@ -590,7 +590,7 @@ label day1_home:
     return
     
 label day1_nightdream:
-    play music "audio/bgm/Trio_for_Piano_Cello_and_Clarinet.mp3"
+    play music "audio/bgm/Trio_for_Piano_Cello_and_Clarinet.mp3" fadeout 1.0
     scene blackscreen with slowdissolve
     
     n "It's like this every time."
@@ -607,5 +607,44 @@ label day1_nightdream:
     n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
     n "That's when I realize all over again."
     n "She's gone."
+    
+    return
+    
+label day1_mayuhome:
+    ##this scene in mayu arriving home late that night to the waiting of her mother
+    ##or maybe this is mayu after she is done having the meeting with her mother
+    play music "audio/bgm/mourning_song.ogg" fadein 1.0 fadeout 1.0
+    scene blackscreen with slowdissolve
+    
+    n "It'd been thirty minutes since she had finished the meeting with her mother, but she still couldn't relax enough to fall asleep."
+    n "She had gotten home late after taking a long stroll through town and came home to her mother's fierce glare. Mayu knew that face too well. She wanted details. All of them."
+    n "Her breathing was heavy, she couldn't remain still. There was too much eating away at her inside. Why? Why did it have to be him? Why her friend? Couldn't it have been anyone else at school?"
+    n "She's had to do things she's disagreed with before for her mother's wishes, but this time it was too personal. All she could do is relive that moment in her head, over and over as the night ticked on."
+    
+    show jagurahome with slowdissolve
+    show ilith def with slowdissolve
+    
+    ilith "You're a bit later than usual. Come inside. We will discuss what you're to do next."
+    n "Mayu stopped and tried to speak something."
+    
+    show ilith mad with fastdissolve
+    
+    ilith "There will be no negotiations with this. This matter is far more serious than you must think."
+    n "She's never been able to stand up to her mother's sharp demands, even when she lays in bed and replays the discussion in her head, she can't form an argument to the barrage of tactful and sharp words hurled at her."
+    
+    hide ilith with slowdissolve
+    scene blackscreen with slowdissolve
+    
+    n "Koji Tasura never existed. It was Koji Ikida all along. She spent the entire second half of the afternoon pondering that fact and she still didn't know how to accept it. For the Jagura's own benefit they would kill the Ikida's when given the chance. For the Ikida's own benefit they would kill the Jagura's when given the chance."
+    n "That was fact. That was life for members of all the family organizations in the city."
+    
+    show ilith dis with slowdissolve
+    
+    ilith "You are still weak and unconditioned to the life that's soon to be yours. Things have been calm lately, but tensions are building. You need to adapt or you'll die an embarrassment to this family."
+    
+    hide ilith with slowdissolve
+    
+    n "Those words. She wouldn't let those words come true. She had swore long ago to do what it took to lead her family when the time came. She wouldn't give up now."
+    n "Koji Ikida could be an enemy or a potential ally. She has her role to play, she can only wait to see what role he chooses."    
     
     return
