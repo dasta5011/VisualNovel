@@ -1,13 +1,15 @@
 ﻿
-Ren'Py 6.99.1.329 lint report, generated at: Wed Apr 08 19:20:48 2015
+Ren'Py 6.99.1.329 lint report, generated at: Sun Apr 19 22:19:37 2015
+
+game/scripts/images.rpy:27 Image saku def uses file 'images/character/saku/default.png', which is not loadable.
 
 
 Statistics:
 
-The game contains 183 dialogue blocks, containing 2,822 words and 14,955
-characters, for an average of 15.4 words and 82 characters per block.
+The game contains 296 dialogue blocks, containing 5,227 words and 27,385
+characters, for an average of 17.7 words and 93 characters per block.
 
-The game contains 3 menus, 21 images, and 12 screens.
+The game contains 3 menus, 40 images, and 12 screens.
 
 
 Remember to set config.developer to False before releasing.

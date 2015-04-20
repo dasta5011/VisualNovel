@@ -24,7 +24,7 @@ image aido dis = "images/characters/lucy_mad.png"
 
 image yukino def = "images/characters/yukino/default.png"
 
-image saku def = "images/character/saku/default.png"
+image saku def = "images/characters/saku/default.png"
 image saku smile = "images/characters/saku/smile.png"
 
 image denji def = "images/characters/denji/default.png"
