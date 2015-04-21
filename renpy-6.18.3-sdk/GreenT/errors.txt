@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/scripts/transitions.rpy", line 32: Line is indented, but the preceding ATL statement does not expect a block. Please check this line's indentation.
-    im.matrix.desaturate()
-    ^
+File "game/scripts/day2.rpy", line 15: could not parse statement.
+    play sound "audio/sfx/alarm.ogg" loop = True
+                                          ^
 
 Ren'Py Version: Ren'Py 6.99.1.329

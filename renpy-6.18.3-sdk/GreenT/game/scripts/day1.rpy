@@ -594,11 +594,11 @@ label day1_nightdream:
     scene blackscreen with slowdissolve
     
     n "It's like this every time."
-    n "Dark. {w=1.5} Lonely. {w=1.5} A place where I've kept all those tears."
+    n "{cps=18}Dark. {w=1.5} Lonely. {w=1.5} A place where I've kept all those tears.{/cps}"
     
     show saku smile at alphacon(0.5, 0.5, 1.0)
     
-    n "I see her face. {w=1.5} Smiling. {w=1.5} Then she leaves."
+    n "{cps=18}I see her face. {w=1.5} Smiling. {w=1.5} Then she leaves.{/cps}"
     
     hide saku with slowdissolve
     show bedroom dream at alphacon(0.1, 0.5, 1.0) with slowdissolve
@@ -611,8 +611,6 @@ label day1_nightdream:
     return
     
 label day1_mayuhome:
-    ##this scene in mayu arriving home late that night to the waiting of her mother
-    ##or maybe this is mayu after she is done having the meeting with her mother
     play music "audio/bgm/mourning_song.ogg" fadein 1.0 fadeout 1.0
     scene blackscreen with slowdissolve
     
@@ -646,5 +644,7 @@ label day1_mayuhome:
     
     n "Those words. She wouldn't let those words come true. She had swore long ago to do what it took to lead her family when the time came. She wouldn't give up now."
     n "Koji Ikida could be an enemy or a potential ally. She has her role to play, she can only wait to see what role he chooses."    
+    
+    stop music
     
     return

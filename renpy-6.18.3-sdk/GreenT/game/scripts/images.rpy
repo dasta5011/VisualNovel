@@ -1,5 +1,6 @@
 #define backgrounds
 image blackscreen = "#000000"
+image whitescreen = "#ffffff"
 image caveh = "images/backgrounds/cave_hallway.png"
 image sidewalk1 = "images/backgrounds/sidewalk_01.png"
 image gunshop = "images/backgrounds/gunshop.png"
@@ -7,6 +8,7 @@ image gunrange ="images/backgrounds/gunrange.png"
 image alley = "images/backgrounds/alley.png"
 image bedroom = "images/backgrounds/bedroom.png"
 image bedroom dream = im.Grayscale("images/backgrounds/bedroom.png")
+image bedroom morn = im.Sepia("images/backgrounds/bedroom.png")
 image cafe = "images/backgrounds/cafe.png"
 
 ##ikida family

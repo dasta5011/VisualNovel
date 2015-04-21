@@ -1,27 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/script.rpy", line 26, in script call
-    call day1_mayuhome
-  File "game/scripts/day1.rpy", line 630, in script
-    show ilith mad with quickdissolve
-  File "game/scripts/day1.rpy", line 630, in <module>
-    show ilith mad with quickdissolve
+  File "game/scripts/script.rpy", line 27, in script call
+    call day2_open
+  File "game/scripts/day2.rpy", line 44, in script
+    
+  File "game/scripts/day2.rpy", line 44, in <module>
+    
 NameError: name 'quickdissolve' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/script.rpy", line 26, in script call
-    call day1_mayuhome
-  File "game/scripts/day1.rpy", line 630, in script
-    show ilith mad with quickdissolve
+  File "game/scripts/script.rpy", line 27, in script call
+    call day2_open
+  File "game/scripts/day2.rpy", line 44, in script
+    
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\ast.py", line 1232, in execute
     paired = renpy.python.py_eval(self.paired)
   File "E:\Work\VisualNovel\renpy-6.18.3-sdk\renpy\python.py", line 1466, in py_eval
     return eval(py_compile(source, 'eval'), globals, locals)
-  File "game/scripts/day1.rpy", line 630, in <module>
-    show ilith mad with quickdissolve
+  File "game/scripts/day2.rpy", line 44, in <module>
+    
 NameError: name 'quickdissolve' is not defined
 
 Windows-8-6.2.9200
