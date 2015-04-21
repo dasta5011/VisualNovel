@@ -11,7 +11,44 @@ label day2_open:
     ##kind of want the days to detail Koji's descendance into the darker underworld of his families lifestyle and see him transform from a college student into someone who has been forced to sacrifice friends and himself to become whats needed to make his family secure
     ##might add in a scene of Mayu talking with her mother
     
+    scene whitescreen with slowdissolve
+    play sound "audio/sfx/alarm.ogg" loop
+    #scene bedroom morn with slowdissolve
     
+    n "Oh god. What is that awful sound? Oh yeah...that's right."
+    n "..."
+    
+    stop sound
+    
+    n "My alarm clock.  I hate whoever invented it."
+    
+    scene bedroom with slowdissolve
+    play music "audio/bgm/easy_lemon.ogg"
+    
+    n "Normally I'd be getting up for school, but not today. So that means..."
+    n "Zzzz...Zzz..."
+    n "Zzzz...Zzz..."
+    n "Zzzz...Zzz..."
+    n "{size=+5}{b}*Knock!* *Knock!*{/b}{/size}"
+    n "...why..."
+    n "{size=+10}{b}*Knock!* *Knock!*{/b}{/size}"
+    n "WHY?!?!?!"
+    n "{color=#f00}{size=+15}{b}*Knock!* *Knock!*{/b}{/size}{/color}"
+    koji "Who is it? You can come in."
+    
+    show denji def at mymoveinleft(0.7, 0.5, 1.0)
+    
+    denji "Your grandfather sent me to you let you know you're expected in the backyard in ten minutes."
+    koji "..so..early."
+    
+    show denji alt with fastdissolve
+    
+    denji "I figured you'd might head back to sleep after your alarm went off, so here's a quick breakfast before you head downstairs."
+    koji "Unghh...Thanks."
+    
+    hide denji with moveoutleft
+    
+    n "I'm not ready to get up yet. I must have been up too late thinking about everything last night."
     
     
     return
