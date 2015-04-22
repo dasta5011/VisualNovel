@@ -505,12 +505,12 @@ label day1_home:
     aido "The right you had to live in the dark was abandoned when you picked your friends poorly. The family needs to make big changes starting tomorrow. Be prepared, tomorrow we take a look at how you can do your part. Don't go to school tomorrow."
     n "This conversation wasn't going to go anywhere. I'm a grown man, but even here I have no power."
     
-    show yukino def at setloc(0.15,1.0) with fastdissolve
+    show yuki def at setloc(0.15,1.0) with fastdissolve
     
     n "I catch my sister off to the side quietly eating while the tension between my grandfather and I builds. She must have something to say about all this."
     n "--Eh, it's not right. If she wanted to say anything, she would have. No need to drag her into this battle. I should find some time to talk to her later."
     
-    hide yukino with fastdissolve
+    hide yuki with fastdissolve
     
     n "With a few words of goodbye I left to my room. Today has been too much."
     

@@ -6,14 +6,15 @@ image sidewalk1 = "images/backgrounds/sidewalk_01.png"
 image gunshop = "images/backgrounds/gunshop.png"
 image gunrange ="images/backgrounds/gunrange.png"
 image alley = "images/backgrounds/alley.png"
-image bedroom = "images/backgrounds/bedroom.png"
-image bedroom dream = im.Grayscale("images/backgrounds/bedroom.png")
-image bedroom morn = im.Sepia("images/backgrounds/bedroom.png")
 image cafe = "images/backgrounds/cafe.png"
 
 ##ikida family
 image storageshed = "images/backgrounds/storage_shed.png"
 image ikidahome = "images/backgrounds/110614.jpg"
+image ikidayard = "images/backgrounds/ikida_yard.png"
+image bedroom = "images/backgrounds/bedroom.png"
+image bedroom dream = im.Grayscale("images/backgrounds/bedroom.png")
+image bedroom morn = im.Sepia("images/backgrounds/bedroom.png")
 
 ##jagura family
 image jagurahome = "images/backgrounds/jagura_home.jpg"
@@ -24,7 +25,7 @@ image jagurahome = "images/backgrounds/jagura_home.jpg"
 image aido def = "images/characters/Comic3_001.png"
 image aido dis = "images/characters/lucy_mad.png"
 
-image yukino def = "images/characters/yukino/default.png"
+image yuki def = "images/characters/yukino/default.png"
 
 image saku def = "images/characters/saku/default.png"
 image saku smile = "images/characters/saku/smile.png"

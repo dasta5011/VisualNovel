@@ -53,8 +53,27 @@ label day2_open:
     return
     
 label day2_yard:
-    ##add picture of a big walled in yard, fancy, etc. here
+    play music "audio/bgm/the_complex.ogg" fadein 1.5
+    scene ikidayard with slowdissolve
     
     n "The backyard here is nice, large, and safe from prying eyes thanks to the high walls. It's a perfect spot for doing any sort of activity you can imagine. Thanks to the distance we are from any of our neighbors, it's often used as a makeshift gun range for some of our employees and family members."
     
+    show aido def at center with quickdissolve
+    show yuki def at left with quickdissolve
+    
+    n "Both my grandfather and Yukino were waiting for me as well as a few of our employees that I'm somewhat familiar with. Sometimes I don't realize just how many people enter and leave our grounds, but they're all paid by Ikida money one way or the other."
+    n "Aido Ikida, the man who is my grandfather, just stares at me as I enter the courtyard. His presence fills the atmosphere with a commanding tone. With a simple hand motion one of the larger, bulkier men behind him comes forward. I don't have a good feeling about this."
+    n "There's a brief pause of silence before Yukino speaks up."
+    yuki "Are you sure about this, grandfather?"
+    aido "If you don't care to watch, you are free to head inside."
+    n "Next he turns back to me."
+    aido "Koji, today we will keep this basic. This will be your first training lesson. Since we can't have you out doing business with no way to handle a situation should it occur, your job is to beat Leon before the day is over."
+    n "The man I can only assume is Leon takes a bow. I can't beat him! He's huge!"
+    koji "What?! I can't possibly do that, look how muscular he is! How tall he is!"
+    aido "That's why you have all day to try. I don't want to have to tell you what happens if you fail."
+    n "With that he starts walking off like what he did was simply just a mundane task."
+    koji "How do I know if I succeed? What counts as beating him?"
+    aido "Hmm, break his nose. Sound good, Leon?"
+    n "He simply gives a nod and a grunt even though his nose is now on the line. What did I just get into?"
+        
     return
