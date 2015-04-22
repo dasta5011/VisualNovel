@@ -9,7 +9,6 @@ label day2_open:
     ##Could be his first mission to show his competence. Something based on his families specialty? Or something basic.
     ##Right now his families specialty is blackmail and gambling. The kind of people who will put you in an unsuspecting trap then wring you dry with you powerless to fight back.
     ##kind of want the days to detail Koji's descendance into the darker underworld of his families lifestyle and see him transform from a college student into someone who has been forced to sacrifice friends and himself to become whats needed to make his family secure
-    ##might add in a scene of Mayu talking with her mother
     
     scene whitescreen with slowdissolve
     play sound "audio/sfx/alarm.ogg" loop
@@ -49,6 +48,13 @@ label day2_open:
     hide denji with moveoutleft
     
     n "I'm not ready to get up yet. I must have been up too late thinking about everything last night."
+    n "Ugh. I guess it's time to get up."    
     
+    return
+    
+label day2_yard:
+    ##add picture of a big walled in yard, fancy, etc. here
+    
+    n "The backyard here is nice, large, and safe from prying eyes thanks to the high walls. It's a perfect spot for doing any sort of activity you can imagine. Thanks to the distance we are from any of our neighbors, it's often used as a makeshift gun range for some of our employees and family members."
     
     return
