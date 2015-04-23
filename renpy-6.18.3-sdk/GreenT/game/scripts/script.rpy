@@ -25,6 +25,7 @@ label start:
     call day1_nightdream
     call day1_mayuhome
     call day2_open
+    call day2_yard
     
     call test
     return
