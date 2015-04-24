@@ -15,6 +15,8 @@ define masachi = Character('Masachi Ikida', color="#b2b2b2")
 define denji = Character('Denji Yamazaki', color="#b2b2b2")
 define haruka = Character('Haruka Matsu', color="#b2b2b2")
 
+define leon = Character('Leon', color="#b2b2b2")
+
 #Jagura Family
 define ilith = Character('Ilith Jagura', color="#ff5c5c")
 define mayu = Character('Mayu Jagura', color="#ff5c5c")
