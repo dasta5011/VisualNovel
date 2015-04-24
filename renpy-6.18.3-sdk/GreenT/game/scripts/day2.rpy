@@ -88,8 +88,23 @@ label day2_yard:
     aido "Hmm, break his nose. Sound good, Leon?"
     
     show leon at center with quickdissolve
+    hide aido with moveoutleft
     
     n "He simply gives a nod and a grunt even though his nose is now on the line. What did I just get into?"
+    
+    scene ikidayard with fade
+    
+    n "Ok, let's see here. What is going to be the best way to approach this? He's big, strong, and has every advantage on me. But he isn't taking an direct action towards me yet. He's just trying to defend himself. Maybe if I charge him fast enough.."
+    
+    show leon at center with Dissolve(1.0)
+    
+    n "I charge at him with everything I have, there's roughly about seven feet between us. As soon as I move he get's his composure together. I leap as I close in the last few feet and reach out my fist towards my target. This is it, I'll do it first try!"
+    koji "Gnhh!"
+    n "A sharp, forceful pain surges through my stomach and my fist is caught by his massive hands."
+    n "I can't breath, my lungs are struggling for air as I sink to the ground. With just a moments notice he had blocked my attack and simultaneously hit my in the gut."
+    koji "I was hoping this was going to be easier."
+    leon "..."
+    n "I rest on the ground for a few minutes before standing back up. Attempt number two is going to need a different approach since he's faster than I thought."
     
     ##Queue brutal ass beating over and over again
     ##maybe draw out the first attempt
@@ -108,9 +123,9 @@ label day2_yard:
     ##leon gets out, packs his heat
     ##The O'MacLynn's. They pull their guns and demand their money.They have the upper hand right now
     ##worried for leon, koji gets out and agrees to bring them the money
-    ##as he gets close to them, three distinct shots of gun fire ring out.
+    ##as he gets close to them, two distinct shots of gun fire ring out.
     ##each of the O'MacLynn's is dead, headshots, blood all over koji
-    ##whether its known or not, Denji, Yukino, and Haruka were all the snipers there.
+    ##whether its known or not, Denji, and Yukino, were the snipers there.
     ##Leons long and roundabout car ride was to a specific location predetermined for this scenario
     
         
