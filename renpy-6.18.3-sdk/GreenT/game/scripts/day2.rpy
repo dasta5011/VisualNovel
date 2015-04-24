@@ -63,6 +63,9 @@ label day2_yard:
     
     n "Both my grandfather and Yukino were waiting for me as well as a few of our employees that I'm somewhat familiar with. Sometimes I don't realize just how many people enter and leave our grounds, but they're all paid by Ikida money one way or the other."
     n "Aido Ikida, the man who is my grandfather, just stares at me as I enter the courtyard. His presence fills the atmosphere with a commanding tone. With a simple hand motion one of the larger, bulkier men behind him comes forward. I don't have a good feeling about this."
+    
+    show leon def at right with quickdissolve
+    
     n "There's a brief pause of silence before Yukino speaks up."
     yuki "Are you sure about this, grandfather?"
     aido "If you don't care to watch, you are free to head inside."
@@ -71,9 +74,44 @@ label day2_yard:
     n "The man I can only assume is Leon takes a bow. I can't beat him! He's huge!"
     koji "What?! I can't possibly do that, look how muscular he is! How tall he is!"
     aido "That's why you have all day to try. I don't want to have to tell you what happens if you fail."
+    
+    hide yuki with moveoutleft
+    
     n "With that he starts walking off like what he did was simply just a mundane task."
+    
+    hide aido with moveoutleft
+    
     koji "How do I know if I succeed? What counts as beating him?"
+    
+    show aido at left with moveinleft
+    
     aido "Hmm, break his nose. Sound good, Leon?"
+    
+    show leon at center with quickdissolve
+    
     n "He simply gives a nod and a grunt even though his nose is now on the line. What did I just get into?"
+    
+    ##Queue brutal ass beating over and over again
+    ##maybe draw out the first attempt
+    ##cut away and make it seem like a bunch of time has passed
+    ##sun is setting
+    ##Gets brilliant idea, makes a feint attempt, pretends to be seriously hurt, leon drops his guard to see if everything is ok
+    ##total suckerpunch attack
+    ##but wait, there's more
+    ##sent out on a mission or something that night with leon
+    ##maybe a deposit run from one of the illegal gambling casinos they run
+    ##first sign of real trouble
+    ##notice they're being tailed
+    ##leon makes the call, everything is set
+    ##engage high speed and roundabout chase
+    ##leads tailing car into an isolated area
+    ##leon gets out, packs his heat
+    ##The O'MacLynn's. They pull their guns and demand their money.They have the upper hand right now
+    ##worried for leon, koji gets out and agrees to bring them the money
+    ##as he gets close to them, three distinct shots of gun fire ring out.
+    ##each of the O'MacLynn's is dead, headshots, blood all over koji
+    ##whether its known or not, Denji, Yukino, and Haruka were all the snipers there.
+    ##Leons long and roundabout car ride was to a specific location predetermined for this scenario
+    
         
     return

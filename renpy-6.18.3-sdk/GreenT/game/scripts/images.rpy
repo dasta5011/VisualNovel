@@ -33,6 +33,8 @@ image saku smile = "images/characters/saku/smile.png"
 image denji def = "images/characters/denji/default.png"
 image denji alt = "images/characters/denji/eyesclosed.png"
 
+image lean def = "images/characters/leon.png"
+
 #Jagura Family
 image mayu def = "images/characters/mayu/default.png"
 image mayu smile = "images/characters/mayu/smile.png"
