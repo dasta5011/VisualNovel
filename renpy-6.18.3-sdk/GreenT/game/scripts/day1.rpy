@@ -7,6 +7,7 @@ label prologue:
     $renpy.pause(0.70)
     scene caveh with slowdissolve
     
+    #maybe make this a scene with Koji as a child hearing a story from his parent or grandparent
     n "{i}Several generations ago, when this land was barren, there came to be rumors of a great power lying within the land.{/i}"
     n "{i}\"Great power requires great sacrifice.\"{/i}"
     n "{i}Upon hearing that, several powerful and wealthy families scoured their countries and the globe for a suitable sacrifice.{/i}"
@@ -83,7 +84,8 @@ label opening:
     n "I know I don't have many, but at least one of them made it.  In fact, he's why I'm here."  
     
     #cut to image showing man with the shit beat out of him
-    show hiro def at center
+    show hiro beat at center
+    
     n "Hiroshi Omura.  The snitch.  And my best friend.  It's because of me that he was in this line of work.  If he hadn't been my best friend growing up, my family never would've recruited him.  He wouldn't have snitched, and I wouldn't be here doing this to him."
     
     show blood_splat_01 at truecenter with Dissolve(0.2):
@@ -126,6 +128,7 @@ label opening:
     stop sound fadeout 0.2
     
     n "Anyway...I hope this is over soon.  It'd be a shame if this was the highlight of my birthday."    
+    
     return
     
 label day1_meetup:
@@ -149,14 +152,15 @@ label day1_meetup:
     n "No, I need to stop this. I just need to focus on the positive. Hiroshi is alive. Hiroshi is alive because of me."
     n "His face...that look he had. I couldn't tell if it was fear or anger or even disgust. I've never seen him look at me like that before."
     n "I guess you really can't escape this life."
+    n "It's a shame really."
     
     show mayu def at center
     
     mayu "Kooooooo-Jiiiiiiii."
     n "Lost in my own head, I nearly crashed right into someone who had just run in front of me."
     koji "Mayu! Where did you come from?"
-    mayu "Are you ok, Koji? You look pale. And you totally ignored me while we were trying to get your attention!"
-    koji "\"We?\""
+    mayu "Are you ok, Koji? You look like your dog died. And you totally ignored me while we were trying to get your attention!  Your dog didn't really die did it?!  You never even told me you had a dog!"
+    koji "Uh, no, I don't. \"We?\""
     
     show mayu smile at center with moveinbottom
     show kaori def at mymoveinleft(0.45, 0.2, 1.0)
@@ -191,6 +195,7 @@ label day1_meetup:
     show toshi def at mymoveinright(0.5, 0.8, 1.0)
     
     toshi "She even insisted she'd pay for everything. The only thing I don't like is her driver. He always looks like he's ready for trouble."
+    n "If only you knew Toshi, if only you knew."
     koji "Hmm, well he's not here anymore, so just enjoy it."
     koji "Hey, Mayu?"
     
@@ -203,8 +208,9 @@ label day1_meetup:
     
     mayu "My father arranged to get special present today. That's where we're going shopping."
     koji "That's right, you've said he's usually out on business?"
-    mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever."
+    mayu "Yep, but whenever he gets the chance he usually arranges something like this for me. He said the shopkeeper should have already been paid and to pick out whatever. Although, I wonder how well you three will fit in."
     toshi "Must be nice being that rich."    
+    
     return
     
 label day1_cafe:
@@ -459,8 +465,9 @@ label day1_c1_follow_c1_surrender:
     mayu "I do have to go though, my driver will be here shortly. I'm sure everyone knows about you by now and they'll expect me to be extra cautious. We may need to keep some distance for a while. I'll call you later and you can fill me in about some details I'm curious about."
     n "With that, we said our goodbyes. It wouldn't be good for her driver to see me."
     mayu "Oh, and Koji...Don't make me have to kill you. Avoid getting dragged in if you can, but if you can't, stay out of Jagura business."
-    n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I, even if I wanted to?"
+    n "After her stern warning she disappeared. I guess I can't expect her to go against her family. Could I go against my own family, even if I wanted to?"
     $jagura += 1
+    
     return
         
 label day1_home:
@@ -498,12 +505,12 @@ label day1_home:
     aido "The right you had to live in the dark was abandoned when you picked your friends poorly. The family needs to make big changes starting tomorrow. Be prepared, tomorrow we take a look at how you can do your part. Don't go to school tomorrow."
     n "This conversation wasn't going to go anywhere. I'm a grown man, but even here I have no power."
     
-    show yukino def at setloc(0.15,1.0) with fastdissolve
+    show yuki def at setloc(0.15,1.0) with fastdissolve
     
     n "I catch my sister off to the side quietly eating while the tension between my grandfather and I builds. She must have something to say about all this."
     n "--Eh, it's not right. If she wanted to say anything, she would have. No need to drag her into this battle. I should find some time to talk to her later."
     
-    hide yukino with fastdissolve
+    hide yuki with fastdissolve
     
     n "With a few words of goodbye I left to my room. Today has been too much."
     
@@ -539,5 +546,105 @@ label day1_home:
     koji "Come on in, what can I help you with?"
     denji "Actually, I wanted to talk to you earlier today but it you were out. How are doing after this morning?"
     koji "Oh, you mean that. I'm honestly not sure..um, feel free to have a seat if you'd like."
+    n "This is so awkward. Is this going to be like a therapy for violent criminals in training?"
+    denji "Ah, thank you. I heard you took off soon after all the commotion was over this morning."
+    n "He took a seat at my desk chair and turned it around to face me."
+    n "A silence took over the room for a few seconds before he started speaking again."
+    denji "It's not easy is it? Having to do that to another person. It's even harder when it's someone you know. Koji, how do you feel about what you did?"
+    n "My brain racked for a few moments, but in the end, it was my heart that spoke."
+    
+    ##this could be a choice? like if we wanted him to have choices to decide how reckless he gets?
+    koji "It made me sick. I threw up all morning whenever I thought back to it. There was so much blood, so many awful sounds. But I also realized later, I didn't hold back. If I really felt that bad about it, why was I able to do it without more resistance? I had already accepted it as necessary and just started."
+    koji "What's wrong with me?"
+    
+    show denji alt
+    
+    denji "I don't think there's anything wrong with you, Koji. You have just been exposed to this all your life, whether or not you were involved before."
+    
+    show denji def
+    
+    denji "You've known great loss, both ten and three years ago. I'm sure you've carried a lot of heavy emotions with you for a long time now. When you see something that has been identified as a threat to your family, do you feel like you'd do whatever it takes to stop it? That may be what made you not even question your orders."
+    n "I couldn't even reply. Perhaps he was right. I let his words sink in as I starred off."
+    denji "Well, don't let it eat you up too much. I think you did the right thing, letting him live, but teaching him his lesson. I've never been big on needless murder. If you need anything, Koji, come talk to me. It's the least I could do for you and your father."
+    koji "Thank you. I'll try to keep your words in mind."
+    n "He gave my should a pat before heading to the door."
+    denji "Oh, and happy birthday, Koji. It's not much, but it was originally a present from your father. I think it'll be better off with you from now on though."
+    n "He left a small box on my desk and headed out."
+    
+    hide denji with meddissolve
+    
+    n "I picked up and unwrapped the small box. It was tied together with a simple leather lace and opened easily enough."
+    n "Inside was a decently sized folding pocketknife. It was high quality, still very sharp, and engraved with the phrase, \"A man with an unwavering will always have a chance.\""
+    n "A bit dramatic, but I'm sure it fit my father's and Denji's youth quite well."
+    n "Laying in bed I looked the knife over as I sifted through everything that happened today."
+    n "My losses, huh?"
+    n "I don't know if I'd say they made me stronger, I'd normally think they made me weaker if anything."
+    n "Maybe I'll feel better tomorrow. I can't take anything more today."
+    n "I go and set the knife down on my nightstand and place it in the drawer right next to the gun Mayu bought for me today."
+    
+    if jagura > 0:
+        n "I'm glad I at least have a truce with Mayu, that should hopefully keep myself, as well as Kaori and Toshi relatively safe."
+    else:
+        n "She must know for sure by now. I can only hope our friendship keeps her from coming after me herself."
+    
+    return
+    
+label day1_nightdream:
+    play music "audio/bgm/Trio_for_Piano_Cello_and_Clarinet.mp3" fadeout 1.0
+    scene blackscreen with slowdissolve
+    
+    n "It's like this every time."
+    n "{cps=18}Dark. {w=1.5} Lonely. {w=1.5} A place where I've kept all those tears.{/cps}"
+    
+    show saku smile at alphacon(0.5, 0.5, 1.0)
+    
+    n "{cps=18}I see her face. {w=1.5} Smiling. {w=1.5} Then she leaves.{/cps}"
+    
+    hide saku with slowdissolve
+    show bedroom dream at alphacon(0.1, 0.5, 1.0) with slowdissolve
+    
+    n "When she does, the walls of the room fade to a pale gray color. {w=1.5} My chests clamps up. {w=1.5} My eyes burn."
+    n "I'm hunched over on the ground, I can't think. {w=1.5} I can't feel."
+    n "That's when I realize all over again."
+    n "She's gone."
+    
+    return
+    
+label day1_mayuhome:
+    play music "audio/bgm/mourning_song.ogg" fadein 1.0 fadeout 1.0
+    scene blackscreen with slowdissolve
+    
+    n "It'd been thirty minutes since she had finished the meeting with her mother, but she still couldn't relax enough to fall asleep."
+    n "She had gotten home late after taking a long stroll through town and came home to her mother's fierce glare. Mayu knew that face too well. She wanted details. All of them."
+    n "Her breathing was heavy, she couldn't remain still. There was too much eating away at her inside. Why? Why did it have to be him? Why her friend? Couldn't it have been anyone else at school?"
+    n "She's had to do things she's disagreed with before for her mother's wishes, but this time it was too personal. All she could do is relive that moment in her head, over and over as the night ticked on."
+    
+    show jagurahome with slowdissolve
+    show ilith def with slowdissolve
+    
+    ilith "You're a bit later than usual. Come inside. We will discuss what you're to do next."
+    n "Mayu stopped and tried to speak something."
+    
+    show ilith mad with fastdissolve
+    
+    ilith "There will be no negotiations with this. This matter is far more serious than you must think."
+    n "She's never been able to stand up to her mother's sharp demands, even when she lays in bed and replays the discussion in her head, she can't form an argument to the barrage of tactful and sharp words hurled at her."
+    
+    hide ilith with slowdissolve
+    scene blackscreen with slowdissolve
+    
+    n "Koji Tasura never existed. It was Koji Ikida all along. She spent the entire second half of the afternoon pondering that fact and she still didn't know how to accept it. For the Jagura's own benefit they would kill the Ikida's when given the chance. For the Ikida's own benefit they would kill the Jagura's when given the chance."
+    n "That was fact. That was life for members of all the family organizations in the city."
+    
+    show ilith dis with slowdissolve
+    
+    ilith "You are still weak and unconditioned to the life that's soon to be yours. Things have been calm lately, but tensions are building. You need to adapt or you'll die an embarrassment to this family."
+    
+    hide ilith with slowdissolve
+    
+    n "Those words. She wouldn't let those words come true. She had swore long ago to do what it took to lead her family when the time came. She wouldn't give up now."
+    n "Koji Ikida could be an enemy or a potential ally. She has her role to play, she can only wait to see what role he chooses."    
+    
+    stop music
     
     return

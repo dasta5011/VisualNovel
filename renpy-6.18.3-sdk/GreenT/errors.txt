@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/scripts/day1.rpy", line 192: expected statement.
-    fade
-        ^
+File "game/scripts/day2.rpy", line 70: end of line expected.
+    aido "Koji, today we will keep this basic. This will be your first training lesson. Since we can't have you out doing business with no way to handle a situation should it occur, your job is to beat Leon before the day is over."\
+                                                                                                                                                                                                                                       ^
 
 Ren'Py Version: Ren'Py 6.99.1.329
